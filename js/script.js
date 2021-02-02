@@ -104,7 +104,15 @@ $('.multiple-items').slick({
 	slidesToShow: 2,
 	dots: true,
 	arrows: false,
-	slidesToScroll: 1
+	slidesToScroll: 1,
+	responsive: [
+	  {
+		breakpoint: 991,
+		settings: {
+		  slidesToShow: 1,
+		  slidesToScroll: 1
+		}
+	  }]
   });
   $('.customerslider').slick({
 	  infinite: true,
@@ -113,5 +121,13 @@ $('.multiple-items').slick({
 	  arrows: false,
 	  slidesToScroll: 1,
 	  autoplay: true,
-	  autoplaySpeed: 3000
+	  autoplaySpeed: 3000,
+	  responsive: [
+		{
+		  breakpoint: 991,
+		  settings: {
+			slidesToShow: 2,
+			slidesToScroll: 1
+		  }
+		}]
 	});

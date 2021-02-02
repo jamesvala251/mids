@@ -1,6 +1,6 @@
-nav.navbar .navbar-collapse {
+/* nav.navbar .navbar-collapse {
     display: block;
-}
+} */
 nav.navbar .navbar-collapse ul.navbar-nav {
     position: relative;
 }
@@ -559,4 +559,126 @@ span.datearea {
 }
 span.datearea i {
     padding-right: 10px;
+}
+@media (max-width:767px){
+    nav.navbar a.navbar-brand {
+        width: 74%;
+        margin: auto;
+    }
+    nav.navbar button.navbar-toggler[data-target="#navbartopbar"] {
+        position: fixed;
+        top: 27px;
+        left: 9px;
+    }
+    nav.navbar button.navbar-toggler[data-target="#navbarResponsive"] {
+        position: fixed;
+        top: 27px;
+        right: 10px;
+    }
+    nav.navbar div#navbartopbar {
+        width: 100%;
+    }
+    nav.navbar {
+        width: 100%;
+    }
+    h2.headtitle {
+        font-size: 34px;
+        line-height: 45px;
+    }
+    .differentiator {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .contentarea h1 {
+        font-size: 28px;
+        line-height: 35px;
+        text-align: center;
+    }
+    .contentarea h6 {
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 4px;
+    }
+    .contentarea a.readmore {
+        font-size: 16px;
+        line-height: 20px;
+        display: block;
+        text-align: center;
+    }
+    .latestnews h5 {
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+        display: inline-block;
+        width: 85%;
+        margin-bottom: 25px;
+    }
+    .latestnews a.readmore {
+        text-align: center;
+        margin-top: 11px;
+    }
+    .differentiator p {
+        font-size: 16px;
+        line-height: 26px;
+        text-align: justify;
+    }
+    a.readmore {
+        display: block;
+        text-align: center;
+    }
+    .boximgarea {
+        width: 100%;
+        height: 351px;
+    }
+    .clientsec .w40 {
+        width: 100%;
+    }
+    .clientsec .w60 {
+        width: 100%;
+    }
+    .ourclient,.ourcustomer {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .customerslider .customerlogo {
+        justify-content: center;
+    }
+    .customerslider .customerlogo {
+        justify-content: center;
+    }
+    footer.footersec h5 {
+        font-size: 21px;
+        line-height: 26px;
+    }
+    footer.footersec ul.link li a {
+        font-size: 16px;
+        line-height: 28px;
+    }
+    footer.footersec form.newsletter input.form-control {
+        width: 100%;
+        border-bottom: 2px solid #97B1B6;
+    }
+    footer.footersec form.newsletter {
+        border: none;
+    }
+    footer.footersec form.newsletter a.readmore {
+        margin-top: 15px;
+    }
+    nav.navbar .row {
+        margin-left: 0;
+    }
+    .innerbanner {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .quatorbox {
+        width: 100%;
+    }
+    a.readmore.readab {
+        position: relative;
+        display: block;
+        top: unset;
+        right: unset;
+        margin-top: 15px;
+    }
 }
