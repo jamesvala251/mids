@@ -560,6 +560,72 @@ span.datearea {
 span.datearea i {
     padding-right: 10px;
 }
+.underconstruction .modal-body img {
+    max-width: 100%;
+}
+.underconstruction .modal-dialog {
+    max-width: 62%;
+}
+.underconstruction .modal-content {
+    background: #DFE7E8;
+}
+.underconstruction .modal-content .modal-header {
+    border: none;
+    padding: 0;    z-index: 111;
+}
+.underconstruction .modal-body img.under {
+    max-width: 44%;
+    margin: auto;
+    display: block;
+    padding-bottom: 23px;
+}
+
+.underconstruction .modal-body img {
+    display: block;
+    margin: auto;
+}
+
+.underconstruction .modal-body h4 {
+    text-align: center;
+    display: block;
+    font-size: 41px;
+    padding-top: 28px;
+    font-weight: 700;
+    color: #006837;
+    line-height: 67px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+.underconstruction  .modal-footer {
+    padding: 0;
+}
+
+.underconstruction .modal-footer button.btn.btn-danger {
+    background: transparent;
+    border: none;
+    color: #0b416d;
+    font-weight: 600;
+    font-size: 20px;
+    border-radius: 0;
+    margin-right: 20px;
+    transition: 0.5s;
+    border-bottom: 2px solid transparent;
+}
+
+.underconstruction .modal-footer button.btn.btn-danger:hover,.underconstruction .modal-footer button.btn.btn-danger:focus {
+    box-shadow: none;
+    border-bottom: 2px solid #006837;
+}
+
+.underconstruction .modal-content .modal-header button.close {
+    padding: 0;
+    margin: 0;
+    float: right;
+    text-align: right;
+    right: 7px;
+    position: absolute;
+}
 @media (max-width:767px){
     nav.navbar a.navbar-brand {
         width: 74%;
@@ -680,5 +746,26 @@ span.datearea i {
         top: unset;
         right: unset;
         margin-top: 15px;
+    }
+    .underconstruction .modal-dialog {
+        max-width: 95%;
+        margin: auto;
+    }
+    
+    .underconstruction .modal-body h4 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+    
+    .underconstruction .modal-footer button.btn.btn-danger {
+        font-size: 15px;
+    }
+    .underconstruction .modal-dialog {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+    }
+    .underconstruction .modal-body img {
+        max-width: 50%;
     }
 }
