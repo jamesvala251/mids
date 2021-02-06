@@ -368,28 +368,34 @@ h2.headtitle:after {
     line-height: 34px;
     color: #37676F;
 }
-.slider.multiple-items  ul.slick-dots li button:before {
+.slider.multiple-items  ul.slick-dots li button:before,.securitiesitem  ul.slick-dots li button:before,
+.slider.insigtsitem ul.slick-dots li button:before {
     display: none;
 }
-.slider.multiple-items ul.slick-dots li button {
+.slider.multiple-items ul.slick-dots li button,.securitiesitem  ul.slick-dots li button,
+.slider.insigtsitem ul.slick-dots li button {
     width: 17px;
     height: 17px;
     background: #DFE7E8;
     margin: 0;
 }
-.slider.multiple-items ul.slick-dots li {
+.slider.multiple-items ul.slick-dots li,.securitiesitem  ul.slick-dots li,
+.slider.insigtsitem ul.slick-dots li {
     padding: 0;
     width: 25px;
     height: 25px;
     padding: 0;
     margin: 0 5px;
 }
-.slider.multiple-items ul.slick-dots li.slick-active button {
+.slider.multiple-items ul.slick-dots li.slick-active button,
+.securitiesitem  ul.slick-dots li.slick-active button,
+.insigtsitem ul.slick-dots li.slick-active button {
     outline: 1px solid #016634;
     background: #016634;
     outline-offset: 4px;
 }
-.slider.multiple-items ul.slick-dots {
+.slider.multiple-items ul.slick-dots,.securitiesitem  ul.slick-dots,
+.slider.insigtsitem ul.slick-dots {
     bottom: -42px;
 }
 .customerslider {
@@ -625,6 +631,439 @@ span.datearea i {
     text-align: right;
     right: 7px;
     position: absolute;
+}
+.webelivebox {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 20px 15px;
+    margin-top: 20px;
+    box-shadow: 0 0 5px 1px #dedede80;
+}
+.webelivebox .icon {
+    width: 52px;
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+}
+.webelivebox .content {
+    width: calc(100% - 57px);
+    display: inline-block;
+    padding-left: 16px;
+    position: relative;
+}
+.webelivebox  h4 {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    color: #37676F;
+    padding-bottom: 11px;
+    margin-bottom: 0;
+}
+.webelivebox  p {
+    margin: 0;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 148.18%;
+    color: #37676F;
+}
+.workwithclient {
+    position: relative;
+    display: block;
+    width: 100%;
+    margin-top: 30px;
+}
+.workwithclient img {
+    max-width: 100%;
+}
+.workwithclient h5.smalltitle {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    color: #0B1D26;
+    margin: 0;
+    padding-bottom: 25px;
+}
+.workwithclient h5.smalltitle:before {content: '';position: relative;display: inline-block;width: 72px;height: 2px;background: #0B1D26;vertical-align: middle;margin-right: 32px;}
+.workwithclient .text-right h5.smalltitle:before {
+    display: none;
+}
+.workwithclient .text-right h5.smalltitle:after {
+    content: '';
+    position: relative;
+    display: inline-block;
+    width: 72px;
+    height: 2px;
+    background: #0B1D26;
+    vertical-align: middle;
+    margin-left: 32px;
+}
+.awardbox {
+    position: relative;
+    display: block;
+    width: 100%;
+    background: rgb(223 231 232 / 50%);
+    padding: 25px;
+    margin-top: 25px;
+
+}
+.awardbox img {
+    width: 130px;
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+}
+.awardbox .content {
+    position: relative;
+    display: inline-block;
+    width: calc(100% - 135px);
+    padding-left: 20px;
+}
+.awardbox .content p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 34px;
+    color: #37676F;
+}
+.peoplebox {
+    position: relative;
+    display: block;
+    width: 100%;
+    background: rgba(223 231 232 / 50%);
+    height: 100%;
+}
+.peoplebox img {
+    display: flex;
+    width: 200px;
+    position: relative;
+    vertical-align: top;
+    flex: 200px;
+    float: left;
+}
+.peoplebox .content {
+    position: relative;
+    width: calc(100% - 205px);
+    padding-left: 31px;
+    display: flex;
+    flex: calc(100% - 205px);
+    height: 100%;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: center;
+    float: left;
+    text-align: left;
+}
+.peoplebox .content h5 {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    color: #0B1D26;
+    text-align: left;
+    margin-bottom: 0;
+}
+.peoplebox .content span {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 148.18%;
+    color: #37676F;
+    padding-bottom: 30px;
+}
+.peoplebox .content p {
+    margin: 0;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 34px;
+    color: rgb(55 103 111 / 75%);
+}
+.industriesbox {
+    position: relative;
+    overflow: hidden;
+    background: rgb(223 231 232 / 50%);
+    padding: 50px 30px;
+    margin: 0 15px !IMPORTANT;
+    width: 96% !important;
+}
+.industriesbox h4 {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    color: #0B1D26;
+    padding-bottom: 20px;
+}
+.industriesbox p {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 34px;
+    color: rgb(55 103 111 / 75%);
+}
+.industriesbox a.share {
+    float: right;
+    font-size: 23px;
+    color: #668E8D;
+}
+
+.industrieds .nav-tabs-wrapper {
+    position: relative;
+    display: block;
+    width: 100%;
+}
+.industrieds .nav-tabs-wrapper ul.nav.nav-tabs {
+    width: 100%;
+    position: relative;
+    border: none;
+    text-align: right;
+    justify-content: flex-end;
+}
+.industrieds .nav-tabs-wrapper ul.nav.nav-tabs li.nav-item a {
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #698D93;
+    padding: 15px 30px;
+}
+.industrieds .nav-tabs-wrapper ul.nav.nav-tabs li.nav-item a.nav-link.active {
+    background: #698D93;
+    color: #fff;
+}
+.industrieds .tab-content {
+    position: relative;
+    display: block;
+    width: 100%;
+}
+.industrieds .tab-content .innertabsec {
+    background: #f3f3f3;
+    padding: 50px 25px;
+}
+.industrieds .tab-content .innberwhite {
+    position: relative;
+    display: block;
+    padding: 50px 25px;
+}
+.industrieds .tab-content h5.tabtitle {
+    position: absolute;
+    top: -86px;
+    left: 25px;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 100px;
+    text-transform: capitalize;
+    color: #0B1D26;
+}
+section.sec-pad.differentiator.industrieds {
+    padding-left: 0;
+    padding-right: 0;    
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.Insigtsitems a.share i {
+    font-size: 25px;
+    color: #016634;
+}
+.Insigtsitems a.share {
+    display: inline-block;
+    position: relative;
+    padding: 0;
+    margin-right: 18px;
+    vertical-align: middle;
+    margin-top: -3px;
+}
+h4.smalltilelbox {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    color: #ABABAB;
+    margin-bottom: 24px;
+}
+.slider.insigtsitem,.slider.securitiesitem {
+    padding-bottom: 25px;
+}
+.securitiesitem ul.slick-dots{    bottom: 15px;}
+.slider.insigtsitem ul.slick-dots {
+    right: 0;
+    bottom: 80px;
+    margin-right: 20px;
+    text-align: right;
+}
+.Insigtsitems .contentbox {
+    width: 65%;
+    display: inline-block;
+}
+.Insigtsitems .imagesbox {
+    width: 34%;
+    display: inline-block;
+    vertical-align: top;
+}
+.Insigtsitems .imagesbox img {
+    max-width: 100%;
+}
+.clientstories {
+    position: relative;
+}
+.clientstories .clientboxsucess {
+    display: inline-block;
+    margin: 15px;
+    width: 31.5%;
+    padding: 40px;
+    background: rgb(223 231 232 / 50%);
+}
+.clientstories .clientboxsucess img {
+    position: relative;
+    display: inline-block;
+}
+.clientstories .clientboxsucess h4 {
+    position: relative;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    color: #0B1D26;
+    padding-left: 29px;
+}
+.clientstories .clientboxsucess p {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 34px;
+    color: rgb(55 103 111 / 75%);
+    padding: 20px 0;
+    margin: 0;
+}
+.clientstories .clientboxsucess a.share {
+    text-align: right;
+    float: right;
+}
+.clientstories .clientboxsucess a.share i {
+    font-size: 28px;
+    color: #016634;
+}
+.slider.insigtsitem.clientsli  ul.slick-dots {
+    bottom: 36px;
+}
+.leaderbox {
+    position: relative;
+    display: block;
+    width: 100%;
+    margin-bottom: 30px;
+    border: 1px solid #006837;
+}
+
+.leaderbox img {
+    max-width: 100%;
+    margin: auto;
+    display: block;
+}
+
+.leaderbox span.titleleader {
+    background: #0B1D26;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 15px 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.leaderbox .content {
+    position: relative;
+    display: block;
+    padding: 15px;
+    overflow: hidden;
+}
+
+.leaderbox .content h5 {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    color: #0B1D26;
+    width: 60%;
+}
+
+.leaderbox .content span.position {
+    text-align: right;
+    float: right;
+    display: inline-block;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 148.18%;
+/* identical to box height, or 24px */
+    color: #37676F;
+    vertical-align: middle;
+    margin-top: 7px;
+    width: 40%;
+}
+
+.leaderbox .content  h6.location {
+    position: relative;
+    display: inline-block;
+    width: 70%;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 34px;
+    color: #0B1D26;
+}
+
+.leaderbox .content .contatc {
+    width: 28%;
+    display: inline-block;
+    text-align: right;
+}
+
+.leaderbox .content .contatc a.social i {
+    font-size: 21px;
+    color: #006837;
+}
+
+.leaderbox .content .contatc a.social {margin: 0 6px;}
+
+.leaderbox .content  .tags {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+.leaderbox .content .tags span {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+/* identical to box height */
+    text-align: center;
+    color: #698D93;
+    border: 1px solid #698D93;
+    padding: 10px;
+    position: relative;
+    display: inline-block;
+    margin: 5px;
+}
+
+.leaderbox .content a.share {
+    float: right;
+}
+
+.leaderbox .content a.share i {
+    font-size: 24px;
+    color: #006837;
 }
 @media (max-width:767px){
     nav.navbar a.navbar-brand {
