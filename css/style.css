@@ -679,7 +679,7 @@ span.datearea i {
 .workwithclient img {
     max-width: 100%;
 }
-.workwithclient h5.smalltitle {
+.workwithclient h5.smalltitle,.contactusform h5.smalltitle {
     font-weight: bold;
     font-size: 24px;
     line-height: 29px;
@@ -689,7 +689,7 @@ span.datearea i {
     margin: 0;
     padding-bottom: 25px;
 }
-.workwithclient h5.smalltitle:before {content: '';position: relative;display: inline-block;width: 72px;height: 2px;background: #0B1D26;vertical-align: middle;margin-right: 32px;}
+.workwithclient h5.smalltitle:before,.contactusform h5.smalltitle:before {content: '';position: relative;display: inline-block;width: 72px;height: 2px;background: #0B1D26;vertical-align: middle;margin-right: 32px;}
 .workwithclient .text-right h5.smalltitle:before {
     display: none;
 }
@@ -843,14 +843,16 @@ span.datearea i {
     display: block;
     width: 100%;
 }
+.industrieds .tab-content .innertabsec,.industrieds .tab-content .innberwhite {
+    padding: 90px 50px;
+}
 .industrieds .tab-content .innertabsec {
     background: #f3f3f3;
-    padding: 50px 25px;
+    
 }
 .industrieds .tab-content .innberwhite {
     position: relative;
     display: block;
-    padding: 50px 25px;
 }
 .industrieds .tab-content h5.tabtitle {
     position: absolute;
@@ -1065,6 +1067,937 @@ h4.smalltilelbox {
     font-size: 24px;
     color: #006837;
 }
+.blogfeatured.slider.insigtsitem ul.slick-dots {
+    right: unset;
+    left: 0;
+    text-align: left;
+    margin-right: 0;
+    margin-left: 11%;
+    z-index: -1;
+    position: relative;
+    bottom: 103px;
+    width: auto;
+}
+.slider.insigtsitem.blogfeatured .Insigtsitems .contentbox {
+    padding-left: 25px;
+}
+.slider.insigtsitem.blogfeatured .Insigtsitems .contentbox h6 {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    color: #0B1D26;
+    padding-bottom: 16px;
+    margin: 0;
+}
+.slider.insigtsitem.blogfeatured .Insigtsitems .contentbox a.share {
+    float: right;
+}
+.slider.insigtsitem.blogfeatured .Insigtsitems .contentbox a.daypost {
+    margin-left: 65%;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 34px;
+    color: #668E8D;
+}
+.slider.insigtsitem.blogfeatured .Insigtsitems .contentbox a.daypost:hover {
+    text-decoration: none;
+}
+.bloggridbox {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    background: hsl(187deg 16% 89% / 50%);
+    margin: 0 15px !IMPORTANT;
+    width: 96% !important;
+}
+.bloggridbox .content {
+    padding: 60px 20px 0px;
+    position: relative;
+    display: block;
+}
+.bloggridbox .content h5 {
+    width: 90%;
+    position: relative;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    color: #0B1D26;
+}
+.bloggridbox .content a.share {
+    width: 8%;
+    position: relative;
+    display: inline-block;
+    color: #668E8D;
+    vertical-align: top;
+    padding-top: 6%;
+}
+.bloggridbox .content a.share i {
+    font-size: 22px;
+}
+.bloggridbox .content .contatc {padding-top: 20px;padding-bottom: 20px;}
+.bloggridbox .content .contatc p {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 34px;
+    color: rgb(55 103 111 / 75%);
+    margin: 0;
+}
+.bloggridbox .content .links {
+    display: block;
+    width: 100%;
+    padding-bottom: 15px;
+}
+.bloggridbox .content .links a.readmore {
+    width: 50%;
+    position: relative;
+    display: inline-block;
+}
+.bloggridbox .content .links span {
+    position: relative;
+    display: inline-block;
+    width: 48%;
+    text-align: right;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 34px;
+    color: rgb(102 142 141 / 70%);
+}
+.bloggridbox .content img {
+    position: relative;
+    display: block;
+    margin-left: -20px;
+    margin-right: -20px;
+}
+.innberwhite.blogslider .slider.securitiesitem {
+    padding-top: 50px;
+}
+a.readmore.bgreadmore {
+    background: #016634;
+    padding: 17px;
+    color: #fff;
+    min-width: 320px;
+    display: inline-block;
+}
+.contactusform h5.smalltitle {
+    color: #016634;
+}
+.contactusform  p.normaltext {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    color: rgb(11 29 38 / 75%);
+    padding-bottom: 10px;
+    margin-bottom: 0;
+}
+.contactusform .input-group.w50 {
+    width: 49.5%;
+    display: inline-block;
+}
+.contactusform .input-group {
+    margin-bottom: 15px;
+}
+.contactusform .input-group input {
+    border: none;
+    border-bottom: 1px solid #97B1B6;
+    width: 100%;
+    position: relative;
+    height: 48px;
+    padding: 8px 15px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 49px;
+    color: rgb(11 29 38 / 50%);
+}
+.contactusform .input-group.w50:first-child {
+    padding-right: 10px;
+}
+.contactusform .input-group input:focus {
+    outline: 0;
+    border-bottom: 2px solid #006837;
+}
+.contactusform input.checknox {
+    width: 22px;
+    height: 22px;
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+}
+.contactusform label.termslabel {
+    display: inline-block;
+    width: calc(100% - 25px);
+    padding-left: 20px;
+    vertical-align: top;
+    position: relative;
+    margin-top: -5px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 189.9%;
+    color: rgb(105 141 147 / 70%);
+}
+.contactusform input.yourareradio {
+    width: 19px;
+    height: 19px;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+}
+.contactusform label {
+    margin: 0;
+    width: calc(100% - 25px);
+    display: inline-block;
+    padding-left: 10px;
+    position: relative;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 32px;
+    color: rgb(11 29 38 / 75%);
+    vertical-align: middle;
+    margin-bottom: 5px;
+}
+.contactusform p.normalformtext {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    color: rgb(11 29 38 / 75%);
+    margin: 0;
+    padding-bottom: 10px;
+}
+.contactusform  a.readmore.bgreadmore {
+    text-align: center;
+}
+.innertabsec.joinusform h2.headtitle:before,.innertabsec.joinusform h2.headtitle:after {
+    display: none;
+}
+.innertabsec.joinusform h2.headtitle {
+    padding-bottom: 30px;
+}
+.innertabsec.joinusform .contactusform .input-group input {
+    background: transparent;
+}
+.contactusform p.gendarlabel {
+    display: block;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    align-items: center;
+    color: rgb(11 29 38 / 75%);
+    position: relative;
+    width: 100%;
+    padding-bottom: 10px;
+}
+.innertabsec.joinusform .contactusform .input-group label {
+    color: rgb(1 102 52 / 75%);
+    vertical-align: top;
+    margin-top: -7px;
+    padding-right: 25px;
+    width: auto;
+}
+i.eyeicons {
+    position: absolute;
+    top: 50%;
+    right: 19px;
+    color: #97B1B6;
+}
+.innertabsec.joinusform a.readmore.bgreadmore {
+    margin: auto;
+    text-align: center;
+    display: block;
+    width: fit-content;
+    margin-top: 30px;
+}
+.innertabsec.joinusform {
+    margin-top: 70px;
+}
+.industrieds .tab-content #joinus h5.tabtitle {
+    top: calc(-86px + -70px);
+}
+.slider.insigtsitem.overvire h6.smalltilelbox {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    color: #0B1D26;
+    display: block;
+    position: relative;
+    padding-bottom: 20px;
+}
+.slider.insigtsitem.overvire ul.slick-dots {
+    bottom: 0;
+    margin-right: 14%;
+}
+.slider.insigtsitem.overvireslide img {
+    max-width: 100%;
+    padding-bottom: 49px;
+}
+.slider.insigtsitem.overvireslide ul.slick-dots {
+    bottom: 50px;
+    right: unset;
+    position: relative;
+    left: unset;
+    margin: auto;
+    display: block;
+    text-align: center;
+}
+.slider.securitiesitem.featuredWork span.sublabel {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    color: #ABABAB;
+    width: 90%;
+    display: inline-block;
+}
+.slider.securitiesitem.featuredWork a.share {
+    padding-top: 0;
+}
+.slider.securitiesitem.featuredWork  .contatc h5 {
+    line-height: 34px;
+    width: 100%;
+    display: block;
+}
+.slider.securitiesitem.featuredWork .bloggridbox .content {
+    padding: 60px 20px 40px;
+}
+#featuredWork a.readmore.bgreadmore,#latestThinking a.readmore.bgreadmore,#blog a.readmore.bgreadmore.gap {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.innberwhite.prl0 {
+    padding-left: 0 !IMPORTANT;
+    padding-right: 0 !important;
+}
+.offeringtab .card .card-header {
+    position: relative;
+    display: block;
+    width: 100%;
+    background: rgb(223 231 232 / 50%);
+    border: none;
+    padding: 20px 50px;
+}
+.offeringtab .card .card-header h5 button {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    color: #0B1D26;
+    width: auto;
+    display: inline-block;
+    text-align: left;
+    background: #eff3f3;
+    z-index: 4;
+    position: relative;
+}
+.offeringtab .card .card-header h5 i.fa {
+    font-size: 30px;
+    right: 0;
+    float: right;
+    color: #016634;
+    vertical-align: middle;
+    position: relative;
+    padding-top: 5px;
+}
+.offeringtab .card .card-header h5 button:hover {
+    text-decoration: none;
+}
+.offeringtab .card .card-header h5:after {content: '';position: absolute;display: inline-block;height: 1px;width: 96%;background: #C4C4C4;left: 0;top: 50%;z-index: 0;}
+.offeringtab .card .card-header h5 {
+    position: relative;
+    display: block;
+    width: 100%;
+}
+.offeringtab .card {
+    border: none;
+    position: relative;
+    display: block;
+    width: 100%;
+}
+.offeringtab .card .collapse {
+    position: relative;
+    background: #DFE7E8;
+}
+.offeringtab .card .collapse .card-body {
+    padding: 0 50px 40px;
+}
+.offeringtab .card .card-body span.subtext {
+    width: 100%;
+    position: relative;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    color: #ABABAB;
+    padding-bottom: 11px;
+    display: block;
+}
+.offeringtab .card .card-body p {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 34px;
+    color: rgb(11 29 38 / 75%);
+    margin: 0;
+    position: relative;
+    display: block;
+}
+.innberwhite.prl0 {
+    padding-left: 0 !IMPORTANT;
+    padding-right: 0 !important;
+}
+.offeringtab .card .card-header {
+    position: relative;
+    display: block;
+    width: 100%;
+    background: rgb(223 231 232 / 50%);
+    border: none;
+    padding: 20px 50px;
+}
+.offeringtab .card .card-header h5 button {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    color: #0B1D26;
+    width: auto;
+    display: inline-block;
+    text-align: left;
+    background: #eff3f3;
+    z-index: 4;
+    position: relative;
+    padding: 0;
+}
+.offeringtab .card .card-header h5 i.fa {
+    font-size: 30px;
+    right: 0;
+    float: right;
+    color: #016634;
+    vertical-align: middle;
+    position: relative;
+    padding-top: 5px;
+    transition: 0.5s;
+}
+.offeringtab .card .card-header h5 button:hover {
+    text-decoration: none;
+}
+.offeringtab .card .card-header h5:after {content: '';position: absolute;display: inline-block;height: 1px;width: 96%;background: #C4C4C4;left: 0;top: 50%;z-index: 0;}
+.offeringtab .card .card-header h5 {
+    position: relative;
+    display: block;
+    width: 100%;
+}
+.offeringtab .card {
+    border: none;
+    position: relative;
+    display: block;
+    width: 100%;
+}
+.offeringtab .card .collapse {
+    position: relative;
+    background: #DFE7E8;
+}
+.offeringtab .card .collapse .card-body {
+    padding: 0 50px 40px;
+}
+.offeringtab .card .card-body span.subtext {
+    width: 100%;
+    position: relative;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    color: #ABABAB;
+    padding-bottom: 11px;
+    display: block;
+}
+.offeringtab .card .card-body p {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 34px;
+    color: rgb(11 29 38 / 75%);
+    margin: 0;
+    position: relative;
+    display: block;
+}
+.offeringtab .card .card-header.active {
+    background: #DFE7E8;
+}
+.offeringtab .card .card-header.active h5:after {
+    display: none;
+}
+.offeringtab .card .card-header.active h5 i.fa {
+    transform: rotate(270deg);
+    transition: 0.5s;
+}
+.offeringtab .card .card-header.active h5 button {
+    background: #dfe7e8;
+}
+.slider.insigtsitem.overvire.joinmids .imagesbox a.readmore {
+    display: block;
+    position: absolute;
+    right: 15px;
+    z-index: 9999;
+    color: #fff;
+}
+.slider.insigtsitem.overvire.joinmids .imagesbox {
+    position: relative;
+}
+.slider.insigtsitem.overvire.joinmids .imagesbox a.readmore:nth-child(2) {
+    bottom: 62px;
+}
+.slider.insigtsitem.overvire.joinmids .imagesbox a.readmore:nth-child(3) {
+    bottom: 30px;
+}
+.slider.insigtsitem.overvire.joinmids .imagesbox img {text-align: right;display: block;position: relative;float: right;}
+.slider.insigtsitem.overvire.joinmids ul.slick-dots {
+    bottom: 63px;
+}
+#ourPeople h2.headtitle {
+    margin-bottom: 50px;
+}
+.slider.securitiesitem.featuredWork .leaderbox {
+    width: 96% !important;
+    margin: 0 15px !important;
+    display: block !important;
+}
+.navsearchbar {
+    position: absolute;
+    background: #f8f9fa;
+    width: 0;
+    opacity: 0;
+    z-index: 0;
+    visibility: hidden;
+    transition: 0.8s;
+}
+.navsearchbar i.closesearch {
+    position: relative;
+    display: inline-block;
+    font-size: 26px;
+    color: #37676F;
+    line-height: 39px;
+    cursor: pointer;
+}
+.navsearchbar form.searchbar {
+    width: calc(100% - 14px);
+    position: relative;
+    display: inline-block;
+    padding-left: 20px;
+    margin: 0;
+}
+.navsearchbar form.searchbar input {
+    width: 100%;
+    background: transparent;
+    display: block;
+    height: 35px;
+    border: none;
+    border-bottom: 1px solid #97B1B6;
+    position: relative;
+    padding: 8px 15px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 49px;
+    color: rgb(11 29 38 / 50%);
+}
+.navsearchbar form.searchbar i {
+    position: absolute;
+    right: 31px;
+    top: 22%;
+    color: #016634;
+}
+.navsearchbar form.searchbar input:focus {
+    outline: 0;
+    border-bottom: 2px solid #006837;
+}
+.navsearchbar.openseachbar {
+    z-index: 9;
+    width: 78%;
+    opacity: 1;
+    visibility: visible;
+    transition: 0.8s;
+}
+
+.submenuiteam {
+    position: fixed;
+    top: 65px;
+    background: #fff;
+    z-index: 2;
+    opacity: 0;
+    visibility: hidden;
+    min-width: 100%;        
+    right: 0;    
+    max-height: 91vh;
+    overflow-y: auto;
+}
+.submenuiteam.widthsmall {
+    min-width: 200px;
+}
+.submenuiteam ul.submenu {
+    padding: 40px;
+    list-style: none;
+    text-align: left;
+}
+.submenuiteam ul.submenu.bg {
+    background: #E7EDEE;
+}
+.submenuiteam.widthsmall {
+    right: 15px;
+}
+.submenuiteam ul.submenu li span.menulabel {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    color: #0B1D26;
+    padding-bottom: 14px;
+    position: relative;
+    display: block;
+}
+.submenuiteam ul.submenu li a.nav-link {
+    color: #016634;
+    padding-left: 0;
+    font-weight: bold;
+}
+.submenuiteam ul.submenu li a.nav-link:hover {
+    color: #425158;
+}
+.submenuiteam ul.submenu li a.nav-link i.linkicon {
+    margin-left: 9px;
+    position: relative;
+    display: inline-block;
+    transition: 0.8s;
+}
+.submenuiteam ul.submenu li a.nav-link:hover i.linkicon {
+    margin-left: 18px;
+    transition: 0.8s;
+}
+.navbar-expand-lg .navbar-collapse ul.navbar-nav.ml-auto li.nav-item:hover .submenuiteam {
+    top: 33px;
+    transition: 0.5s;
+    opacity: 1;
+    visibility: visible;
+}
+.navbar-expand-lg .navbar-collapse ul.navbar-nav.ml-auto li.nav-item:hover {
+    background: #fff;
+}
+.submenuiteam ul li span.submenulabel {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    color: #016634;
+    padding-bottom: 13px;
+    position: relative;
+    display: inline-block;
+}
+.submenuiteam ul li span.submenulabel:before {content: '';position: relative;display: inline-block;width: 72px;height: 2px;background: #016634;vertical-align: middle;margin-right: 26px;}
+.submenuiteam ul li  p {
+    margin: 0;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    color: rgb(11 29 38 / 75%);
+    position: relative;
+    display: block;
+    padding-bottom: 10px;
+}
+.submenuiteam ul.submenu li a.nav-link.contacticon {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    color: #0B1D26;
+}
+.submenuiteam ul.submenu li a.nav-link.contacticon i {
+    display: inline-block;
+    font-size: 19px;
+    color: #425158;
+    padding-right: 15px;
+}
+ul.navbar-nav li.nav-item a.nav-link i.menuicon {
+    padding-left: 15px;
+    color: #37676F;
+    font-weight: 600;
+}
+ul.navbar-nav li.nav-item:hover a.nav-link i.menuicon {
+    transform: rotate(181deg);
+    padding-right: 15px;
+    padding-left: 0;
+}
+.navbar-expand-lg .navbar-collapse ul.navbar-nav.ml-auto li.nav-item:hover .submenuiteam form.contactusform {
+    padding: 40px;
+    text-align: left;
+}
+.navbar-expand-lg .navbar-collapse#navbarResponsive ul.navbar-nav.ml-auto li.nav-item:hover .submenuiteam {
+    top: 84px;
+}
+.navbar-expand-lg .navbar-collapse#navbarResponsive ul.navbar-nav.ml-auto li.nav-item .submenuiteam {
+    top: 100px;
+    background: #E7EDEE;
+}
+.navbar-expand-lg .navbar-collapse#navbarResponsive ul.navbar-nav.ml-auto li.nav-item:hover {
+    background: #E7EDEE;
+}
+.navbar-expand-lg .navbar-collapse#navbarResponsive ul.navbar-nav.ml-auto li.nav-item .submenuiteam ul.submenu li a.nav-link {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: rgb(11 29 38 / 75%);
+}
+.rightborder:after {content: '';position: absolute;display: inline-block;height: calc(100% - 80px);width: 1px;background: #97B1B6;right: 0;top: 40px;}
+ul.submenu.pb-0 {
+    margin-bottom: -30px;
+}
+ul.submenu.mbpb-0 {
+    margin-bottom: -20px;
+    padding-bottom: 0;
+}
+#navbartopbar ul.navbar-nav.ml-auto li.nav-item.subitem a.nav-link i.menuicon {
+    padding-left: 0;
+    padding-right: 15px;
+}
+#navbartopbar ul.navbar-nav.ml-auto li.nav-item.subitem:hover a.nav-link i.menuicon {
+    padding-left: 15px;
+    padding-right: 0;
+}
+
+
+
+
+
+
+div#myModal {}
+
+.modal.underconstruction.loginpopup .modal-content {
+    background: transparent;
+    border: none;
+}
+
+.modal.underconstruction.loginpopup .modal-body {
+    padding: 0;
+}
+
+.modal.underconstruction.loginpopup .modal-body .signsignup {
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+.modal.underconstruction.loginpopup .modal-body .signsignup .nav-tabs-wrapper {
+    display: block;
+    width: 100%;
+}
+
+.modal.underconstruction.loginpopup .modal-body .signsignup .nav-tabs-wrapper.vertical {
+    display: block;
+}
+
+.nav-tabs-wrapper.vertical {}
+
+.modal.underconstruction.loginpopup .modal-body .signsignup .nav-tabs-wrapper.vertical {
+    display: inline-block;
+    width: 149px;
+    float: left;
+    vertical-align: middle;
+}
+
+.modal.underconstruction.loginpopup .modal-body .signsignup .nav-tabs-wrapper.vertical li {
+    position: relative;
+    display: block;
+    width: 100%;
+    background: transparent;
+    border: none;
+}
+
+.modal.underconstruction.loginpopup .modal-body .signsignup .nav-tabs-wrapper.vertical li a {
+    width: 100%;
+    border-radius: 0;
+    background: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #698D93;
+    border: none;
+}
+
+.modal.underconstruction.loginpopup .modal-body .tab-content.vertical {
+    width: calc(100% - 149px);
+    position: relative;
+    display: inline-block;
+    float: left;
+}
+.modal.underconstruction.loginpopup .modal-body .signsignup .nav-tabs-wrapper.vertical ul.nav.nav-tabs {
+    margin-top: 120px;
+}
+.modal.underconstruction.loginpopup .modal-body .signsignup .nav-tabs-wrapper.vertical li a.active, .modal.underconstruction.loginpopup .modal-body .tab-content.vertical .tab-pane .nav-tabs-wrapper ul.nav.nav-tabs li a.active {
+    background: #698D93;
+    color: #fff;
+}
+.modal.underconstruction.loginpopup .modal-body .tab-content.vertical .tab-content {
+    background: #fff;
+    vertical-align: top;
+    align-items: initial;
+    position: relative;
+    display: block;
+}
+.modal.underconstruction.loginpopup .modal-body .tab-content.vertical .tab-pane {
+    position: relative;
+    /* display: block; */
+    width: 100%;
+    vertical-align: top;
+    align-items: initial;
+}
+.modal.underconstruction.loginpopup .modal-body .tab-content.vertical .tab-content .innertabsec.joinusform {
+    margin-top: 0;
+}
+.modal.underconstruction.loginpopup .modal-body .tab-content.vertical .tab-pane .innertab {
+    position: relative;
+    display: block;
+    width: 100%;
+}
+.modal.underconstruction.loginpopup .modal-body .tab-content.vertical .tab-pane .nav-tabs-wrapper ul.nav.nav-tabs {
+    width: 100%;
+    border: none;
+}
+.modal.underconstruction.loginpopup .modal-body .tab-content.vertical .tab-pane .nav-tabs-wrapper ul.nav.nav-tabs li a {
+    width: 100%;
+    border-radius: 0;
+    background: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    color: #698D93;
+    border: none;
+}
+.modal.underconstruction.loginpopup .modal-body .signsignup .nav-tabs-wrapper ul.nav li {
+    width: 149px;
+    height: 56px;
+}
+.modal.underconstruction.loginpopup .modal-body .signsignup .nav-tabs-wrapper ul.nav li a {
+    height: 100%;
+    line-height: 40px;
+}
+.modal.underconstruction.loginpopup .modal-body .tab-content.vertical .tab-content .input-group.w50 {
+    float: left;
+    display: inline-block;
+    overflow: hidden;
+    padding: 0 10px;
+    width: 50%;
+}
+.modal.underconstruction.loginpopup .modal-dialog {
+    max-width: 90%;
+    height: 100vh;
+    align-items: center;
+    margin: 0 auto;
+    display: flex;
+}
+.modal.underconstruction.loginpopup .modal-body .tab-content.vertical .tab-pane .innertabsec.joinusform {
+    padding: 40px;
+}
+.modal.underconstruction.loginpopup .modal-body .tab-content.vertical .tab-pane .innertabsec.joinusform .forgoltlink {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    text-align: right;
+}
+.modal.underconstruction.loginpopup .modal-body .tab-content.vertical .tab-pane .innertabsec.joinusform .forgoltlink a.link {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 20px;
+    color: rgb(11 29 38 / 75%);
+}
+.modal.underconstruction.loginpopup .modal-body .tab-content.vertical .tab-pane .innertabsec.joinusform .forgoltlink a.link:hover {
+    text-decoration: none;
+    color: #016634;
+}
+.modal.underconstruction.loginpopup .modal-body .tab-content.vertical .tab-content a.readmore.bgreadmore {
+    position: relative;
+    display: block;
+    overflow: hidden;
+}
+.modal.underconstruction.loginpopup .modal-body .tab-content.vertical .tab-content .input-group {
+    position: relative;
+    display: block;
+    padding: 0 10px;
+    overflow: hidden;
+    width: 100%;
+}
+.modal.underconstruction.loginpopup .modal-body .tab-content.vertical .tab-content .input-group select.selectbox {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #97B1B6;
+    width: 100%;
+    position: relative;
+    height: 48px;
+    padding: 8px 15px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 49px;
+    color: rgb(11 29 38 / 50%);
+}
+.modal.underconstruction.loginpopup .modal-body .tab-content.vertical .tab-content .input-group select.selectbox:focus {
+    outline: 0;
+    border-bottom: 2px solid #006837;
+}
+.modal.underconstruction.loginpopup .modal-body .tab-content.vertical .tab-content .input-group input.yourareradio {
+    vertical-align: top;
+}
+.modal.underconstruction.loginpopup .modal-dialog button.close {
+    top: 60px;
+    right: 30px;
+}
+.modal.underconstruction.passeordchangedbox .modal-dialog {max-width: 90%;align-items: center;height: 91vh;display: flex;justify-content: center;}
+.modal.underconstruction.passeordchangedbox .modal-dialog .modal-content {
+    background: #fff;
+    padding: 50px;
+    height: 50vh;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+}
+.modal.underconstruction.passeordchangedbox .modal-dialog .modal-body {
+    align-items: center;
+    height: 100%;
+    display: flex;
+    width: 83%;
+}
+.modal.underconstruction.passeordchangedbox .modal-dialog .modal-body p {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 39px;
+    text-align: center;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    color: #0B1D26;
+}
+.modal.underconstruction.passeordchangedbox .modal-dialog .modal-content button.close {
+    top: 6px;
+}
+.modal.underconstruction.passeordchangedbox .modal-dialog .modal-body .textarea.text-center h2.headtitle:before,.modal.underconstruction.passeordchangedbox .modal-dialog .modal-body .textarea.text-center h2.headtitle:after {
+    display: none;
+}
+.modal.underconstruction.passeordchangedbox .modal-dialog .modal-body .textarea.text-center p {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    color: rgb(11 29 38 / 75%);
+}
+.modal.underconstruction.loginpopup.fullwidth .modal-body .tab-content.vertical{
+    width: 100%;
+}
+.modal.underconstruction.loginpopup.fullwidth .modal-dialog button.close {
+    top: 5px;
+}
+.modal.underconstruction.loginpopup .modal-body .tab-content.vertical .tab-content {
+    max-height: 90vh;
+    overflow-y: auto;
+}
 @media (max-width:767px){
     nav.navbar a.navbar-brand {
         width: 74%;
@@ -1206,5 +2139,23 @@ h4.smalltilelbox {
     }
     .underconstruction .modal-body img {
         max-width: 50%;
+    }
+}
+@media (min-width:1024px) and  (max-width:1600px){
+    .slider.insigtsitem.blogfeatured .Insigtsitems .contentbox a.daypost {
+        margin-left: 57%;
+    }
+    .clientstories .clientboxsucess {
+        width: 30.8%;
+    }
+    .slider.insigtsitem.overvire ul.slick-dots {
+        bottom: 114px;
+        margin-right: 10%;
+    }
+    .industrieds .tab-content .innertabsec,.industrieds .tab-content .innberwhite {
+        padding: 50px 25px;
+    }
+    .industrieds .nav-tabs-wrapper ul.nav.nav-tabs li.nav-item a {
+        padding: 13px 21px;
     }
 }

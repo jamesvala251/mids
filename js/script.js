@@ -161,10 +161,16 @@ $('.Insigtsitem').slick({
 		}
 		}]
 	});
-	$('.industrieds .nav-tabs-wrapper ul.nav.nav-tabs li.nav-item a').click(function(){
-		callSLider();
-		});
-function callSLider(){
-	$('.securitiesitem').slickReinit();
-	$('.insigtsitem').slickReinit();
-}
+$('.closesearch').click(function(){
+	$('.navsearchbar').removeClass('openseachbar');
+});
+$('a.nav-link.opensearchbar').click(function(){
+	$('.navsearchbar').addClass('openseachbar');
+});
+	// $('.industrieds .nav-tabs-wrapper ul.nav.nav-tabs li.nav-item a').click(function(){
+	// 	callSLider();
+	// 	});
+// function callSLider(){
+// 	$('.securitiesitem').slickReinit();
+// 	$('.insigtsitem').slickReinit();
+// }
