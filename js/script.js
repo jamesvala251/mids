@@ -167,6 +167,9 @@ $('.closesearch').click(function(){
 $('a.nav-link.opensearchbar').click(function(){
 	$('.navsearchbar').addClass('openseachbar');
 });
+$('.opensharebox').click(function(){
+    $(this).parent().find('.sharebox').toggleClass('active');
+});
 	// $('.industrieds .nav-tabs-wrapper ul.nav.nav-tabs li.nav-item a').click(function(){
 	// 	callSLider();
 	// 	});
