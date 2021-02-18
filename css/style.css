@@ -2812,6 +2812,51 @@ table.tablebox tbody td ul.innnermenuitme li a:hover {text-decoration: none;    
 .maincon.consultantsec #main.mainboxarea button.openbtn.openSitebararea {
     left: -190px;
 }
+.daterangepicker.ltr {
+    padding: 30px 15px;
+    box-shadow: 0 0 8px 2px rgb(135 135 135 / 50%);
+    border: none;
+    border-radius: 0;
+}
+.daterangepicker.ltr input.input-mini.form-control {
+    border: none;
+    border-bottom: 1px solid #97B1B6;
+    border-radius: 0;
+    padding-left: 7px;
+    font-weight: 500;
+    font-size: 16px;
+    color: rgb(11 29 38 / 50%);
+}
+.daterangepicker.ltr i.fa.fa-calendar {
+    display: none;
+}
+.daterangepicker.ltr .calendar-table table.table-condensed tr th {
+    font-weight: bold;
+    color: #0B1D26;
+    padding: 6px;
+}
+.daterangepicker.ltr .calendar-table table.table-condensed  tr td {
+    color: #7D888C;
+    font-weight: 500;
+    padding: 6px;
+    border-radius: 0;
+}
+.daterangepicker.ltr .calendar-table table.table-condensed tr td.in-range.available {
+    background: rgba(1, 102, 52, 0.1);
+    color: rgb(11 29 38 / 50%);
+}
+.daterangepicker.ltr .calendar-table table.table-condensed tr td.active {
+    background: #016634;
+    color: #fff;
+    border-radius: 0;
+}
+.daterangepicker.ltr .calendar-table table.table-condensed tr td.end-date {
+    background: #016634 !important;
+    color: #fff !IMPORTANT;
+}
+.daterangepicker.ltr .calendar-table table.table-condensed tr th i {
+    color: #37676F;
+}
   /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
   @media screen and (max-height: 450px) {
     .consultantsec .sidebar {padding-top: 15px;}
@@ -3188,6 +3233,196 @@ table.tablebox tbody td ul.innnermenuitme li a:hover {text-decoration: none;    
     }
     .modal.underconstruction.loginpopup .modal-body .tab-content.vertical .tab-content {
         max-height: 76vh;
+    }
+}
+@media (min-width:768px) and (max-width:991px){
+    button.navbar-toggler[data-target="#navbarResponsive"] {
+        position: absolute;
+        top: -41px;
+        right: 0;
+    }
+    button.navbar-toggler.collapsed[data-target="#navbartopbar"] {
+        margin-top: 11px;
+    }
+    .md-order-2 {order: 2;}
+.md-order-3 {order: 3;}
+.latestnews p {
+    padding-top: 15px;
+}
+.differentiator p {
+    padding-top: 15px;
+}
+.awardbox img {
+    display: block;
+    margin: auto;
+}
+.awardbox .content {
+    width: 100%;
+    padding-left: 0;
+}
+.awardbox {
+    padding: 20px;
+    min-height: 550px;
+}
+.peoplebox img {
+    display: block;
+    max-width: 100%;
+    width: auto;
+    margin: auto;
+    float: unset;
+}
+.peoplebox .content {
+    display: block;
+    width: 100%;
+    text-align: center;
+    height: auto;
+    padding-left: 0;
+    flex-direction: unset;
+    float: unset;
+    padding-top: 15px;
+}
+.peoplebox {
+    height: auto;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+}
+.peoplebox .content h5 {
+    text-align: center;
+    padding-bottom: 12px;
+}
+.peoplebox .content span {
+    padding-bottom: 2px;
+}
+.peoplebox .content p {
+    padding-top: 1;
+}
+.careerbox .industriesbox {
+    margin-bottom: 32px !important;
+}
+.navbar-light .navbar-toggler[data-target="#navbartopbar"] {
+    margin-top: 12px;
+}
+.contentarea h1 {
+    font-size: 57px;
+    line-height: 75px;
+}
+h2.headtitle {
+    font-size: 36px;
+    line-height: 75px;
+}
+.boximgarea {
+    width: 50%;
+}
+.customerslider .customerlogo {
+    text-align: center;
+}
+.customerslider .customerlogo img {
+    margin: auto;
+}
+.industrieds .tab-content h5.tabtitle {
+    position: relative;
+    top: unset;
+    left: unset;
+    text-align: center;
+    line-height: 50px;
+    font-size: 35px;
+}
+.industrieds .tab-content .innertabsec, .industrieds .tab-content .innberwhite {
+    padding: 60px 50px;
+}
+.industrieds .nav-tabs-wrapper ul.nav.nav-tabs li.nav-item a {
+    padding: 15px 10px;
+}
+.leaderbox .content h5, .leaderbox .content h6.location,.leaderbox .content .contatc {
+    width: 100%;
+}
+.leaderbox .content span.position {
+    float: unset;
+    width: 100%;
+    text-align: left;
+}
+.leaderbox .content .contatc {
+    float: unset;
+    text-align: left;
+}
+.Insigtsitems .imagesbox {
+    width: 100%;
+    text-align: center;
+}
+.Insigtsitems .imagesbox img {
+    margin: auto;
+    max-width: 60%;
+}
+.Insigtsitems .contentbox {
+    padding-left: 0;
+    width: 100%;
+    padding-top: 20px;
+}
+
+.bloggridbox .content img {
+    margin: 0;
+    margin: auto;
+}
+.industrieds .tab-content #joinus h5.tabtitle {
+    top: unset;
+}
+.industrieds .nav-tabs-wrapper ul.nav.nav-tabs {
+    text-align: center;
+    justify-content: center;
+}
+}
+@media (min-width:992px) and (max-width:1024px){
+    .contentarea h1 {
+        font-size: 46px;
+        line-height: 78px;
+    }
+    .awardbox img {
+        display: block;
+        margin: auto;
+    }
+    .awardbox .content {
+        width: 100%;
+        padding-left: 0;
+        padding-top: 15px;
+    }
+    .awardbox {
+        padding: 20px;
+        min-height: 568px;
+    }
+    .awardbox .content p {
+        font-size: 16px;
+    }
+    .peoplebox img {
+        display: block;
+        width: 100%;
+        flex: unset;
+        float: unset;
+        margin: auto;
+    }
+    .peoplebox .content {
+        width: 100%;
+        padding-left: 0;
+        display: block;
+        flex-direction: unset;
+        float: unset;
+        text-align: center;
+        padding-top: 15px;
+        height: auto;
+    }
+    .peoplebox .content h5 {
+        text-align: center;
+        padding-bottom: 10px;
+    }
+    .latestnews h5 {
+        font-size: 16;
+    }
+    h2.headtitle {
+        font-size: 37px;
+        line-height: 85px;
+    }
+    ul.navbar-nav li.nav-item a.nav-link {
+        font-size: 14px;
+        padding: 5px;
     }
 }
 @media (min-width:1024px) and  (max-width:1600px){
