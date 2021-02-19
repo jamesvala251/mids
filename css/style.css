@@ -3370,6 +3370,69 @@ h2.headtitle {
     text-align: center;
     justify-content: center;
 }
+.quatorbox {
+    width: 33%;
+}
+.slider.insigtsitem.overvire.joinmids .imagesbox img {
+    text-align: center;
+    float: unset;
+    padding-top: 20px;
+}
+.technologiesbox .industriesbox {
+    padding: 50px 20px;
+}
+.technologiesbox .industriesbox span.icons {width: auto;margin: auto;display: block;text-align: center;}
+.technologiesbox .industriesbox h4 {
+    width: 100%;
+    padding-left: 0;
+    padding-top: 20px;
+    font-size: 20px;
+    text-align: center;
+}
+.consultantsec #main .nav-tabs-wrapper ul.nav.nav-tabs li.nav-item a.nav-link {
+    padding: 0 11px;
+    font-size: 15px;
+}
+.consultantsec .sidebar.opensidebar {
+    width: 180px;
+}
+.consultantsec .sidebar.opensidebar ul li a {
+    padding: 0 10px;
+    font-size: 15px;
+}
+.consultantsec #main.mainboxarea {
+    margin-left: 180px;
+}
+section.consultantsec {padding: 0;}
+.consultantsec #main .nav-tabs-wrapper {
+    margin: 0;
+}
+.consultantsec .sidebar.opensidebar ul li a i {
+    font-size: 15px;
+    margin-right: 10px;
+}
+.consultantsec #main button.openbtn.openSitebararea {
+    position: relative;
+    left: -65px;
+}
+a.readmore.readab {
+    position: relative;
+    animation: unset;
+    top: unset;
+}
+.maincon.consultantsec #main button.openbtn.openSitebararea {
+    left: -180px;
+}
+.maincon.consultantsec #main.mainboxarea button.openbtn.openSitebararea {
+    left: -160px;
+}
+ul.horizontallist li {
+    width: 50%;
+}
+.searchbararwa .input-group {
+    width: 100%;
+    padding-top: 15px;
+}
 }
 @media (min-width:992px) and (max-width:1024px){
     .contentarea h1 {
@@ -3423,6 +3486,29 @@ h2.headtitle {
     ul.navbar-nav li.nav-item a.nav-link {
         font-size: 14px;
         padding: 5px;
+    }
+    .consultantsec .sidebar.opensidebar {width: 220px;}
+    .consultantsec .sidebar.opensidebar ul li a {
+        padding: 0 20px;
+        font-size: 16px;
+    }
+    .consultantsec #main.mainboxarea {
+        margin-left: 220px;
+    }
+    section.consultantsec {
+        padding: 0;
+    }
+    .consultantsec #main .nav-tabs-wrapper {
+        margin: 0;
+    }
+    .consultantsec #main .nav-tabs-wrapper ul.nav.nav-tabs li.nav-item a.nav-link {
+        padding: 0 20px;
+    }
+    .consultantsec #main.mainboxarea button.openbtn.openSitebararea {
+        left: -48px;
+    }
+    .consultantsec #main button.openbtn.openSitebararea {
+        left: -62px;
     }
 }
 @media (min-width:1024px) and  (max-width:1600px){
