@@ -3541,3 +3541,7 @@ ul.horizontallist li {
         border-bottom: 47px solid #016634;
     }
 }
+
+a.readmore.bgreadmore.smallwidth {
+    min-width: 120px;
+}
