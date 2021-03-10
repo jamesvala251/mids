@@ -3545,3 +3545,60 @@ ul.horizontallist li {
 a.readmore.bgreadmore.smallwidth {
     min-width: 120px;
 }
+
+
+
+
+
+
+
+
+.file-wrapper {
+    overflow: hidden;
+    background: #fff;
+    padding: 0 20px;
+    position: relative;
+    margin-bottom: 12px;
+    border-bottom: 1px solid #97B1B6;
+    cursor: pointer;
+    font-family: 'Quicksand', sans-serif;
+    width: 100%;
+}
+.file-wrapper span.file-button {
+    color: #016634;
+    float: right;
+    cursor: pointer;
+    margin-right: -20px;
+    padding: 11px 15px;
+    border: 1px solid #97B1B6;
+    display: inline-block;
+    font-weight: 600;
+    border-bottom: 0;
+}
+.file-wrapper input#resume {
+    left: 0;
+    opacity: .01;
+    cursor: pointer;
+    position: absolute;
+    font-size: 13px;
+    border: 1px solid #e6e6e6;
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -o-border-radius: 0px;
+    outline: none;
+    width: 100%;
+    padding: 8px 15px;
+    display: block;
+    margin-bottom: 10px;
+}
+.file-wrapper span.file-button span.file-holder {
+    top: 15px;
+    padding-left: 15px;
+    position: absolute;
+    left: auto;
+}
+.file-wrapper span.file-button i {
+    color: #016634;
+    font-size: 15px;
+}

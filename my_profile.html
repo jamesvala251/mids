@@ -458,6 +458,26 @@
                                         </div>
                                     </div>
                                     <div class="col-md-12">
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-9">
+                                                <div class="input-group">
+                                                    <div class="file-wrapper">
+                                                        <input type="file" id="resume">
+                                                        <span class="file-button"> <span class="file-holder"></span> <i class="fa fa-upload"></i> Upload Resume*</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-md-3">
+                                                <div class="input-group aligncenter">
+                                                    <label class="switch toggleswitch">
+                                                        <input type="checkbox" checked>
+                                                        <span class="slider round"></span>
+                                                      </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
                                         <a href="#" class="readmore redcrborder wauto">Cancel</a>
                                         <a href="#" class="readmore bgreadmore smallwidth">Save</a>
                                         <a href="#" class="readmore bgreadmore smallwidth">Next <i class="fa fa-long-arrow-right"></i></a>
@@ -1497,6 +1517,31 @@
         $(function() {
             $('.daterange').daterangepicker();
         });
+        </script>
+         <script type="text/javascript">
+            var SITE = SITE || {};
+            SITE.fileInputs = function() {
+             var $this = $(this),
+                 $val = $this.val(),
+                 valArray = $val.split('\\'),
+                 newVal = valArray[valArray.length-1],
+                 $button = $this.siblings('.file-button'),
+                 $fakeFile = $this.siblings('.file-holder');
+             if(newVal !== '') {
+               $button.html('<i class="fa fa-upload"></i> Resume Uploaded');
+               if($fakeFile.length === 0) {
+                 $button.after('<span class="file-holder">' + newVal + '</span>');
+               } else {
+                 $fakeFile.text(newVal);
+               }
+             }
+            };
+
+            $(document).ready(function() {
+             $('.file-wrapper input[type=file]').bind('change focus click', SITE.fileInputs);
+            });
+
+ 
         </script>
     </body>
 </html>
