@@ -3602,3 +3602,32 @@ a.readmore.bgreadmore.smallwidth {
     color: #016634;
     font-size: 15px;
 }
+table.tablebox.newinvoice tr th i, table.tablebox.newinvoice tr td i {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid #016634;
+    text-align: center;
+    line-height: 20px;
+    font-size: 12px;
+}
+table.tablebox.newinvoice tr td i.las.la-times-circle {
+    color: red;
+}
+table.tablebox.newinvoice tr td i.las.la-times {
+    color: #D80027;
+    border-color: #D80027;
+}
+table.tablebox.newinvoice td select,table.tablebox.newinvoice td select:focus {
+    border: none;
+    background: #f2f2f2;
+    padding: 1px 5px;
+}
+a.blukupload {
+    position: relative;
+    margin: 31px 0px 0;
+    display: inline-block;
+}
+a.blukupload:hover {
+    text-decoration: none;
+}
