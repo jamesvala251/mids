@@ -1,0 +1,1030 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MIDS</title>
+        <link rel="stylesheet" href="../vendor/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../icons/css/line-awesome.min.css">
+        <link rel="stylesheet" href="../vendor/select-picker/css/bootstrap-select.min.css">
+        <link rel="stylesheet" href="../vendor/slick/slick.css">
+        <link rel="stylesheet" href="../vendor/slick/slick-theme.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="../css/style.css">
+    </head>
+    <body>
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-3">
+                        <a class="navbar-brand" href="#"><img src="../images/logo.png"></a>
+                    </div>
+                    <div class="col-md-9">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbartopbar" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                                <div class="navsearchbar">
+                                    <i class="closesearch fa fa-angle-left"></i>
+                                    <form class="searchbar" method="POST">
+                                        <input type="text" placeholder="Enter hear to Search">
+                                        <i class="fa fa-search"></i>
+                                    </form>
+                                </div>
+                                <div class="collapse navbar-collapse" id="navbartopbar">
+                                    <ul class="navbar-nav ml-auto">
+                                        <li class="nav-item">
+                                            <a class="nav-link opensearchbar" href="#"><i class="fa fa-search"></i></a>
+                                        </li>
+                                        <li class="nav-item active">
+                                            <a class="nav-link" href="#">Our People</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Investor Relation</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Our Locations <i class="fa fa-angle-down menuicon"></i></a>
+                                            <div class="submenuiteam">
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <ul class="submenu">
+                                                            <li><span class="submenulabel">USA</span></li>
+                                                            <li><p>1050 17th Street, Suite 1000, Washington DC, 20036</p></li>
+                                                            <li><a href="tel:+19294005189" class="nav-link contacticon"><i class="fa fa-phone"></i> 9294005189</a></li>
+                                                            <li><a href="mailto:info@midscorp.com" class="nav-link contacticon"><i class="fa fa-envelope"></i> info@midscorp.com</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <ul class="submenu">
+                                                            <li><span class="submenulabel">INDIA</span></li>
+                                                            <li><p>13/3 Koramangala, Bangalore. India 560068</p></li>
+                                                            <li><a href="tel:+19294005189" class="nav-link contacticon"><i class="fa fa-phone"></i> 9294005189</a></li>
+                                                            <li><a href="mailto:info@midscorp.com" class="nav-link contacticon"><i class="fa fa-envelope"></i> info@midscorp.com</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <ul class="submenu">
+                                                            <li><span class="submenulabel">DUBAI</span></li>
+                                                            <li><p>13/3 Koramangala, Bangalore. India 560068</p></li>
+                                                            <li><a href="tel:+19294005189" class="nav-link contacticon"><i class="fa fa-phone"></i> 9294005189</a></li>
+                                                            <li><a href="mailto:info@midscorp.com" class="nav-link contacticon"><i class="fa fa-envelope"></i> info@midscorp.com</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Contact Us</a>
+                                            <div class="submenuiteam">
+                                                <form class="contactusform" method="post">
+                                                    <h5 class="smalltitle">Contact Mids Corporation</h5>
+                                                    <p class="normaltext">Got a question? We’re here to help</p>
+                                                    <div class="row">
+                                                        <div class="col-md-7">
+                                                                <div class="input-group w50">
+                                                                    <input type="text" name="firstname" placeholder="First Name*">
+                                                                </div>
+                                                                <div class="input-group w50">
+                                                                    <input type="text" name="lastname" placeholder="Last Name">
+                                                                </div>
+                                                                <div class="input-group">
+                                                                    <input type="text" name="lastname" placeholder="Email Id*">
+                                                                </div>
+                                                                <div class="input-group">
+                                                                    <input type="text" name="lastname" placeholder="Phone Number*">
+                                                                </div>
+                                                                <div class="input-group">
+                                                                    <input type="text" name="lastname" placeholder="Company Name*">
+                                                                </div>
+                                                                <div class="input-group">
+                                                                    <input type="text" name="lastname" placeholder="Industry*">
+                                                                </div>
+                                                                <div class="input-group">
+                                                                    <input type="text" name="lastname" placeholder="Your Message*">
+                                                                </div>
+                                                                <div class="input-group">
+                                                                    <input type="checkbox" class="checknox" id="terms">
+                                                                    <label for="terms" class="termslabel"> By submitting this form, I understand that my data will be processed by Mids corp as indicated above and described in the Terms of use *.</label>
+                                                                </div>
+                                                                <a href="#" class="readmore bgreadmore">Submit <i class="fa fa-long-arrow-right"></i></a>
+                                                        </div>
+                                                        <div class="col-md-5">
+                                                            <p class="normalformtext">You Are*</p>
+                                                            <input type="radio" class="yourareradio" name="youare" id="jobseeker">
+                                                            <label for="jobseeker">Job Seeker</label>
+                                                            <input type="radio" class="yourareradio" name="youare" id="newsmedia">
+                                                            <label for="newsmedia">News Media/Industry Analyst</label>
+                                                            <input type="radio" class="yourareradio" name="youare" id="investor">
+                                                            <label for="investor">Investor</label>
+                                                            <input type="radio" class="yourareradio" name="youare" id="midscrop">
+                                                            <label for="midscrop">Mids Corp Employee</label>
+                                                            <input type="radio" class="yourareradio" name="youare" id="client">
+                                                            <label for="client">Client</label>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </li>
+                                        <li class="nav-item subitem">
+                                            <a class="nav-link" href="#"> <i class="fa fa-angle-down menuicon"></i><img src="../images/flag.png" /></a>
+                                            <div class="submenuiteam">
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <ul class="submenu pb-0">
+                                                            <li><span class="submenulabel">Please select a country/region and language</span></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <ul class="submenu mbpb-0">
+                                                            <li><p>Africa</p></li>
+                                                            <li><a href="javascript:;" class="nav-link contacticon">Kenya - English</a></li>
+                                                            <li><a href="javascript:;" class="nav-link contacticon">Morocco - English</a></li>
+                                                            <li><a href="javascript:;" class="nav-link contacticon">Nigeria - English</a></li>
+                                                            <li><a href="javascript:;" class="nav-link contacticon">South Africa - English</a></li>
+                                                            <li><a href="javascript:;" class="nav-link contacticon">African regional site - English</a></li>
+                                                            <li><a href="javascript:;" class="nav-link contacticon">African regional site - Français</a></li>
+                                                        </ul>
+                                                        <ul class="submenu">
+                                                            <li><p>Asia Pacific</p></li>
+                                                            <li><a href="javascript:;" class="nav-link contacticon">Australia - English</a></li>
+                                                            <li><a href="javascript:;" class="nav-link contacticon">China - 简体中文</a></li>
+                                                            <li><a href="javascript:;" class="nav-link contacticon">Hong Kong SAR - English</a></li>
+                                                            <li><a href="javascript:;" class="nav-link contacticon">India - English</a></li>
+                                                            <li><a href="javascript:;" class="nav-link contacticon">Japan - 日本語</a></li>
+                                                            <li><a href="javascript:;" class="nav-link contacticon">Korea - 한국어</a></li>
+                                                            <li><a href="javascript:;" class="nav-link contacticon">Malaysia - English</a></li>
+                                                            <li><a href="javascript:;" class="nav-link contacticon">New Zealand - English</a></li>
+                                                            <li><a href="javascript:;" class="nav-link contacticon">Singapore - English</a></li>
+                                                            <li><a href="javascript:;" class="nav-link contacticon">Taiwan - 繁體中文</a></li>
+                                                            <li><a href="javascript:;" class="nav-link contacticon">ASEAN regional site - English</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <ul class="submenu">
+                                                            <li><p>Europe</p></li>
+                                                            <li><a href="javascript:;" class="nav-link contacticon">Austria - Deutsch</a></li>
+                                                            <li><a href="javascript:;" class="nav-link contacticon">Belarus - English</a></li>
+                                                            <li><a href="javascript:;" class="nav-link contacticon">Belgium - Français</a></li>
+                                                            <li><a href="javascript:;" class="nav-link contacticon">Belgium - English</a></li>
+                                                            <li><a href="javascript:;" class="nav-link contacticon">Belgium - Nederlands</a></li>
+                                                            <li><a href="javascript:;" class="nav-link contacticon">Bulgaria - English</a></li>
+                                                            <li><a href="javascript:;" class="nav-link contacticon">Croatia - English</a></li>
+                                                            <li><a href="javascript:;" class="nav-link contacticon">Czech Republic - English</a></li>
+                                                            <li><a href="javascript:;" class="nav-link contacticon">Denmark - English</a></li>
+                                                            <li><a href="javascript:;" class="nav-link contacticon">Finland - English</a></li>
+                                                            <li><a href="javascript:;" class="nav-link contacticon">France - Français</a></li>
+                                                            <li><a href="javascript:;" class="nav-link contacticon">Germany - Deutsch</a></li>
+                                                            <li><a href="javascript:;" class="nav-link contacticon">Ireland - English</a></li>
+                                                            <li><a href="javascript:;" class="nav-link contacticon">Israel - English</a></li>
+                                                            <li><a href="javascript:;" class="nav-link contacticon">Italy - Italiano</a></li>
+                                                            <li><a href="javascript:;" class="nav-link contacticon">Lithuania - English</a></li>
+                                                            <li><a href="javascript:;" class="nav-link contacticon">Netherlands - Nederlands</a></li>
+                                                            <li><a href="javascript:;" class="nav-link contacticon">Norway - English</a></li>
+                                                            <li><a href="javascript:;" class="nav-link contacticon">Poland - Polski</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <ul class="submenu">
+                                                            <li><p>&nbsp;</p></li>
+                                                            <li><a href="javascript:;" class="nav-link contacticon">Portugal - English</a></li>
+                                                            <li><a href="javascript:;" class="nav-link contacticon">Russia - Русский</a></li>
+                                                            <li><a href="javascript:;" class="nav-link contacticon">Serbia - English</a></li>
+                                                            <li><a href="javascript:;" class="nav-link contacticon">Spain - Español</a></li>
+                                                            <li><a href="javascript:;" class="nav-link contacticon">Sweden - Svenska</a></li>
+                                                            <li><a href="javascript:;" class="nav-link contacticon">Switzerland - Français</a></li>
+                                                            <li><a href="javascript:;" class="nav-link contacticon">Switzerland - Deutsch</a></li>
+                                                            <li><a href="javascript:;" class="nav-link contacticon">Turkey - Türkçe</a></li>
+                                                            <li><a href="javascript:;" class="nav-link contacticon">Ukraine - English</a></li>
+                                                            <li><a href="javascript:;" class="nav-link contacticon">United Kingdom - English</a></li>
+                                                            <li><a href="javascript:;" class="nav-link contacticon">European regional site - English</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <ul class="submenu mbpb-0">
+                                                            <li><p>Middle East</p></li>
+                                                            <li><a href="javascript:;" class="nav-link contacticon">Saudi Arabia - العربية</a></li>
+                                                            <li><a href="javascript:;" class="nav-link contacticon">Saudi Arabia - English</a></li>
+                                                            <li><a href="javascript:;" class="nav-link contacticon">United Arab Emirates - العربية</a></li>
+                                                            <li><a href="javascript:;" class="nav-link contacticon">United Arab Emirates - English</a></li>
+                                                            <li><a href="javascript:;" class="nav-link contacticon">Middle East regional site - English</a></li>
+                                                            <li><a href="javascript:;" class="nav-link contacticon">Middle East regional site - العربية</a></li>
+                                                        </ul>
+                                                        <ul class="submenu mbpb-0">
+                                                            <li><p>North America</p></li>
+                                                            <li><a href="javascript:;" class="nav-link contacticon">Canada - English</a></li>
+                                                            <li><a href="javascript:;" class="nav-link contacticon">Canada - Français</a></li>
+                                                            <li><a href="javascript:;" class="nav-link contacticon">Mexico - Español</a></li>
+                                                            <li><a href="javascript:;" class="nav-link contacticon">United States - English</a></li>
+                                                        </ul>
+                                                        <ul class="submenu">
+                                                            <li><p>South America</p></li>
+                                                            <li><a href="javascript:;" class="nav-link contacticon">Brazil - Português brasileiro</a></li>
+                                                            <li><a href="javascript:;" class="nav-link contacticon">LATAM regional site - English</a></li>
+                                                            <li><a href="javascript:;" class="nav-link contacticon">LATAM regional site - Español</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#"><i class="fa fa-user-circle-o"></i> View Account</a>
+                                            <div class="submenuiteam widthsmall">
+                                                <ul class="submenu">
+                                                    <li><span class="menulabel">FOR CLIENT?</span></li>
+                                                    <li><a href="#" data-toggle="modal" data-target="#SignInSignUp" class="nav-link">Sign In as Client <i class="linkicon fa fa-long-arrow-right"></i></a></li>
+                                                    <li><a href="#" data-toggle="modal" data-target="#SignInSignUp" class="nav-link">Sign In as Client <i class="linkicon fa fa-long-arrow-right"></i></a></li>
+                                                </ul>
+                                                <ul class="submenu bg">
+                                                    <li><span class="menulabel">FOR CONSULTANT</span></li>
+                                                    <li><a href="#" data-toggle="modal" data-target="#SignInSignUp" class="nav-link">Sign In as Consultant <i class="linkicon fa fa-long-arrow-right"></i></a></li>
+                                                    <li><a href="#" data-toggle="modal" data-target="#SignInSignUp" class="nav-link">Sign In as Consultant <i class="linkicon fa fa-long-arrow-right"></i></a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarResponsive">
+                                <ul class="navbar-nav ml-auto">
+                                    <li class="nav-item active">
+                                        <a class="nav-link" href="../about_us.html">About Us</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="../industries.html">Industries</a>
+                                        <div class="submenuiteam">
+                                            <div class="row">
+                                                <div class="col-md-3 rightborder">
+                                                    <ul class="submenu">
+                                                        <li><a href="javascript:;" class="nav-link">Banking & Financial</a></li>
+                                                        <li><a href="javascript:;" class="nav-link">E Learning & Education</a></li>
+                                                        <li><a href="javascript:;" class="nav-link">Healthcare & Telemedicine</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-md-3 rightborder">
+                                                    <ul class="submenu">
+                                                        <li><a href="javascript:;" class="nav-link">Insurance</a></li>
+                                                        <li><a href="javascript:;" class="nav-link">Media & Entertainmenent</a></li>
+                                                        <li><a href="javascript:;" class="nav-link">Travel & Hospitality</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-md-3 rightborder">
+                                                    <ul class="submenu">
+                                                        <li><a href="javascript:;" class="nav-link">Transportation</a></li>
+                                                        <li><a href="javascript:;" class="nav-link">Public Service</a></li>
+                                                        <li><a href="javascript:;" class="nav-link">Retail & Ecommerce</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <ul class="submenu">
+                                                        <li><a href="javascript:;" class="nav-link">Manufacturing</a></li>
+                                                        <li><a href="javascript:;" class="nav-link">Social Impact</a></li>
+                                                        <li><a href="javascript:;" class="nav-link">Telecommunication</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="../services.html">Services</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Technologies</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Ideas & Inspiration</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Careers</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </nav>
+       <section class="consultantsec maincon">
+            <div id="mySidebar" class="sidebar">
+                <ul>
+                    <li><a href="consultant.html"> <i class="fa fa-fire"></i> Consultant</a></li>
+                    <li><a href="clients.html"> <i class="fa fa-file-text-o"></i> Client</a></li>
+                    <li class="active"><a href="projects.html"> <i class="fa fa-building"></i> Projects</a></li>
+                    <li><a href="invoice.html"> <i class="fa fa-credit-card-alt" style="    margin-left: -5px;"></i> Billing & Invoices</a></li>
+                    <li><a href="my_profile.html"> <i class="fa fa-user"></i> My Profile</a></li>
+                    <li><a href="javascript:;"> <i class="fa fa-envelope"></i> Inbox</a></li>
+                    <li><a href="javascript:;"> <i class="fa fa-bell"></i> Notification</a></li>
+                    <li><a href="javascript:;"> <i class="fa fa-cog"></i> Setting</a></li>
+                </ul>
+            </div>
+            <div id="main">
+                <a href="#" class="readmore leftside"><i class="fa fa-long-arrow-left"> Projects</i></a>
+                
+                <button class="openbtn openSitebararea"><i class="fa fa-bars"></i></button> 
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="marginbottom-150">
+                            <div class="table-responsive">
+                                <table class="tablebox newtable">
+                                    <thead>
+                                        <tr>
+                                            <th>Project Title</th>
+                                            <th>Owner</th>
+                                            <th>Start Date</th>
+                                            <th>End Date</th>
+                                            <th>Budget</th>
+                                            <th>Country</th>
+                                            <th>Action 
+                                                <div class="dropdownmainmenuheader"><a href="javascript:;" class=""><i class="fa fa-sliders"></i></a>                                            
+                                                    <ul class="innnermenuitme">
+                                                        <li><input type="checkbox" class="check"> <label>Project Title</label></li>
+                                                        <li><input type="checkbox" class="check"> <label>Owner</label></li>
+                                                        <li><input type="checkbox" class="check"> <label>Start Date</label></li>
+                                                        <li><input type="checkbox" class="check"> <label>End Date</label></li>
+                                                        <li><input type="checkbox" class="check"> <label>Budget</label></li>
+                                                        <li><input type="checkbox" class="check"> <label>Country</label></li>
+                                                        <li><input type="checkbox" class="check"> <label>Action</label></li>
+                                                    </ul>
+                                                </div>
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><input type="checkbox" class="check"> XYZ</td>
+                                            <td>BA</td>
+                                            <td>01/07/2006</td>
+                                            <td>01/07/2010</td>
+                                            <td>$400</td>
+                                            <td>India</td>
+                                            <td><div class="dropdownmainmenu">
+                                                <a href="javascript:;" class=""><i class="fa fa-ellipsis-v"></i>
+                                                </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="checkbox" class="check"> XYZ</td>
+                                            <td>BA</td>
+                                            <td>01/07/2006</td>
+                                            <td>01/07/2010</td>
+                                            <td>$400</td>
+                                            <td>India</td>
+                                            <td><div class="dropdownmainmenu">
+                                                <a href="javascript:;" class=""><i class="fa fa-ellipsis-v"></i>
+                                                </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="checkbox" class="check"> XYZ</td>
+                                            <td>BA</td>
+                                            <td>01/07/2006</td>
+                                            <td>01/07/2010</td>
+                                            <td>$400</td>
+                                            <td>India</td>
+                                            <td><div class="dropdownmainmenu">
+                                                <a href="javascript:;" class=""><i class="fa fa-ellipsis-v"></i>
+                                                </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="checkbox" class="check"> XYZ</td>
+                                            <td>BA</td>
+                                            <td>01/07/2006</td>
+                                            <td>01/07/2010</td>
+                                            <td>$400</td>
+                                            <td>India</td>
+                                            <td><div class="dropdownmainmenu">
+                                                <a href="javascript:;" class=""><i class="fa fa-ellipsis-v"></i>
+                                                </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="checkbox" class="check"> XYZ</td>
+                                            <td>BA</td>
+                                            <td>01/07/2006</td>
+                                            <td>01/07/2010</td>
+                                            <td>$400</td>
+                                            <td>India</td>
+                                            <td><div class="dropdownmainmenu">
+                                                <a href="javascript:;" class=""><i class="fa fa-ellipsis-v"></i>
+                                                </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="checkbox" class="check"> XYZ</td>
+                                            <td>BA</td>
+                                            <td>01/07/2006</td>
+                                            <td>01/07/2010</td>
+                                            <td>$400</td>
+                                            <td>India</td>
+                                            <td><div class="dropdownmainmenu">
+                                                <a href="javascript:;" class=""><i class="fa fa-ellipsis-v"></i>
+                                                </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="checkbox" class="check"> XYZ</td>
+                                            <td>BA</td>
+                                            <td>01/07/2006</td>
+                                            <td>01/07/2010</td>
+                                            <td>$400</td>
+                                            <td>India</td>
+                                            <td><div class="dropdownmainmenu">
+                                                <a href="javascript:;" class=""><i class="fa fa-ellipsis-v"></i>
+                                                </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="checkbox" class="check"> XYZ</td>
+                                            <td>BA</td>
+                                            <td>01/07/2006</td>
+                                            <td>01/07/2010</td>
+                                            <td>$400</td>
+                                            <td>India</td>
+                                            <td><div class="dropdownmainmenu">
+                                                <a href="javascript:;" class=""><i class="fa fa-ellipsis-v"></i>
+                                                </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+       </section>
+       <footer class="footersec">
+         <div class="coninter-fluid">
+             <div class="row">
+                 <div class="col-lg-3 col-md-6">
+                     <h5>Company</h5>
+                     <ul class="link">
+                        <li><a href="#">About Mids Corp</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Leadership</a></li>
+                        <li><a href="#">Inverstor Relation</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                     </ul>
+                     <h5 class="pt-30">Follow Us On</h5>
+                     <ul class="social">
+                         <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                         <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                         <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                         <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                     </ul>
+                 </div>
+                 <div class="col-lg-3 col-md-6">                     
+                    <h5>News & Events</h5>
+                    <ul class="link">
+                       <li><a href="#">News Room</a></li>
+                       <li><a href="#">Webinars</a></li>
+                    </ul>
+                 </div>
+                 <div class="col-lg-6 col-md-12">  
+                     <div class="row">
+                         <div class="col-md-6">              
+                            <h5>Policies</h5>
+                            <ul class="link">
+                               <li><a href="#">Policy</a></li>
+                               <li><a href="#">User Agreement</a></li>
+                               <li><a href="#">Instrutor Agreement</a></li>
+                               <li><a href="#">Training Terms of use</a></li>
+                               <li><a href="#">Contact Us</a></li>
+                            </ul>
+                         </div>
+                         <div class="col-md-6">              
+                            <h5>Contact Us</h5>
+                            <ul class="link">
+                               <li><a href="#">Head Office</a></li>
+                               <li><a href="#">Address: 1050 17th Street, Suite 1000, Washington DC, 20036</a></li>
+                               <li><a href="#">Phone: +1 9294005189</a></li>
+                               <li><a href="#">Email: info@midscorp.com</a></li>
+                            </ul>
+                         </div>
+                     </div>            
+                     <h5 class="pt-30">Join Our Newsletter</h5>
+                     <form class="newsletter">
+                         <input type="text" class="form-control">
+                         <a href="#" class="readmore">Subscribe <i class="fa fa-long-arrow-right"></i></a>
+                     </form>
+                 </div>
+             </div>
+         </div>
+         <div class="bottomfooter">
+             <p>© Copyright 2020 Mids Corp</p>
+         </div>
+       </footer>
+       <div class="modal underconstruction loginpopup" id="SignInSignUp">
+        <div class="modal-dialog">
+          <div class="modal-content">
+      
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+      
+            <!-- Modal body -->
+            <div class="modal-body">
+                    <div class="signsignup">
+                        <div class="nav-tabs-wrapper vertical">
+                            <ul class="nav nav-tabs dragscroll">
+                                <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#signIn">Sign In</a></li>
+                                <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#signUp">Sign Up</a></li>
+                            </ul>
+                        </div>
+                        <span class="nav-tabs-wrapper-border" role="presentation"></span>        
+                        <div class="tab-content vertical">
+                            <div class="tab-pane fade show active" id="signIn">
+                                <div class="innertab">
+                                    <div class="nav-tabs-wrapper">
+                                        <ul class="nav nav-tabs dragscroll horizontal">
+                                            <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#clientSignIn">Client</a></li>
+                                            <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#consultantSignIn">Consultant</a></li>
+                                        </ul>
+                                    </div>
+                                    <span class="nav-tabs-wrapper-border" role="presentation"></span>       
+                                    <div class="tab-content">
+                                        <div class="tab-pane fade show active" id="clientSignIn">
+                                            <div class="innerboxarea">
+                                                <div class="innertabsec joinusform">
+                                                    <form class="contactusform" method="post">
+                                                        <h2 class="headtitle">Client sign in</h2>
+                                                        <div class="row">
+                                                            <div class="col-md-10 offset-md-1">
+                                                                    <div class="input-group w50">
+                                                                        <input type="text" name="lastname" placeholder="Email*">
+                                                                    </div>
+                                                                    <div class="input-group w50">
+                                                                        <input type="text" name="lastname" placeholder="Password*">
+                                                                        <i class="eyeicons fa fa-eye"></i>
+                                                                    </div>
+                                                                    <div class="forgoltlink">
+                                                                       <a class="link" data-toggle="tab" href="#clientForgotPassword">Forgot password?</a> 
+                                                                    </div>
+                                                                    <a href="#" class="readmore bgreadmore">Submit <i class="fa fa-long-arrow-right"></i></a>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="consultantSignIn">
+                                            <div class="innertabsec joinusform">
+                                                <form class="contactusform" method="post">
+                                                    <h2 class="headtitle">Consultant sign in</h2>
+                                                    <div class="row">
+                                                        <div class="col-md-10 offset-md-1">
+                                                                <div class="input-group w50">
+                                                                    <input type="text" name="lastname" placeholder="Email*">
+                                                                </div>
+                                                                <div class="input-group w50">
+                                                                    <input type="text" name="lastname" placeholder="Password*">
+                                                                    <i class="eyeicons fa fa-eye"></i>
+                                                                </div>
+                                                                <div class="forgoltlink">
+                                                                   <a class="link" data-toggle="tab" href="#consutantForgotPassword">Forgot password?</a> 
+                                                                </div>
+                                                                <a href="#" class="readmore bgreadmore">Submit <i class="fa fa-long-arrow-right"></i></a>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="clientForgotPassword">
+                                            <div class="innerboxarea">
+                                                <div class="innertabsec joinusform">
+                                                    <form class="contactusform" method="post">
+                                                        <h2 class="headtitle">Client Forgot Password </h2>
+                                                        <div class="row">
+                                                            <div class="col-md-8 offset-md-2">
+                                                                    <div class="input-group">
+                                                                        <input type="text" name="lastname" placeholder="Email*">
+                                                                    </div>
+                                                                    <div class="forgoltlink">
+                                                                       <a class="link" data-toggle="tab" href="#clientSignIn">Sign In</a> 
+                                                                    </div>
+                                                                    <a href="#" class="readmore bgreadmore">Submit <i class="fa fa-long-arrow-right"></i></a>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="consutantForgotPassword">
+                                            <div class="innerboxarea">
+                                                <div class="innertabsec joinusform">
+                                                    <form class="contactusform" method="post">
+                                                        <h2 class="headtitle">Consultant Forgot Password  </h2>
+                                                        <div class="row">
+                                                            <div class="col-md-8 offset-md-2">
+                                                                    <div class="input-group">
+                                                                        <input type="text" name="lastname" placeholder="Email*">
+                                                                    </div>
+                                                                    <div class="forgoltlink">
+                                                                       <a class="link" data-toggle="tab" href="#consultantSignIn">Sign In</a> 
+                                                                    </div>
+                                                                    <a href="#" class="readmore bgreadmore">Submit <i class="fa fa-long-arrow-right"></i></a>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="signUp">
+                                <div class="innertab">
+                                    <div class="nav-tabs-wrapper">
+                                        <ul class="nav nav-tabs dragscroll  horizontal">
+                                            <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#clientSignUp">Client</a></li>
+                                            <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#consultantSignUp">Consultant</a></li>
+                                        </ul>
+                                    </div>
+                                    <span class="nav-tabs-wrapper-border" role="presentation"></span>       
+                                    <div class="tab-content">
+                                        <div class="tab-pane fade show active" id="clientSignUp">
+                                            <div class="innertabsec joinusform">
+                                                <form class="contactusform" method="post">
+                                                    <h2 class="headtitle">Client Sign Up</h2>
+                                                    <div class="row">
+                                                        <div class="col-md-10 offset-md-1">
+                                                                <div class="input-group w50">
+                                                                    <input type="text" name="firstname" placeholder="Company Name*">
+                                                                </div>
+                                                                <div class="input-group w50">
+                                                                    <input type="text" name="lastname" placeholder="Company Registration Number">
+                                                                </div>
+                                                                <div class="input-group">
+                                                                    <select class="selectbox">
+                                                                        <option>Select Industry</option>
+                                                                    </select>
+                                                                </div>
+                                                                <div class="input-group w50">
+                                                                    <input type="text" name="lastname" placeholder="First Name*">
+                                                                </div>
+                                                                <div class="input-group w50">
+                                                                    <input type="text" name="lastname" placeholder="Last Name*">
+                                                                </div>
+                                                                <div class="input-group w50">
+                                                                    <input type="text" name="lastname" placeholder="Email ID*">
+                                                                </div>
+                                                                <div class="input-group w50">
+                                                                    <input type="text" name="lastname" placeholder="Phone Number*">
+                                                                </div>
+                                                                <div class="input-group">
+                                                                    <select class="selectbox">
+                                                                        <option>Select your job title</option>
+                                                                    </select>
+                                                                </div>
+                                                                <div class="input-group w50">
+                                                                    <input type="text" name="lastname" placeholder="Password*">
+                                                                    <i class="eyeicons fa fa-eye"></i>
+                                                                </div>
+                                                                <div class="input-group w50">
+                                                                    <input type="text" name="lastname" placeholder="Confirm Password*">
+                                                                    <i class="eyeicons fa fa-eye"></i>
+                                                                </div>
+                                                                <a href="#" class="readmore bgreadmore">Submit <i class="fa fa-long-arrow-right"></i></a>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="consultantSignUp">
+                                            <div class="innertabsec joinusform">
+                                                <form class="contactusform" method="post">
+                                                    <h2 class="headtitle">Consultant Sign Up</h2>
+                                                    <div class="row">
+                                                        <div class="col-md-10 offset-md-1">
+                                                                <div class="input-group w50">
+                                                                    <input type="text" name="firstname" placeholder="First Name*">
+                                                                </div>
+                                                                <div class="input-group w50">
+                                                                    <input type="text" name="lastname" placeholder="Last Name">
+                                                                </div>
+                                                                <div class="input-group w50">
+                                                                    <input type="text" name="lastname" placeholder="Email Id*">
+                                                                </div>
+                                                                <div class="input-group w50">
+                                                                    <input type="text" name="lastname" placeholder="Phone Number*">
+                                                                </div>
+                                                                <div class="input-group">
+                                                                    <p class="gendarlabel">Select Gender</p>
+                                                                    <input type="radio" class="yourareradio" name="youare" id="Male">
+                                                                    <label for="Male">Male</label>
+                                                                    <input type="radio" class="yourareradio" name="youare" id="Female">
+                                                                    <label for="Female">Female</label>
+                                                                </div>
+                                                                <div class="input-group w50">
+                                                                    <input type="text" name="lastname" placeholder="Password*">
+                                                                    <i class="eyeicons fa fa-eye"></i>
+                                                                </div>
+                                                                <div class="input-group w50">
+                                                                    <input type="text" name="lastname" placeholder="Confirm Password*">
+                                                                    <i class="eyeicons fa fa-eye"></i>
+                                                                </div>
+                                                                <a href="#" class="readmore bgreadmore">Submit <i class="fa fa-long-arrow-right"></i></a>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>      
+          </div>
+        </div>
+      </div>
+      <div class="modal underconstruction passeordchangedbox" id="passeordchanged">
+       <div class="modal-dialog">
+         <div class="modal-content">
+     
+           <!-- Modal Header -->
+           <div class="modal-header">
+             <button type="button" class="close" data-dismiss="modal">&times;</button>
+           </div>
+     
+           <!-- Modal body -->
+           <div class="modal-body">
+                <div class="signsignup">
+                    <div class="textarea">
+                        <p>Password has been sent to you in your registered email ID</p>
+                    </div>
+                </div>
+           </div>      
+         </div>
+       </div>
+     </div>
+     <div class="modal underconstruction passeordchangedbox" id="confirmationMail">
+      <div class="modal-dialog">
+        <div class="modal-content">
+    
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+    
+          <!-- Modal body -->
+          <div class="modal-body">
+               <div class="signsignup">
+                   <div class="textarea text-center">
+                        <h2 class="headtitle">Hi User Name,</h2>
+                       <p>We have sent a confirmation mail to your entered email ID, Mids corp request you to validate your mail ID in order to proceed further.</p>
+                   </div>
+               </div>
+          </div>      
+        </div>
+      </div>
+    </div>
+    <div class="modal underconstruction passeordchangedbox" id="customerconfirmationMail">
+     <div class="modal-dialog">
+       <div class="modal-content">
+   
+         <!-- Modal Header -->
+         <div class="modal-header">
+           <button type="button" class="close" data-dismiss="modal">&times;</button>
+         </div>
+   
+         <!-- Modal body -->
+         <div class="modal-body">
+              <div class="signsignup ">
+                  <div class="textarea text-center">
+                       <h2 class="headtitle">Hi Customer,</h2>
+                      <p>We have sent a confirmation mail to your entered email ID, Mids corp request you to validate your mail ID in order to proceed further.</p>
+                  </div>
+              </div>
+         </div>      
+       </div>
+     </div>
+   </div>
+    <div class="modal underconstruction loginpopup fullwidth" id="counsultantresetPassword">
+        <div class="modal-dialog">
+          <div class="modal-content">      
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>      
+            <!-- Modal body -->
+            <div class="modal-body">
+                    <div class="signsignup">       
+                        <div class="tab-content vertical">
+                            <div class="tab-pane fade show active">
+                                <div class="innertab">   
+                                    <div class="tab-content">
+                                        <div class="tab-pane fade show active" >
+                                            <div class="innertabsec joinusform">
+                                                <form class="contactusform" method="post">
+                                                    <h2 class="headtitle">Consultant Reset Password </h2>
+                                                    <div class="row">
+                                                        <div class="col-md-8 offset-md-2">
+                                                                <div class="input-group">
+                                                                    <input type="text" name="lastname" placeholder="Enter Password*">
+                                                                </div>
+                                                                <div class="forgoltlink">
+                                                                   <a href="javascript:;" class="link">Signin</a> 
+                                                                </div>
+                                                                <div class="input-group">
+                                                                    <input type="text" name="lastname" placeholder="Enter Password*">
+                                                                </div>
+                                                                <div class="input-group">
+                                                                    <input type="text" name="lastname" placeholder="Confirm New Password*">
+                                                                </div>
+                                                                <a href="#" class="readmore bgreadmore">Submit <i class="fa fa-long-arrow-right"></i></a>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>      
+          </div>
+        </div>
+      </div>
+      <div class="modal underconstruction loginpopup fullwidth" id="clientresetPassword">
+          <div class="modal-dialog">
+            <div class="modal-content">      
+              <!-- Modal Header -->
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+              </div>      
+              <!-- Modal body -->
+              <div class="modal-body">
+                      <div class="signsignup">       
+                          <div class="tab-content vertical">
+                              <div class="tab-pane fade show active">
+                                  <div class="innertab">   
+                                      <div class="tab-content">
+                                          <div class="tab-pane fade show active" >
+                                              <div class="innertabsec joinusform">
+                                                  <form class="contactusform" method="post">
+                                                      <h2 class="headtitle">Client Reset Password </h2>
+                                                      <div class="row">
+                                                          <div class="col-md-8 offset-md-2">
+                                                                  <div class="input-group">
+                                                                      <input type="text" name="lastname" placeholder="Enter Password*">
+                                                                  </div>
+                                                                  <div class="forgoltlink">
+                                                                     <a href="javascript:;" class="link">Signin</a> 
+                                                                  </div>
+                                                                  <div class="input-group">
+                                                                      <input type="text" name="lastname" placeholder="Enter Password*">
+                                                                  </div>
+                                                                  <div class="input-group">
+                                                                      <input type="text" name="lastname" placeholder="Confirm New Password*">
+                                                                  </div>
+                                                                  <a href="#" class="readmore bgreadmore">Submit <i class="fa fa-long-arrow-right"></i></a>
+                                                          </div>
+                                                      </div>
+                                                  </form>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+              </div>      
+            </div>
+          </div>
+        </div>
+        <div class="modal underconstruction loginpopup fullwidth" id="filterBy">
+            <div class="modal-dialog">
+              <div class="modal-content">      
+                <!-- Modal Header -->
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>      
+                <!-- Modal body -->
+                <div class="modal-body">
+                        <div class="signsignup">       
+                            <div class="tab-content vertical">
+                                <div class="tab-pane fade show active">
+                                    <div class="innertab">   
+                                        <div class="tab-content">
+                                            <div class="tab-pane fade show active" >
+                                                <div class="innertabsec joinusform">
+                                                    <form class="contactusform" method="post">
+                                                        <h2 class="headtitle">Filter by  </h2>
+                                                        <div class="row">
+                                                            <div class="col-md-3">
+                                                                <div class="input-group">
+                                                                    <select>
+                                                                        <option>Select Industry</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-3">
+                                                                <div class="input-group">
+                                                                    <select>
+                                                                        <option>Select Business Function</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <div class="input-group">
+                                                                    <p class="gendarlabel">Education</p>
+                                                                    <input type="radio" class="yourareradio" name="youare" id="FullTime">
+                                                                    <label for="FullTime">Full Time</label>
+                                                                    <input type="radio" class="yourareradio" name="youare" id="PartTime">
+                                                                    <label for="PartTime">Part Time</label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-3">
+                                                                <div class="input-group">
+                                                                    <select>
+                                                                        <option>Select Country</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-3">
+                                                                <div class="input-group">
+                                                                    <input type="text" name="lastname" placeholder="Enter Location">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <div class="input-group">
+                                                                    <p class="gendarlabel">Education Type</p>
+                                                                    <input type="radio" class="yourareradio" name="youare" id="MasterDegree">
+                                                                    <label for="MasterDegree">Master Degree</label>
+                                                                    <input type="radio" class="yourareradio" name="youare" id="BachelorDegree">
+                                                                    <label for="BachelorDegree">Bachelor Degree</label>
+                                                                    <input type="radio" class="yourareradio" name="youare" id="Other">
+                                                                    <label for="Other">Other</label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-12">
+                                                                <div class="input-group">
+                                                                    <input type="text" name="lastname" placeholder="">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-3">
+                                                                <div class="input-group checboxlist">
+                                                                    <p class="gendarlabel">Years of Experience</p>
+                                                                    <input type="checkbox" class="yourareradio" name="youare" id="2Years">
+                                                                    <label for="2Years">0-2 Years</label>
+                                                                    <input type="checkbox" class="yourareradio" name="youare" id="5Years">
+                                                                    <label for="5Years">2-5 Years</label>
+                                                                    <input type="checkbox" class="yourareradio" name="youare" id="8Years">
+                                                                    <label for="8Years">5-8 Years</label>
+                                                                    <input type="checkbox" class="yourareradio" name="youare" id="Years">
+                                                                    <label for="Years">8+ Years</label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-3 verticalmiddle">
+                                                                <p>Or</p>
+                                                                <div class="input-group">
+                                                                    <input type="text" name="lastname" placeholder="Enter specific detail">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>      
+              </div>
+            </div>
+          </div>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+       <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+       <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+       <script src="../vendor/select-picker/js/bootstrap-select.min.js"></script>
+       <script src="../vendor/slick/slick.js"></script>
+       <script src="../js/script.js"></script>
+       <script>
+           $(document).ready(function(){
+                $('.openSitebararea').click(function(){
+                    $('#mySidebar').toggleClass('opensidebar');
+                    $('#main').toggleClass('mainboxarea');
+                });
+           });
+       </script>
+    </body>
+</html>

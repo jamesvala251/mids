@@ -183,3 +183,4 @@ $('.opensharebox').click(function(){
 // 	$('.securitiesitem').slickReinit();
 // 	$('.insigtsitem').slickReinit();
 // }
+
