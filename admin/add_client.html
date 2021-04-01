@@ -5,6 +5,7 @@
         <title>MIDS</title>
         <link rel="stylesheet" href="../vendor/bootstrap/css/bootstrap.min.css">
         <link rel="stylesheet" href="../icons/css/line-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="../vendor/date-range-picker/css/daterangepicker.css" />
         <link rel="stylesheet" href="../vendor/select-picker/css/bootstrap-select.min.css">
         <link rel="stylesheet" href="../vendor/slick/slick.css">
         <link rel="stylesheet" href="../vendor/slick/slick-theme.css">
@@ -310,231 +311,75 @@
                 
             </div>
         </nav>
-       <section class="consultantsec maincon">
-            <div id="mySidebar" class="sidebar">
-                <ul>
-                    <li><a href="consultant.html"> <i class="fa fa-fire"></i> Consultant</a></li>
-                    <li class="active"><a href="javascript:;"> <i class="fa fa-file-text-o"></i> Client</a></li>
-                    <li><a href="projects.html"> <i class="fa fa-building"></i> Projects</a></li>
-                    <li><a href="invoice.html"> <i class="fa fa-credit-card-alt" style="    margin-left: -5px;"></i> Billing & Invoices</a></li>
-                    <li><a href="my_profile.html"> <i class="fa fa-user"></i> My Profile</a></li>
-                    <li><a href="javascript:;"> <i class="fa fa-envelope"></i> Inbox</a></li>
-                    <li><a href="javascript:;"> <i class="fa fa-bell"></i> Notification</a></li>
-                    <li><a href="javascript:;"> <i class="fa fa-cog"></i> Setting</a></li>
-                </ul>
-            </div>
-            <div id="main">
-                <a href="#" class="readmore leftside"><i class="fa fa-long-arrow-left"> Clients</i></a>
+       <section class="consultantsec">
+        <div id="mySidebar" class="sidebar">
+            <ul>
+                <li><a href="consultant.html"> <i class="fa fa-fire"></i> Consultant</a></li>
+                <li><a href="clients.html"> <i class="fa fa-file-text-o"></i> Client</a></li>
+                <li class="active"><a href="javascript:;"> <i class="fa fa-building"></i> Projects</a></li>
+                <li><a href="invoice.html"> <i class="fa fa-credit-card-alt" style="    margin-left: -5px;"></i> Billing & Invoices</a></li>
+                <li><a href="my_profile.html"> <i class="fa fa-user"></i> My Profile</a></li>
+                <li><a href="javascript:;"> <i class="fa fa-envelope"></i> Inbox</a></li>
+                <li><a href="javascript:;"> <i class="fa fa-bell"></i> Notification</a></li>
+                <li><a href="javascript:;"> <i class="fa fa-cog"></i> Setting</a></li>
+            </ul>
+        </div>
+            <div id="main">   
                 
-                <button class="openbtn openSitebararea"><i class="fa fa-bars"></i></button> 
-                <div class="row">
-                    <div class="col-md-6">
-                        <ul class="horizontallist">
-                            <li class="active"><a class="boxcut" data-toggle="tab" href="javascript:;"><span>1097</span><br>All Clients </a></li>
-                            <li><a class="boxcut" data-toggle="tab" href="javascript:;"><span>1097</span><br>All Clients </a></li>
-                            <li><a class="boxcut" data-toggle="tab" href="#"><span>37</span><br>Archived </a></li>
-                            <li><a class="boxcut" data-toggle="tab" href="#"><span>50</span><br>Blocked </a></li>
-                        </ul>   
-                    </div>
-                    <div class="col-md-6">
-                            <div class="row">
-                                <div class="col-lg-12 col-md-12">
-                                    <a href="add_client.html" class="readmore borderbtn wauto" >Add Client</a>
-                                </div>
-                                <div class="col-md-12">
-                                    <div class="searchbararwa">
+                
+                <button class="openbtn openSitebararea"><i class="fa fa-bars"></i></button>  
+                <a href="#" class="readmore leftside"><i class="fa fa-long-arrow-left"> Client</i></a>   
+                <span class="nav-tabs-wrapper-border" role="presentation"></span>
+                
+                
+                            <form class="contactusform consultantside mt-4" method="post">
+                                <div class="row">
+                                    <div class="col-lg-8 col-md-12">
                                         <div class="input-group">
-                                            <input type="text" class="form-control">
-                                            <i class="fa fa-search searicon"></i>
-                                        </div>
-                                        <div class="input-group">
-                                            <select class="form-control">
-                                                <option>10/page</option>
-                                            </select>
-                                        </div>
-                                        <div class="input-group">
-                                            <a href="javascript:;"><i class="fa fa-refresh"></i></a>
-                                            <a href="javascript:;"><i class="fa fa-file"></i></a>
-                                            <a href="javascript:;" data-toggle="modal" data-target="#filterBy"><i class="fa fa-filter"></i></a>
+                                            <!-- <label class="form-label">Project Title</label> -->
+                                            <input type="text" name="firstname" placeholder="Company Name*">
                                         </div>
                                     </div>
+                                    <div class="col-lg-4 col-md-12"></div>
+                                    <div class="col-lg-8 col-md-12">
+                                        <div class="input-group">
+                                            <select class="selectbox">
+                                                <option>Select Industry</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-12"></div>
+                                    <div class="col-lg-4 col-md-12">
+                                        <div class="input-group">
+                                            <!-- <label class="form-label">Budget</label> -->
+                                            <input type="text" name="lastname" placeholder="First Name*">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="input-group">
+                                            <input type="text" name="daterange"  placeholder="Last Name*">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-12"></div>
+                                    <div class="col-md-4">
+                                        <div class="input-group">
+                                            <!-- <label class="form-label">Owner</label> -->
+                                            <input type="text" name="lastname" placeholder="Email ID*">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="input-group">
+                                            <!-- <label class="form-label">Owner</label> -->
+                                            <input type="text" name="lastname" placeholder="Phone Number*">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-12"></div>  
+                                    <div class="col-md-12">
+                                        <a href="#" class="readmore redcrborder wauto">Cancel</a>
+                                        <a href="#" class="readmore bgreadmore smallwidth" data-toggle="modal" data-target="#addClientSucess">Submit</a>
+                                    </div>
                                 </div>
-                            </div>
-                    </div>
-                    <div class="col-md-12">
-                        <div class="marginbottom-150">
-                            <div class="table-responsive">
-                                <table class="tablebox newtable">
-                                    <thead>
-                                        <tr>
-                                            <th>Name</th>
-                                            <th>Register No.</th>
-                                            <th>Industry</th>
-                                            <th>Name</th>
-                                            <th>Email ID</th>
-                                            <th>Phone No.</th>
-                                            <th>Job Title</th>
-                                            <th>Total Project</th>
-                                            <th>Active Project</th>
-                                            <th>Approval Pending</th>
-                                            <th>Action 
-                                                <div class="dropdownmainmenuheader"><a href="javascript:;" class=""><i class="fa fa-sliders"></i></a>                                            
-                                                    <ul class="innnermenuitme">
-                                                        <li><input type="checkbox" class="check"> <label>Name</label></li>
-                                                        <li><input type="checkbox" class="check"> <label>Email ID</label></li>
-                                                        <li><input type="checkbox" class="check"> <label>Designation</label></li>
-                                                        <li><input type="checkbox" class="check"> <label>Country</label></li>
-                                                        <li><input type="checkbox" class="check"> <label>Status</label></li>
-                                                        <li><input type="checkbox" class="check"> <label>Project Name</label></li>
-                                                        <li><input type="checkbox" class="check"> <label>Action</label></li>
-                                                    </ul>
-                                                </div>
-                                            </th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>TCS</td>
-                                            <td>TCS123</td>
-                                            <td>Technology +4</td>
-                                            <td>Jashwant</td>
-                                            <td>jashwant.s@midscorp.com</td>
-                                            <td>+91 9023490123</td>
-                                            <td>CEO</td>
-                                            <td>72</td>
-                                            <td>22</td>
-                                            <td>2</td>
-                                            <td><div class="dropdownmainmenu">
-                                                <a href="javascript:;" class=""><i class="fa fa-ellipsis-v"></i>
-                                                </a>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>TCS</td>
-                                            <td>TCS123</td>
-                                            <td>Technology +4</td>
-                                            <td>Jashwant</td>
-                                            <td>jashwant.s@midscorp.com</td>
-                                            <td>+91 9023490123</td>
-                                            <td>CEO</td>
-                                            <td>72</td>
-                                            <td>22</td>
-                                            <td>2</td>
-                                            <td><div class="dropdownmainmenu">
-                                                <a href="javascript:;" class=""><i class="fa fa-ellipsis-v"></i>
-                                                </a>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>TCS</td>
-                                            <td>TCS123</td>
-                                            <td>Technology +4</td>
-                                            <td>Jashwant</td>
-                                            <td>jashwant.s@midscorp.com</td>
-                                            <td>+91 9023490123</td>
-                                            <td>CEO</td>
-                                            <td>72</td>
-                                            <td>22</td>
-                                            <td>2</td>
-                                            <td><div class="dropdownmainmenu">
-                                                <a href="javascript:;" class=""><i class="fa fa-ellipsis-v"></i>
-                                                </a>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>TCS</td>
-                                            <td>TCS123</td>
-                                            <td>Technology +4</td>
-                                            <td>Jashwant</td>
-                                            <td>jashwant.s@midscorp.com</td>
-                                            <td>+91 9023490123</td>
-                                            <td>CEO</td>
-                                            <td>72</td>
-                                            <td>22</td>
-                                            <td>2</td>
-                                            <td><div class="dropdownmainmenu">
-                                                <a href="javascript:;" class=""><i class="fa fa-ellipsis-v"></i>
-                                                </a>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>TCS</td>
-                                            <td>TCS123</td>
-                                            <td>Technology +4</td>
-                                            <td>Jashwant</td>
-                                            <td>jashwant.s@midscorp.com</td>
-                                            <td>+91 9023490123</td>
-                                            <td>CEO</td>
-                                            <td>72</td>
-                                            <td>22</td>
-                                            <td>2</td>
-                                            <td><div class="dropdownmainmenu">
-                                                <a href="javascript:;" class=""><i class="fa fa-ellipsis-v"></i>
-                                                </a>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>TCS</td>
-                                            <td>TCS123</td>
-                                            <td>Technology +4</td>
-                                            <td>Jashwant</td>
-                                            <td>jashwant.s@midscorp.com</td>
-                                            <td>+91 9023490123</td>
-                                            <td>CEO</td>
-                                            <td>72</td>
-                                            <td>22</td>
-                                            <td>2</td>
-                                            <td><div class="dropdownmainmenu">
-                                                <a href="javascript:;" class=""><i class="fa fa-ellipsis-v"></i>
-                                                </a>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>TCS</td>
-                                            <td>TCS123</td>
-                                            <td>Technology +4</td>
-                                            <td>Jashwant</td>
-                                            <td>jashwant.s@midscorp.com</td>
-                                            <td>+91 9023490123</td>
-                                            <td>CEO</td>
-                                            <td>72</td>
-                                            <td>22</td>
-                                            <td>2</td>
-                                            <td><div class="dropdownmainmenu">
-                                                <a href="javascript:;" class=""><i class="fa fa-ellipsis-v"></i>
-                                                </a>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>TCS</td>
-                                            <td>TCS123</td>
-                                            <td>Technology +4</td>
-                                            <td>Jashwant</td>
-                                            <td>jashwant.s@midscorp.com</td>
-                                            <td>+91 9023490123</td>
-                                            <td>CEO</td>
-                                            <td>72</td>
-                                            <td>22</td>
-                                            <td>2</td>
-                                            <td><div class="dropdownmainmenu">
-                                                <a href="javascript:;" class=""><i class="fa fa-ellipsis-v"></i>
-                                                </a>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                            </form>
             </div>
        </section>
        <footer class="footersec">
@@ -979,112 +824,38 @@
             </div>
           </div>
         </div>
-        <div class="modal underconstruction loginpopup fullwidth" id="filterBy">
-            <div class="modal-dialog">
-              <div class="modal-content">      
-                <!-- Modal Header -->
-                <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal">&times;</button>
-                </div>      
-                <!-- Modal body -->
-                <div class="modal-body">
-                        <div class="signsignup">       
-                            <div class="tab-content vertical">
-                                <div class="tab-pane fade show active">
-                                    <div class="innertab">   
-                                        <div class="tab-content">
-                                            <div class="tab-pane fade show active" >
-                                                <div class="innertabsec joinusform">
-                                                    <form class="contactusform" method="post">
-                                                        <h2 class="headtitle">Filter by  </h2>
-                                                        <div class="row">
-                                                            <div class="col-md-3">
-                                                                <div class="input-group">
-                                                                    <select>
-                                                                        <option>Select Industry</option>
-                                                                    </select>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-md-3">
-                                                                <div class="input-group">
-                                                                    <select>
-                                                                        <option>Select Business Function</option>
-                                                                    </select>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-md-6">
-                                                                <div class="input-group">
-                                                                    <p class="gendarlabel">Education</p>
-                                                                    <input type="radio" class="yourareradio" name="youare" id="FullTime">
-                                                                    <label for="FullTime">Full Time</label>
-                                                                    <input type="radio" class="yourareradio" name="youare" id="PartTime">
-                                                                    <label for="PartTime">Part Time</label>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-md-3">
-                                                                <div class="input-group">
-                                                                    <select>
-                                                                        <option>Select Country</option>
-                                                                    </select>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-md-3">
-                                                                <div class="input-group">
-                                                                    <input type="text" name="lastname" placeholder="Enter Location">
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-md-6">
-                                                                <div class="input-group">
-                                                                    <p class="gendarlabel">Education Type</p>
-                                                                    <input type="radio" class="yourareradio" name="youare" id="MasterDegree">
-                                                                    <label for="MasterDegree">Master Degree</label>
-                                                                    <input type="radio" class="yourareradio" name="youare" id="BachelorDegree">
-                                                                    <label for="BachelorDegree">Bachelor Degree</label>
-                                                                    <input type="radio" class="yourareradio" name="youare" id="Other">
-                                                                    <label for="Other">Other</label>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-md-12">
-                                                                <div class="input-group">
-                                                                    <input type="text" name="lastname" placeholder="">
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-md-3">
-                                                                <div class="input-group checboxlist">
-                                                                    <p class="gendarlabel">Years of Experience</p>
-                                                                    <input type="checkbox" class="yourareradio" name="youare" id="2Years">
-                                                                    <label for="2Years">0-2 Years</label>
-                                                                    <input type="checkbox" class="yourareradio" name="youare" id="5Years">
-                                                                    <label for="5Years">2-5 Years</label>
-                                                                    <input type="checkbox" class="yourareradio" name="youare" id="8Years">
-                                                                    <label for="8Years">5-8 Years</label>
-                                                                    <input type="checkbox" class="yourareradio" name="youare" id="Years">
-                                                                    <label for="Years">8+ Years</label>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-md-3 verticalmiddle">
-                                                                <p>Or</p>
-                                                                <div class="input-group">
-                                                                    <input type="text" name="lastname" placeholder="Enter specific detail">
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </form>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                </div>      
-              </div>
+        
+      <div class="modal underconstruction addClientSucessbox" id="addClientSucess">
+        <div class="modal-dialog">
+          <div class="modal-content">
+      
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
             </div>
+      
+            <!-- Modal body -->
+            <div class="modal-body">
+                 <div class="signsignup">
+                     <div class="textarea">
+                         <p>Hi,<br><br>
+                            We have sent a confirmation mail to the entered email ID, Client contact person need to submit.
+                            <br><br>
+                            1. Company Registration<br>
+                            2. Their Job Title<br>  
+                            3. Set their login Credential</p>
+                     </div>
+                 </div>
+            </div>      
           </div>
+        </div>
+      </div>
        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+       <script type="text/javascript" src="../vendor/date-range-picker/js/moment.min.js"></script>
        <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
        <script src="../vendor/select-picker/js/bootstrap-select.min.js"></script>
+       <script type="text/javascript" src="../vendor/date-range-picker/js/daterangepicker.js"></script>
        <script src="../vendor/slick/slick.js"></script>
        <script src="../js/script.js"></script>
        <script>
@@ -1095,5 +866,35 @@
                 });
            });
        </script>
+       <script type="text/javascript">
+        $(function() {
+            $('.daterange').daterangepicker();
+        });
+        </script>
+         <script type="text/javascript">
+            var SITE = SITE || {};
+            SITE.fileInputs = function() {
+             var $this = $(this),
+                 $val = $this.val(),
+                 valArray = $val.split('\\'),
+                 newVal = valArray[valArray.length-1],
+                 $button = $this.siblings('.file-button'),
+                 $fakeFile = $this.siblings('.file-holder');
+             if(newVal !== '') {
+               $button.html('<i class="fa fa-upload"></i> Resume Uploaded');
+               if($fakeFile.length === 0) {
+                 $button.after('<span class="file-holder">' + newVal + '</span>');
+               } else {
+                 $fakeFile.text(newVal);
+               }
+             }
+            };
+
+            $(document).ready(function() {
+             $('.file-wrapper input[type=file]').bind('change focus click', SITE.fileInputs);
+            });
+
+ 
+        </script>
     </body>
 </html>
