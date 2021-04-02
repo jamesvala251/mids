@@ -316,10 +316,10 @@
                 <ul>
                     <li><a href="consultant.html"> <i class="fa fa-fire"></i> Consultant</a></li>
                     <li><a href="clients.html"> <i class="fa fa-file-text-o"></i> Client</a></li>
-                    <li class="active"><a href="javascript:;"> <i class="fa fa-building"></i> Projects</a></li>
+                    <li><a href="javascript:;"> <i class="fa fa-building"></i> Projects</a></li>
                     <li><a href="invoice.html"> <i class="fa fa-credit-card-alt" style="    margin-left: -5px;"></i> Billing & Invoices</a></li>
                     <li><a href="my_profile.html"> <i class="fa fa-user"></i> My Profile</a></li>
-                    <li><a href="inbox.html"> <i class="fa fa-envelope"></i> Inbox</a></li>
+                    <li class="active"><a href="javascript:;"> <i class="fa fa-envelope"></i> Inbox</a></li>
                     <li><a href="javascript:;"> <i class="fa fa-bell"></i> Notification</a></li>
                     <li><a href="javascript:;"> <i class="fa fa-cog"></i> Setting</a></li>
                 </ul>
@@ -328,94 +328,64 @@
                 
                 
                 <button class="openbtn openSitebararea"><i class="fa fa-bars"></i></button>  
-                <a href="#" class="readmore leftside"><i class="fa fa-long-arrow-left"> Project</i></a>   
+                <!-- <a href="#" class="readmore leftside"><i class="fa fa-long-arrow-left"> Project</i></a>    -->
                 <span class="nav-tabs-wrapper-border" role="presentation"></span>
                 
                 
                             <form class="contactusform consultantside mt-4" method="post">
                                 <div class="row">
-                                    <div class="col-lg-8 col-md-12">
-                                        <div class="input-group">
-                                            <!-- <label class="form-label">Project Title</label> -->
-                                            <input type="text" name="firstname" placeholder="Project Title*">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-12"></div>
-                                    <div class="col-lg-4 col-md-12">
-                                        <div class="input-group">
-                                            <!-- <label class="form-label">Owner</label> -->
-                                            <input type="text" name="lastname" placeholder="Owner">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-12">
-                                        <div class="input-group">
-                                            <!-- <label class="form-label">Budget</label> -->
-                                            <input type="text" name="lastname" placeholder="Budget">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-8">
-                                        <div class="input-group">
-                                            <input type="text" name="daterange" class="daterange" placeholder="Start Date">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-8">
-                                        <div class="input-group">
-                                            <!-- <label class="form-label">Owner</label> -->
-                                            <input type="text" name="lastname" placeholder="Project overview">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-8 col-md-12">
-                                        <div class="input-group">
-                                            <div class="file-wrapper">
-                                                <input type="file" id="resume">
-                                                <span class="file-button"> <span class="file-holder"></span> <i class="fa fa-upload"></i> Upload Resume*</span>
+                                    <div class="col-lg-12 col-md-12">
+                                        <div class="boxgrid mb-20 smallpadd">
+                                            <div class="chatbox">
+                                                <div class="msg_history">                                    
+                                                    <div class="outgoing_msg">
+                                                        <div class="sent_msg">
+                                                          <p>I need help</p>
+                                                        </div>
+                                                    </div>                                    
+                                                    <div class="outgoing_msg">
+                                                        <div class="sent_msg">
+                                                            <p>I do not see transactions</p>
+                                                            <span class="time_date">3/22/20, 09:12</span> 
+                                                        </div>
+                                                    </div>
+                                                    <div class="incoming_msg">
+                                                        <div class="incoming_msg_img"> 
+                                                            <img src="images/incoming_message.png" alt=""> 
+                                                        </div>
+                                                        <div class="received_msg">
+                                                            <div class="received_withd_msg">
+                                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultrices mi facilisi libero vel. Laoreet risus pretium quisque viverra consectetur sed. Eu a suscipit purus volutpat. Purus neque elementum quis vulputate. Imperdiet lobortis adipiscing mauris commodo sagittis.</p>
+                                                                <span class="time_date">3/22/20, 09:12</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>                                  
+                                                    <div class="outgoing_msg">
+                                                        <div class="sent_msg">
+                                                          <p>Thanks for the quick response</p>
+                                                        </div>
+                                                    </div>                                  
+                                                    <div class="outgoing_msg">
+                                                        <div class="sent_msg">
+                                                          <p>Give me a second</p>
+                                                        </div>
+                                                    </div>                                  
+                                                    <div class="outgoing_msg">
+                                                        <div class="sent_msg">
+                                                            <p>It’s a Mobile Top-Up</p>
+                                                            <span class="time_date">3/22/20, 09:12</span> 
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="type_msg">
+                                                    <div class="input_msg_write">
+                                                      <a href="javascript:;" class="attachmentbox"><i class="las la-paperclip"></i></a>  
+                                                      <input type="text" class="write_msg" placeholder="Type a message" />
+                                                      <button class="msg_send_btn" type="button"><i class="las la-location-arrow" aria-hidden="true"></i></button>
+                                                    </div>
+                                                  </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <a href="#" class="readmore greencrborder wauto mt-0 mb-4">Add </a>
-                                    </div>
-                                    <div class="col-xl-8 col-md-12">
-                                        <label class="form-label">Project review</label>
-                                        <div class="table-responsive">
-                                            <table class="tablebox">
-                                                <thead>
-                                                    <tr>
-                                                        <th>Project title</th>
-                                                        <th>Owner</th>
-                                                        <th>Start Date</th>
-                                                        <th>End Date</th>
-                                                        <th>Budget</th>
-                                                        <th>Country</th>
-                                                        <th></th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td>XYZ</td>
-                                                        <td>BA</td>
-                                                        <td>01/07/2006</td>
-                                                        <td>01/07/2010</td>
-                                                        <td>$400</td>
-                                                        <td>NSW</td>
-                                                        <td><a href="javascript:;"><i class="fa fa-close"></i></a></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>ABC</td>
-                                                        <td>BA</td>
-                                                        <td>01/07/2006</td>
-                                                        <td>01/07/2010</td>
-                                                        <td>4 Year</td>
-                                                        <td>India</td>
-                                                        <td><a href="javascript:;"><i class="fa fa-close"></i></a></td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <a href="#" class="readmore redcrborder wauto">Cancel</a>
-                                        <a href="#" class="readmore bgreadmore smallwidth">Save</a>
                                     </div>
                                 </div>
                             </form>
