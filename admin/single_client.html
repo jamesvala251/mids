@@ -5,7 +5,6 @@
         <title>MIDS</title>
         <link rel="stylesheet" href="../vendor/bootstrap/css/bootstrap.min.css">
         <link rel="stylesheet" href="../icons/css/line-awesome.min.css">
-        <link rel="stylesheet" type="text/css" href="../vendor/date-range-picker/css/daterangepicker.css" />
         <link rel="stylesheet" href="../vendor/select-picker/css/bootstrap-select.min.css">
         <link rel="stylesheet" href="../vendor/slick/slick.css">
         <link rel="stylesheet" href="../vendor/slick/slick-theme.css">
@@ -311,12 +310,12 @@
                 
             </div>
         </nav>
-       <section class="consultantsec">
+       <section class="consultantsec maincon">
             <div id="mySidebar" class="sidebar">
                 <ul>
                     <li><a href="consultant.html"> <i class="fa fa-fire"></i> Consultant</a></li>
-                    <li><a href="clients.html"> <i class="fa fa-file-text-o"></i> Client</a></li>
-                    <li class="active"><a href="javascript:;"> <i class="fa fa-building"></i> Projects</a></li>
+                    <li class="active"><a href="javascript:;"> <i class="fa fa-file-text-o"></i> Client</a></li>
+                    <li><a href="projects.html"> <i class="fa fa-building"></i> Projects</a></li>
                     <li><a href="invoice.html"> <i class="fa fa-credit-card-alt" style="    margin-left: -5px;"></i> Billing & Invoices</a></li>
                     <li><a href="my_profile.html"> <i class="fa fa-user"></i> My Profile</a></li>
                     <li><a href="inbox.html"> <i class="fa fa-envelope"></i> Inbox</a></li>
@@ -324,68 +323,235 @@
                     <li><a href="javascript:;"> <i class="fa fa-cog"></i> Setting</a></li>
                 </ul>
             </div>
-            <div id="main">   
+            <div id="main">
+                <a href="#" class="readmore leftside"><i class="fa fa-long-arrow-left"> TCS</i></a>
                 
-                
-                <button class="openbtn openSitebararea"><i class="fa fa-bars"></i></button>  
-                <a href="#" class="readmore leftside"><i class="fa fa-long-arrow-left">Add Project</i></a>   
-                <span class="nav-tabs-wrapper-border" role="presentation"></span>
-                
-                        <div class="innertabsec joinusform">
-                            <form class="contactusform consultantside mt-4" method="post">
-                                <div class="row">
-                                    <div class="col-lg-8 col-md-12">
+                <button class="openbtn openSitebararea"><i class="fa fa-bars"></i></button> 
+                <div class="row">
+                    <div class="col-md-6">
+                        <ul class="horizontallist">
+                            <li class="active"><a class="boxcut" data-toggle="tab" href="javascript:;"><span>1097</span><br>Project Posted </a></li>
+                            <li><a class="boxcut" data-toggle="tab" href="javascript:;"><span>1097</span><br>Approval Pending </a></li>
+                            <li><a class="boxcut" data-toggle="tab" href="#"><span>37</span><br>Active Project </a></li>
+                            <li><a class="boxcut" data-toggle="tab" href="#"><span>50</span><br>Completed Project </a></li>
+                        </ul>   
+                    </div>
+                    <div class="col-md-6">
+                            <div class="row">
+                                <div class="col-lg-12 col-md-12">
+                                    <ul class="clientinfo">
+                                        <li><strong>Creation Date:</strong> 06/04/2021</li>
+                                        <li><strong>Registration No:</strong> TCS123</li>
+                                        <li><strong>Created By:</strong> Jashwant</li>
+                                        <li><strong>Industries:</strong> Technology +4</li>
+                                    </ul>
+                                    <a href="add_client.html" class="readmore borderbtn wauto" >Add Client</a>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="searchbararwa">
                                         <div class="input-group">
-                                            <!-- <label class="form-label">Project Title</label> -->
-                                            <input type="text" name="firstname" placeholder="Project Name*">
+                                            <input type="text" class="form-control">
+                                            <i class="fa fa-search searicon"></i>
                                         </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-12"></div>
-                                    <div class="col-lg-8 col-md-12">
                                         <div class="input-group">
-                                            <p class="gendarlabel">Project Budget</p>
-                                            <input type="radio" class="yourareradio" name="youare" id="FullTime">
-                                            <label for="FullTime">Fixed Price</label>
-                                            <input type="radio" class="yourareradio" name="youare" id="PartTime">
-                                            <label for="PartTime">Hourly</label>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-12"></div>
-                                    <div class="col-lg-4 col-md-12">
-                                        <div class="input-group">
-                                            <!-- <label class="form-label">Budget</label> -->
-                                            <input type="text" name="lastname" placeholder="Enter Amount">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-8 col-md-12"></div>
-                                    <div class="col-md-8">
-                                        <div class="input-group">
-                                            <select class="selectbox">
-                                                <option>Seach and Select Client</option>
+                                            <select class="form-control">
+                                                <option>10/page</option>
                                             </select>
                                         </div>
-                                    </div>
-                                    <div class="col-md-8">
                                         <div class="input-group">
-                                            <!-- <label class="form-label">Owner</label> -->
-                                            <input type="text" name="lastname" placeholder="Project overview">
+                                            <a href="javascript:;"><i class="fa fa-refresh"></i></a>
+                                            <a href="javascript:;"><i class="fa fa-file"></i></a>
+                                            <a href="javascript:;" data-toggle="modal" data-target="#filterBy"><i class="fa fa-filter"></i></a>
                                         </div>
-                                    </div>
-                                    <div class="col-lg-8 col-md-12">
-                                        <div class="input-group">
-                                            <div class="file-wrapper">
-                                                <input type="file" id="resume">
-                                                <span class="file-button"> <span class="file-holder"></span> <i class="fa fa-upload"></i> Upload File*</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <a href="#" class="readmore redcrborder wauto">Cancel</a>
-                                        <a href="#" class="readmore bgreadmore autobutton">Submit</a>
                                     </div>
                                 </div>
-                            </form>
+                            </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="marginbottom-150">
+                            <div class="table-responsive">
+                                <table class="tablebox newtable">
+                                    <thead>
+                                        <tr>
+                                            <th>ID</th>
+                                            <th>Project Title</th>
+                                            <th>Creation Date</th>
+                                            <th>Created By</th>
+                                            <th>Status</th>
+                                            <th>Budget Type</th>
+                                            <th>Consultant Allocated?</th>
+                                            <th>Consultant Email Id</th>
+                                            <th>Amount Paid</th>
+                                            <th>Amount Pending</th>
+                                            <th>Action 
+                                                <div class="dropdownmainmenuheader"><a href="javascript:;" class=""><i class="fa fa-sliders"></i></a>                                            
+                                                    <ul class="innnermenuitme">
+                                                        <li><input type="checkbox" class="check"> <label>ID</label></li>
+                                                        <li><input type="checkbox" class="check"> <label>Project Title</label></li>
+                                                        <li><input type="checkbox" class="check"> <label>Creation Date</label></li>
+                                                        <li><input type="checkbox" class="check"> <label>Status</label></li>
+                                                        <li><input type="checkbox" class="check"> <label>Budget Type</label></li>
+                                                        <li><input type="checkbox" class="check"> <label>Consultant Allocated?</label></li>
+                                                        <li><input type="checkbox" class="check"> <label>Consultant Email Id</label></li>
+                                                        <li><input type="checkbox" class="check"> <label>Amount Paid</label></li>
+                                                        <li><input type="checkbox" class="check"> <label>Amount Pending</label></li>
+                                                        <li><input type="checkbox" class="check"> <label>Action</label></li>
+                                                    </ul>
+                                                </div>
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>C# Developer</td>
+                                            <td>21/12/2020</td>
+                                            <td>Client</td>
+                                            <td>Active</td>
+                                            <td>Fixed Price</td>
+                                            <td>Yes</td>
+                                            <td>jashwant.s@midscorp.com</td>
+                                            <td>$21022</td>
+                                            <td>$1502</td>
+                                            <td><div class="dropdownmainmenu">
+                                                <a href="javascript:;" class=""><i class="fa fa-ellipsis-v"></i>
+                                                </a>
+                                                <ul class="innnermenuitme">
+                                                    <li><a href="javascript:;">View Project Info</a></li>
+                                                    <li><a href="javascript:;">Approved Project</a></li>
+                                                    <li><a href="javascript:;">Reject Project</a></li>
+                                                    <li><a href="javascript:;" data-toggle="modal" data-target="#projectClosed">Mark Project as Closed</a></li>
+                                                    <li><a href="javascript:;">Allocate Consultant</a></li>
+                                                    <li><a href="javascript:;">View Invoice</a></li>
+                                                </ul>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>C# Developer</td>
+                                            <td>21/12/2020</td>
+                                            <td>Client</td>
+                                            <td>Active</td>
+                                            <td>Fixed Price</td>
+                                            <td>Yes</td>
+                                            <td>jashwant.s@midscorp.com</td>
+                                            <td>$21022</td>
+                                            <td>$1502</td>
+                                            <td><div class="dropdownmainmenu">
+                                                <a href="javascript:;" class=""><i class="fa fa-ellipsis-v"></i>
+                                                </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>C# Developer</td>
+                                            <td>21/12/2020</td>
+                                            <td>Client</td>
+                                            <td>Active</td>
+                                            <td>Fixed Price</td>
+                                            <td>Yes</td>
+                                            <td>jashwant.s@midscorp.com</td>
+                                            <td>$21022</td>
+                                            <td>$1502</td>
+                                            <td><div class="dropdownmainmenu">
+                                                <a href="javascript:;" class=""><i class="fa fa-ellipsis-v"></i>
+                                                </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>C# Developer</td>
+                                            <td>21/12/2020</td>
+                                            <td>Client</td>
+                                            <td>Active</td>
+                                            <td>Fixed Price</td>
+                                            <td>Yes</td>
+                                            <td>jashwant.s@midscorp.com</td>
+                                            <td>$21022</td>
+                                            <td>$1502</td>
+                                            <td><div class="dropdownmainmenu">
+                                                <a href="javascript:;" class=""><i class="fa fa-ellipsis-v"></i>
+                                                </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>5</td>
+                                            <td>C# Developer</td>
+                                            <td>21/12/2020</td>
+                                            <td>Client</td>
+                                            <td>Active</td>
+                                            <td>Fixed Price</td>
+                                            <td>Yes</td>
+                                            <td>jashwant.s@midscorp.com</td>
+                                            <td>$21022</td>
+                                            <td>$1502</td>
+                                            <td><div class="dropdownmainmenu">
+                                                <a href="javascript:;" class=""><i class="fa fa-ellipsis-v"></i>
+                                                </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>6</td>
+                                            <td>C# Developer</td>
+                                            <td>21/12/2020</td>
+                                            <td>Client</td>
+                                            <td>Active</td>
+                                            <td>Fixed Price</td>
+                                            <td>Yes</td>
+                                            <td>jashwant.s@midscorp.com</td>
+                                            <td>$21022</td>
+                                            <td>$1502</td>
+                                            <td><div class="dropdownmainmenu">
+                                                <a href="javascript:;" class=""><i class="fa fa-ellipsis-v"></i>
+                                                </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>7</td>
+                                            <td>C# Developer</td>
+                                            <td>21/12/2020</td>
+                                            <td>Client</td>
+                                            <td>Active</td>
+                                            <td>Fixed Price</td>
+                                            <td>Yes</td>
+                                            <td>jashwant.s@midscorp.com</td>
+                                            <td>$21022</td>
+                                            <td>$1502</td>
+                                            <td><div class="dropdownmainmenu">
+                                                <a href="javascript:;" class=""><i class="fa fa-ellipsis-v"></i>
+                                                </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>8</td>
+                                            <td>C# Developer</td>
+                                            <td>21/12/2020</td>
+                                            <td>Client</td>
+                                            <td>Active</td>
+                                            <td>Fixed Price</td>
+                                            <td>Yes</td>
+                                            <td>jashwant.s@midscorp.com</td>
+                                            <td>$21022</td>
+                                            <td>$1502</td>
+                                            <td><div class="dropdownmainmenu">
+                                                <a href="javascript:;" class=""><i class="fa fa-ellipsis-v"></i>
+                                                </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
+                    </div>
+                </div>
             </div>
        </section>
        <footer class="footersec">
@@ -449,15 +615,15 @@
              <p>© Copyright 2020 Mids Corp</p>
          </div>
        </footer>
-       <div class="modal underconstruction loginpopup" id="SignInSignUp">
+    <div class="modal underconstruction loginpopup" id="SignInSignUp">
         <div class="modal-dialog">
-          <div class="modal-content">
-      
+        <div class="modal-content">
+    
             <!-- Modal Header -->
             <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
             </div>
-      
+    
             <!-- Modal body -->
             <div class="modal-body">
                     <div class="signsignup">
@@ -494,7 +660,7 @@
                                                                         <i class="eyeicons fa fa-eye"></i>
                                                                     </div>
                                                                     <div class="forgoltlink">
-                                                                       <a class="link" data-toggle="tab" href="#clientForgotPassword">Forgot password?</a> 
+                                                                    <a class="link" data-toggle="tab" href="#clientForgotPassword">Forgot password?</a> 
                                                                     </div>
                                                                     <a href="#" class="readmore bgreadmore">Submit <i class="fa fa-long-arrow-right"></i></a>
                                                             </div>
@@ -517,7 +683,7 @@
                                                                     <i class="eyeicons fa fa-eye"></i>
                                                                 </div>
                                                                 <div class="forgoltlink">
-                                                                   <a class="link" data-toggle="tab" href="#consutantForgotPassword">Forgot password?</a> 
+                                                                <a class="link" data-toggle="tab" href="#consutantForgotPassword">Forgot password?</a> 
                                                                 </div>
                                                                 <a href="#" class="readmore bgreadmore">Submit <i class="fa fa-long-arrow-right"></i></a>
                                                         </div>
@@ -536,7 +702,7 @@
                                                                         <input type="text" name="lastname" placeholder="Email*">
                                                                     </div>
                                                                     <div class="forgoltlink">
-                                                                       <a class="link" data-toggle="tab" href="#clientSignIn">Sign In</a> 
+                                                                    <a class="link" data-toggle="tab" href="#clientSignIn">Sign In</a> 
                                                                     </div>
                                                                     <a href="#" class="readmore bgreadmore">Submit <i class="fa fa-long-arrow-right"></i></a>
                                                             </div>
@@ -556,7 +722,7 @@
                                                                         <input type="text" name="lastname" placeholder="Email*">
                                                                     </div>
                                                                     <div class="forgoltlink">
-                                                                       <a class="link" data-toggle="tab" href="#consultantSignIn">Sign In</a> 
+                                                                    <a class="link" data-toggle="tab" href="#consultantSignIn">Sign In</a> 
                                                                     </div>
                                                                     <a href="#" class="readmore bgreadmore">Submit <i class="fa fa-long-arrow-right"></i></a>
                                                             </div>
@@ -671,77 +837,77 @@
                         </div>
                     </div>
             </div>      
-          </div>
         </div>
-      </div>
-      <div class="modal underconstruction passeordchangedbox" id="passeordchanged">
-       <div class="modal-dialog">
-         <div class="modal-content">
-     
-           <!-- Modal Header -->
-           <div class="modal-header">
-             <button type="button" class="close" data-dismiss="modal">&times;</button>
-           </div>
-     
-           <!-- Modal body -->
-           <div class="modal-body">
+        </div>
+    </div>
+    <div class="modal underconstruction passeordchangedbox" id="passeordchanged">
+    <div class="modal-dialog">
+        <div class="modal-content">
+    
+        <!-- Modal Header -->
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+    
+        <!-- Modal body -->
+        <div class="modal-body">
                 <div class="signsignup">
                     <div class="textarea">
                         <p>Password has been sent to you in your registered email ID</p>
                     </div>
                 </div>
-           </div>      
-         </div>
-       </div>
-     </div>
-     <div class="modal underconstruction passeordchangedbox" id="confirmationMail">
-      <div class="modal-dialog">
+        </div>      
+        </div>
+    </div>
+    </div>
+    <div class="modal underconstruction passeordchangedbox" id="confirmationMail">
+    <div class="modal-dialog">
         <div class="modal-content">
     
-          <!-- Modal Header -->
-          <div class="modal-header">
+        <!-- Modal Header -->
+        <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal">&times;</button>
-          </div>
-    
-          <!-- Modal body -->
-          <div class="modal-body">
-               <div class="signsignup">
-                   <div class="textarea text-center">
-                        <h2 class="headtitle">Hi User Name,</h2>
-                       <p>We have sent a confirmation mail to your entered email ID, Mids corp request you to validate your mail ID in order to proceed further.</p>
-                   </div>
-               </div>
-          </div>      
         </div>
-      </div>
+    
+        <!-- Modal body -->
+        <div class="modal-body">
+            <div class="signsignup">
+                <div class="textarea text-center">
+                        <h2 class="headtitle">Hi User Name,</h2>
+                    <p>We have sent a confirmation mail to your entered email ID, Mids corp request you to validate your mail ID in order to proceed further.</p>
+                </div>
+            </div>
+        </div>      
+        </div>
+    </div>
     </div>
     <div class="modal underconstruction passeordchangedbox" id="customerconfirmationMail">
-     <div class="modal-dialog">
-       <div class="modal-content">
-   
-         <!-- Modal Header -->
-         <div class="modal-header">
-           <button type="button" class="close" data-dismiss="modal">&times;</button>
-         </div>
-   
-         <!-- Modal body -->
-         <div class="modal-body">
-              <div class="signsignup ">
-                  <div class="textarea text-center">
-                       <h2 class="headtitle">Hi Customer,</h2>
-                      <p>We have sent a confirmation mail to your entered email ID, Mids corp request you to validate your mail ID in order to proceed further.</p>
-                  </div>
-              </div>
-         </div>      
-       </div>
-     </div>
-   </div>
+    <div class="modal-dialog">
+    <div class="modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body">
+            <div class="signsignup ">
+                <div class="textarea text-center">
+                    <h2 class="headtitle">Hi Customer,</h2>
+                    <p>We have sent a confirmation mail to your entered email ID, Mids corp request you to validate your mail ID in order to proceed further.</p>
+                </div>
+            </div>
+        </div>      
+    </div>
+    </div>
+    </div>
     <div class="modal underconstruction loginpopup fullwidth" id="counsultantresetPassword">
         <div class="modal-dialog">
-          <div class="modal-content">      
+        <div class="modal-content">      
             <!-- Modal Header -->
             <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
             </div>      
             <!-- Modal body -->
             <div class="modal-body">
@@ -760,7 +926,7 @@
                                                                     <input type="text" name="lastname" placeholder="Enter Password*">
                                                                 </div>
                                                                 <div class="forgoltlink">
-                                                                   <a href="javascript:;" class="link">Signin</a> 
+                                                                <a href="javascript:;" class="link">Signin</a> 
                                                                 </div>
                                                                 <div class="input-group">
                                                                     <input type="text" name="lastname" placeholder="Enter Password*">
@@ -780,62 +946,318 @@
                         </div>
                     </div>
             </div>      
-          </div>
         </div>
-      </div>
-      <div class="modal underconstruction loginpopup fullwidth" id="clientresetPassword">
-          <div class="modal-dialog">
+        </div>
+    </div>
+    <div class="modal underconstruction loginpopup fullwidth" id="clientresetPassword">
+        <div class="modal-dialog">
             <div class="modal-content">      
-              <!-- Modal Header -->
-              <div class="modal-header">
+            <!-- Modal Header -->
+            <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
-              </div>      
-              <!-- Modal body -->
-              <div class="modal-body">
-                      <div class="signsignup">       
-                          <div class="tab-content vertical">
-                              <div class="tab-pane fade show active">
-                                  <div class="innertab">   
-                                      <div class="tab-content">
-                                          <div class="tab-pane fade show active" >
-                                              <div class="innertabsec joinusform">
-                                                  <form class="contactusform" method="post">
-                                                      <h2 class="headtitle">Client Reset Password </h2>
-                                                      <div class="row">
-                                                          <div class="col-md-8 offset-md-2">
-                                                                  <div class="input-group">
-                                                                      <input type="text" name="lastname" placeholder="Enter Password*">
-                                                                  </div>
-                                                                  <div class="forgoltlink">
-                                                                     <a href="javascript:;" class="link">Signin</a> 
-                                                                  </div>
-                                                                  <div class="input-group">
-                                                                      <input type="text" name="lastname" placeholder="Enter Password*">
-                                                                  </div>
-                                                                  <div class="input-group">
-                                                                      <input type="text" name="lastname" placeholder="Confirm New Password*">
-                                                                  </div>
-                                                                  <a href="#" class="readmore bgreadmore">Submit <i class="fa fa-long-arrow-right"></i></a>
-                                                          </div>
-                                                      </div>
-                                                  </form>
-                                              </div>
-                                          </div>
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-              </div>      
+            </div>      
+            <!-- Modal body -->
+            <div class="modal-body">
+                    <div class="signsignup">       
+                        <div class="tab-content vertical">
+                            <div class="tab-pane fade show active">
+                                <div class="innertab">   
+                                    <div class="tab-content">
+                                        <div class="tab-pane fade show active" >
+                                            <div class="innertabsec joinusform">
+                                                <form class="contactusform" method="post">
+                                                    <h2 class="headtitle">Client Reset Password </h2>
+                                                    <div class="row">
+                                                        <div class="col-md-8 offset-md-2">
+                                                                <div class="input-group">
+                                                                    <input type="text" name="lastname" placeholder="Enter Password*">
+                                                                </div>
+                                                                <div class="forgoltlink">
+                                                                    <a href="javascript:;" class="link">Signin</a> 
+                                                                </div>
+                                                                <div class="input-group">
+                                                                    <input type="text" name="lastname" placeholder="Enter Password*">
+                                                                </div>
+                                                                <div class="input-group">
+                                                                    <input type="text" name="lastname" placeholder="Confirm New Password*">
+                                                                </div>
+                                                                <a href="#" class="readmore bgreadmore">Submit <i class="fa fa-long-arrow-right"></i></a>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>      
             </div>
-          </div>
         </div>
+    </div>
+    <!-- <div class="modal underconstruction loginpopup fullwidth" id="filterBy">
+        <div class="modal-dialog">
+        <div class="modal-content">     
+            <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>      
+            <div class="modal-body">
+                    <div class="signsignup">       
+                        <div class="tab-content vertical">
+                            <div class="tab-pane fade show active">
+                                <div class="innertab">   
+                                    <div class="tab-content">
+                                        <div class="tab-pane fade show active" >
+                                            <div class="innertabsec joinusform">
+                                                <form class="contactusform" method="post">
+                                                    <h2 class="headtitle">Filter by  </h2>
+                                                    <div class="row">
+                                                        <div class="col-md-3">
+                                                            <div class="input-group">
+                                                                <select>
+                                                                    <option>Select Industry</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-3">
+                                                            <div class="input-group">
+                                                                <select>
+                                                                    <option>Select Business Function</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="input-group">
+                                                                <p class="gendarlabel">Education</p>
+                                                                <input type="radio" class="yourareradio" name="youare" id="FullTime">
+                                                                <label for="FullTime">Full Time</label>
+                                                                <input type="radio" class="yourareradio" name="youare" id="PartTime">
+                                                                <label for="PartTime">Part Time</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-3">
+                                                            <div class="input-group">
+                                                                <select>
+                                                                    <option>Select Country</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-3">
+                                                            <div class="input-group">
+                                                                <input type="text" name="lastname" placeholder="Enter Location">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="input-group">
+                                                                <p class="gendarlabel">Education Type</p>
+                                                                <input type="radio" class="yourareradio" name="youare" id="MasterDegree">
+                                                                <label for="MasterDegree">Master Degree</label>
+                                                                <input type="radio" class="yourareradio" name="youare" id="BachelorDegree">
+                                                                <label for="BachelorDegree">Bachelor Degree</label>
+                                                                <input type="radio" class="yourareradio" name="youare" id="Other">
+                                                                <label for="Other">Other</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-12">
+                                                            <div class="input-group">
+                                                                <input type="text" name="lastname" placeholder="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-3">
+                                                            <div class="input-group checboxlist">
+                                                                <p class="gendarlabel">Years of Experience</p>
+                                                                <input type="checkbox" class="yourareradio" name="youare" id="2Years">
+                                                                <label for="2Years">0-2 Years</label>
+                                                                <input type="checkbox" class="yourareradio" name="youare" id="5Years">
+                                                                <label for="5Years">2-5 Years</label>
+                                                                <input type="checkbox" class="yourareradio" name="youare" id="8Years">
+                                                                <label for="8Years">5-8 Years</label>
+                                                                <input type="checkbox" class="yourareradio" name="youare" id="Years">
+                                                                <label for="Years">8+ Years</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-3 verticalmiddle">
+                                                            <p>Or</p>
+                                                            <div class="input-group">
+                                                                <input type="text" name="lastname" placeholder="Enter specific detail">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>      
+        </div>
+        </div>
+    </div> -->
+    <div class="modal underconstruction loginpopup fullwidth" id="filterBy">
+        <div class="modal-dialog">
+        <div class="modal-content">      
+            <!-- Modal Header -->
+            <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>      
+            <!-- Modal body -->
+            <div class="modal-body">
+                    <div class="signsignup">       
+                        <div class="tab-content vertical">
+                            <div class="tab-pane fade show active">
+                                <div class="innertab">   
+                                    <div class="tab-content">
+                                        <div class="tab-pane fade show active" >
+                                            <div class="innertabsec joinusform">
+                                                <form class="contactusform" method="post">
+                                                    <h5 class="smalltitle">Filter by  </h5>
+                                                    <div class="row">
+                                                        <div class="col-md-4">
+                                                            <div class="input-group">
+                                                                <select>
+                                                                    <option>Select Project Status</option>
+                                                                    <option>All</option>
+                                                                    <option>Active</option>
+                                                                    <option>Completed</option>
+                                                                    <option>Pending</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <div class="input-group">
+                                                                <select>
+                                                                    <option>Select Budget Type</option>
+                                                                    <option>All</option>
+                                                                    <option>Fixed</option>
+                                                                    <option>Hourly</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <div class="input-group">
+                                                                <select>
+                                                                    <option>Select Consultant Allocation</option>
+                                                                    <option>All</option>
+                                                                    <option>Yes</option>
+                                                                    <option>No</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <div class="input-group">
+                                                                <select>
+                                                                    <option>Select Amount Pending</option>
+                                                                    <option>All</option>
+                                                                    <option>Yes</option>
+                                                                    <option>No</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <div class="input-group">
+                                                                <input type="text" name="lastname" placeholder="Enter Client Email ID">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-12">
+                                                            <h5 class="smalltitle">Seach by  </h5>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <div class="input-group">
+                                                                <input type="text" name="lastname" placeholder="Enter Project Id">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <div class="input-group">
+                                                                <input type="text" name="lastname" placeholder="Enter Project Title">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4 text-right"></div>
+                                                        <div class="col-md-4">
+                                                            <div class="input-group">
+                                                                <input type="text" name="lastname" placeholder="Enter Consultant Email Id">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-8 text-right"></div>
+                                                        <div class="col-md-6 text-right">
+                                                            <a href="#" class="readmore redcrborder wauto mt-0" data-dismiss="modal">Cancel</a>
+                                                        </div>
+                                                        <div class="col-md-6 text-left">
+                                                            <a href="#" class="readmore bgreadmore wauto mt-0 ml-0" data-dismiss="modal" data-toggle="modal" data-target="#confirmationMessage">Submit</a>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>      
+        </div>
+        </div>
+    </div>
+    <div class="modal underconstruction addClientSucessbox" id="projectClosed">
+        <div class="modal-dialog">
+        <div class="modal-content">
+    
+            <!-- Modal Header -->
+            <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+    
+            <!-- Modal body -->
+            <div class="modal-body">
+                <div class="signsignup">
+                    <div class="textarea">
+                        <p>Hi,<br><br>
+                            Do you really want to Block Client Name. Please note you will note client will not be able to post any new project request and you can not allocate any consultant to this client project.</p>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <a href="#" class="readmore redcrborder wauto" data-dismiss="modal">Cancel</a>
+                            <a href="#" class="readmore bgreadmore smallwidth" data-dismiss="modal" data-toggle="modal" data-target="#confirmationMessage">Submit</a>
+                        </div>
+                    </div>
+                </div>
+            </div>      
+        </div>
+        </div>
+    </div>
+    <div class="modal underconstruction addClientSucessbox" id="confirmationMessage">
+        <div class="modal-dialog">
+        <div class="modal-content">
+    
+            <!-- Modal Header -->
+            <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+    
+            <!-- Modal body -->
+            <div class="modal-body">
+                <div class="signsignup">
+                    <div class="textarea">
+                        <p>Hi,<br><br>
+                            Do you really want to Archive Client Name Please note client will not be able to login to the Mids Portal anymore</p>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <a href="#" class="readmore redcrborder wauto" data-dismiss="modal">Cancel</a>
+                            <a href="#" class="readmore bgreadmore smallwidth" data-dismiss="modal" >Submit</a>
+                        </div>
+                    </div>
+                </div>
+            </div>      
+        </div>
+        </div>
+    </div>
        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-       <script type="text/javascript" src="../vendor/date-range-picker/js/moment.min.js"></script>
        <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
        <script src="../vendor/select-picker/js/bootstrap-select.min.js"></script>
-       <script type="text/javascript" src="../vendor/date-range-picker/js/daterangepicker.js"></script>
        <script src="../vendor/slick/slick.js"></script>
        <script src="../js/script.js"></script>
        <script>
@@ -846,35 +1268,5 @@
                 });
            });
        </script>
-       <script type="text/javascript">
-        $(function() {
-            $('.daterange').daterangepicker();
-        });
-        </script>
-         <script type="text/javascript">
-            var SITE = SITE || {};
-            SITE.fileInputs = function() {
-             var $this = $(this),
-                 $val = $this.val(),
-                 valArray = $val.split('\\'),
-                 newVal = valArray[valArray.length-1],
-                 $button = $this.siblings('.file-button'),
-                 $fakeFile = $this.siblings('.file-holder');
-             if(newVal !== '') {
-               $button.html('<i class="fa fa-upload"></i> Resume Uploaded');
-               if($fakeFile.length === 0) {
-                 $button.after('<span class="file-holder">' + newVal + '</span>');
-               } else {
-                 $fakeFile.text(newVal);
-               }
-             }
-            };
-
-            $(document).ready(function() {
-             $('.file-wrapper input[type=file]').bind('change focus click', SITE.fileInputs);
-            });
-
- 
-        </script>
     </body>
 </html>

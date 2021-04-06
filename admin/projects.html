@@ -328,27 +328,68 @@
                 
                 <button class="openbtn openSitebararea"><i class="fa fa-bars"></i></button> 
                 <div class="row">
+                    <div class="col-md-6">
+                        <ul class="horizontallist">
+                            <li class="active"><a class="boxcut" data-toggle="tab" href="javascript:;"><span>1097</span><br>All Projects </a></li>
+                            <li><a class="boxcut" data-toggle="tab" href="javascript:;"><span>1097</span><br>Active </a></li>
+                            <li><a class="boxcut" data-toggle="tab" href="#"><span>37</span><br>Pending </a></li>
+                            <li><a class="boxcut" data-toggle="tab" href="#"><span>50</span><br>Closed </a></li>
+                        </ul>   
+                    </div>
+                    <div class="col-md-6">
+                            <div class="row">
+                                <div class="col-lg-12 col-md-12">
+                                    <a href="add_project.html" class="readmore borderbtn wauto" >Add Project</a>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="searchbararwa">
+                                        <div class="input-group">
+                                            <input type="text" class="form-control">
+                                            <i class="fa fa-search searicon"></i>
+                                        </div>
+                                        <div class="input-group">
+                                            <select class="form-control">
+                                                <option>10/page</option>
+                                            </select>
+                                        </div>
+                                        <div class="input-group">
+                                            <a href="javascript:;"><i class="fa fa-refresh"></i></a>
+                                            <a href="javascript:;"><i class="fa fa-file"></i></a>
+                                            <a href="javascript:;" data-toggle="modal" data-target="#filterBy"><i class="fa fa-filter"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
                     <div class="col-md-12">
                         <div class="marginbottom-150">
                             <div class="table-responsive">
                                 <table class="tablebox newtable">
                                     <thead>
                                         <tr>
-                                            <th>Project Title</th>
-                                            <th>Owner</th>
-                                            <th>Start Date</th>
-                                            <th>End Date</th>
+                                            <th>ID</th>
+                                            <th>Name</th>
+                                            <th>Created By</th>
+                                            <th>Status</th>
+                                            <th>Created Date</th>
                                             <th>Budget</th>
-                                            <th>Country</th>
+                                            <th>Consultant Allocated</th>
+                                            <th>Consultant Email ID</th>
+                                            <th>Amount Paid</th>
+                                            <th>Amount Pending</th>
                                             <th>Action 
                                                 <div class="dropdownmainmenuheader"><a href="javascript:;" class=""><i class="fa fa-sliders"></i></a>                                            
                                                     <ul class="innnermenuitme">
-                                                        <li><input type="checkbox" class="check"> <label>Project Title</label></li>
-                                                        <li><input type="checkbox" class="check"> <label>Owner</label></li>
-                                                        <li><input type="checkbox" class="check"> <label>Start Date</label></li>
-                                                        <li><input type="checkbox" class="check"> <label>End Date</label></li>
+                                                        <li><input type="checkbox" class="check"> <label>ID</label></li>
+                                                        <li><input type="checkbox" class="check"> <label>Name</label></li>
+                                                        <li><input type="checkbox" class="check"> <label>Created By</label></li>
+                                                        <li><input type="checkbox" class="check"> <label>Status</label></li>
+                                                        <li><input type="checkbox" class="check"> <label>Created Date</label></li>
                                                         <li><input type="checkbox" class="check"> <label>Budget</label></li>
-                                                        <li><input type="checkbox" class="check"> <label>Country</label></li>
+                                                        <li><input type="checkbox" class="check"> <label>Consultant Allocated</label></li>
+                                                        <li><input type="checkbox" class="check"> <label>Consultant Email ID</label></li>
+                                                        <li><input type="checkbox" class="check"> <label>Amount Paid</label></li>
+                                                        <li><input type="checkbox" class="check"> <label>Amount Pending</label></li>
                                                         <li><input type="checkbox" class="check"> <label>Action</label></li>
                                                     </ul>
                                                 </div>
@@ -357,12 +398,41 @@
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td><input type="checkbox" class="check"> XYZ</td>
-                                            <td>BA</td>
-                                            <td>01/07/2006</td>
-                                            <td>01/07/2010</td>
-                                            <td>$400</td>
-                                            <td>India</td>
+                                            <td>C1P1</td>
+                                            <td>C# Developer</td>
+                                            <td>TCS</td>
+                                            <td>Pending</td>
+                                            <td>12/11/2020</td>
+                                            <td>Fixed</td>
+                                            <td>N.A.</td>
+                                            <td>N.A.</td>
+                                            <td>N.A.</td>
+                                            <td>N.A.</td>
+                                            <td><div class="dropdownmainmenu">
+                                                <a href="javascript:;" class=""><i class="fa fa-ellipsis-v"></i>
+                                                </a>
+                                                <ul class="innnermenuitme">
+                                                    <li><a href="javascript:;" data-toggle="modal" data-target="#productInfo">View Project Info</a></li>
+                                                    <li><a href="javascript:;" data-toggle="modal" data-target="#approveProject">Approved Project</a></li>
+                                                    <li><a href="javascript:;" data-toggle="modal" data-target="#rejectProject">Reject Project</a></li>
+                                                    <li><a href="javascript:;" data-toggle="modal" data-target="#closeProject">Mark Project as Closed</a></li>
+                                                    <li><a href="javascript:;">Allocate Consultant</a></li>
+                                                    <li><a href="javascript:;">View Invoice</a></li>
+                                                </ul>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>C1P1</td>
+                                            <td>C# Developer</td>
+                                            <td>TCS</td>
+                                            <td>Pending</td>
+                                            <td>12/11/2020</td>
+                                            <td>Fixed</td>
+                                            <td>N.A.</td>
+                                            <td>N.A.</td>
+                                            <td>N.A.</td>
+                                            <td>N.A.</td>
                                             <td><div class="dropdownmainmenu">
                                                 <a href="javascript:;" class=""><i class="fa fa-ellipsis-v"></i>
                                                 </a>
@@ -370,12 +440,16 @@
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td><input type="checkbox" class="check"> XYZ</td>
-                                            <td>BA</td>
-                                            <td>01/07/2006</td>
-                                            <td>01/07/2010</td>
-                                            <td>$400</td>
-                                            <td>India</td>
+                                            <td>C1P1</td>
+                                            <td>C# Developer</td>
+                                            <td>TCS</td>
+                                            <td>Pending</td>
+                                            <td>12/11/2020</td>
+                                            <td>Fixed</td>
+                                            <td>N.A.</td>
+                                            <td>N.A.</td>
+                                            <td>N.A.</td>
+                                            <td>N.A.</td>
                                             <td><div class="dropdownmainmenu">
                                                 <a href="javascript:;" class=""><i class="fa fa-ellipsis-v"></i>
                                                 </a>
@@ -383,12 +457,16 @@
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td><input type="checkbox" class="check"> XYZ</td>
-                                            <td>BA</td>
-                                            <td>01/07/2006</td>
-                                            <td>01/07/2010</td>
-                                            <td>$400</td>
-                                            <td>India</td>
+                                            <td>C1P1</td>
+                                            <td>C# Developer</td>
+                                            <td>TCS</td>
+                                            <td>Pending</td>
+                                            <td>12/11/2020</td>
+                                            <td>Fixed</td>
+                                            <td>N.A.</td>
+                                            <td>N.A.</td>
+                                            <td>N.A.</td>
+                                            <td>N.A.</td>
                                             <td><div class="dropdownmainmenu">
                                                 <a href="javascript:;" class=""><i class="fa fa-ellipsis-v"></i>
                                                 </a>
@@ -396,12 +474,16 @@
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td><input type="checkbox" class="check"> XYZ</td>
-                                            <td>BA</td>
-                                            <td>01/07/2006</td>
-                                            <td>01/07/2010</td>
-                                            <td>$400</td>
-                                            <td>India</td>
+                                            <td>C1P1</td>
+                                            <td>C# Developer</td>
+                                            <td>TCS</td>
+                                            <td>Pending</td>
+                                            <td>12/11/2020</td>
+                                            <td>Fixed</td>
+                                            <td>N.A.</td>
+                                            <td>N.A.</td>
+                                            <td>N.A.</td>
+                                            <td>N.A.</td>
                                             <td><div class="dropdownmainmenu">
                                                 <a href="javascript:;" class=""><i class="fa fa-ellipsis-v"></i>
                                                 </a>
@@ -409,12 +491,16 @@
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td><input type="checkbox" class="check"> XYZ</td>
-                                            <td>BA</td>
-                                            <td>01/07/2006</td>
-                                            <td>01/07/2010</td>
-                                            <td>$400</td>
-                                            <td>India</td>
+                                            <td>C1P1</td>
+                                            <td>C# Developer</td>
+                                            <td>TCS</td>
+                                            <td>Pending</td>
+                                            <td>12/11/2020</td>
+                                            <td>Fixed</td>
+                                            <td>N.A.</td>
+                                            <td>N.A.</td>
+                                            <td>N.A.</td>
+                                            <td>N.A.</td>
                                             <td><div class="dropdownmainmenu">
                                                 <a href="javascript:;" class=""><i class="fa fa-ellipsis-v"></i>
                                                 </a>
@@ -422,12 +508,16 @@
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td><input type="checkbox" class="check"> XYZ</td>
-                                            <td>BA</td>
-                                            <td>01/07/2006</td>
-                                            <td>01/07/2010</td>
-                                            <td>$400</td>
-                                            <td>India</td>
+                                            <td>C1P1</td>
+                                            <td>C# Developer</td>
+                                            <td>TCS</td>
+                                            <td>Pending</td>
+                                            <td>12/11/2020</td>
+                                            <td>Fixed</td>
+                                            <td>N.A.</td>
+                                            <td>N.A.</td>
+                                            <td>N.A.</td>
+                                            <td>N.A.</td>
                                             <td><div class="dropdownmainmenu">
                                                 <a href="javascript:;" class=""><i class="fa fa-ellipsis-v"></i>
                                                 </a>
@@ -435,25 +525,16 @@
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td><input type="checkbox" class="check"> XYZ</td>
-                                            <td>BA</td>
-                                            <td>01/07/2006</td>
-                                            <td>01/07/2010</td>
-                                            <td>$400</td>
-                                            <td>India</td>
-                                            <td><div class="dropdownmainmenu">
-                                                <a href="javascript:;" class=""><i class="fa fa-ellipsis-v"></i>
-                                                </a>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td><input type="checkbox" class="check"> XYZ</td>
-                                            <td>BA</td>
-                                            <td>01/07/2006</td>
-                                            <td>01/07/2010</td>
-                                            <td>$400</td>
-                                            <td>India</td>
+                                            <td>C1P1</td>
+                                            <td>C# Developer</td>
+                                            <td>TCS</td>
+                                            <td>Pending</td>
+                                            <td>12/11/2020</td>
+                                            <td>Fixed</td>
+                                            <td>N.A.</td>
+                                            <td>N.A.</td>
+                                            <td>N.A.</td>
+                                            <td>N.A.</td>
                                             <td><div class="dropdownmainmenu">
                                                 <a href="javascript:;" class=""><i class="fa fa-ellipsis-v"></i>
                                                 </a>
@@ -863,155 +944,352 @@
           </div>
         </div>
       </div>
-      <div class="modal underconstruction loginpopup fullwidth" id="clientresetPassword">
-          <div class="modal-dialog">
-            <div class="modal-content">      
-              <!-- Modal Header -->
-              <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
-              </div>      
-              <!-- Modal body -->
-              <div class="modal-body">
-                      <div class="signsignup">       
-                          <div class="tab-content vertical">
-                              <div class="tab-pane fade show active">
-                                  <div class="innertab">   
-                                      <div class="tab-content">
-                                          <div class="tab-pane fade show active" >
-                                              <div class="innertabsec joinusform">
-                                                  <form class="contactusform" method="post">
-                                                      <h2 class="headtitle">Client Reset Password </h2>
-                                                      <div class="row">
-                                                          <div class="col-md-8 offset-md-2">
-                                                                  <div class="input-group">
-                                                                      <input type="text" name="lastname" placeholder="Enter Password*">
-                                                                  </div>
-                                                                  <div class="forgoltlink">
-                                                                     <a href="javascript:;" class="link">Signin</a> 
-                                                                  </div>
-                                                                  <div class="input-group">
-                                                                      <input type="text" name="lastname" placeholder="Enter Password*">
-                                                                  </div>
-                                                                  <div class="input-group">
-                                                                      <input type="text" name="lastname" placeholder="Confirm New Password*">
-                                                                  </div>
-                                                                  <a href="#" class="readmore bgreadmore">Submit <i class="fa fa-long-arrow-right"></i></a>
-                                                          </div>
-                                                      </div>
-                                                  </form>
-                                              </div>
-                                          </div>
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-              </div>      
-            </div>
-          </div>
-        </div>
-        <div class="modal underconstruction loginpopup fullwidth" id="filterBy">
-            <div class="modal-dialog">
-              <div class="modal-content">      
-                <!-- Modal Header -->
-                <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal">&times;</button>
-                </div>      
-                <!-- Modal body -->
-                <div class="modal-body">
-                        <div class="signsignup">       
-                            <div class="tab-content vertical">
-                                <div class="tab-pane fade show active">
-                                    <div class="innertab">   
-                                        <div class="tab-content">
-                                            <div class="tab-pane fade show active" >
-                                                <div class="innertabsec joinusform">
-                                                    <form class="contactusform" method="post">
-                                                        <h2 class="headtitle">Filter by  </h2>
-                                                        <div class="row">
-                                                            <div class="col-md-3">
+    <div class="modal underconstruction loginpopup fullwidth" id="clientresetPassword">
+        <div class="modal-dialog">
+        <div class="modal-content">      
+            <!-- Modal Header -->
+            <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>      
+            <!-- Modal body -->
+            <div class="modal-body">
+                    <div class="signsignup">       
+                        <div class="tab-content vertical">
+                            <div class="tab-pane fade show active">
+                                <div class="innertab">   
+                                    <div class="tab-content">
+                                        <div class="tab-pane fade show active" >
+                                            <div class="innertabsec joinusform">
+                                                <form class="contactusform" method="post">
+                                                    <h2 class="headtitle">Client Reset Password </h2>
+                                                    <div class="row">
+                                                        <div class="col-md-8 offset-md-2">
                                                                 <div class="input-group">
-                                                                    <select>
-                                                                        <option>Select Industry</option>
-                                                                    </select>
+                                                                    <input type="text" name="lastname" placeholder="Enter Password*">
                                                                 </div>
-                                                            </div>
-                                                            <div class="col-md-3">
+                                                                <div class="forgoltlink">
+                                                                    <a href="javascript:;" class="link">Signin</a> 
+                                                                </div>
                                                                 <div class="input-group">
-                                                                    <select>
-                                                                        <option>Select Business Function</option>
-                                                                    </select>
+                                                                    <input type="text" name="lastname" placeholder="Enter Password*">
                                                                 </div>
-                                                            </div>
-                                                            <div class="col-md-6">
                                                                 <div class="input-group">
-                                                                    <p class="gendarlabel">Education</p>
-                                                                    <input type="radio" class="yourareradio" name="youare" id="FullTime">
-                                                                    <label for="FullTime">Full Time</label>
-                                                                    <input type="radio" class="yourareradio" name="youare" id="PartTime">
-                                                                    <label for="PartTime">Part Time</label>
+                                                                    <input type="text" name="lastname" placeholder="Confirm New Password*">
                                                                 </div>
-                                                            </div>
-                                                            <div class="col-md-3">
-                                                                <div class="input-group">
-                                                                    <select>
-                                                                        <option>Select Country</option>
-                                                                    </select>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-md-3">
-                                                                <div class="input-group">
-                                                                    <input type="text" name="lastname" placeholder="Enter Location">
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-md-6">
-                                                                <div class="input-group">
-                                                                    <p class="gendarlabel">Education Type</p>
-                                                                    <input type="radio" class="yourareradio" name="youare" id="MasterDegree">
-                                                                    <label for="MasterDegree">Master Degree</label>
-                                                                    <input type="radio" class="yourareradio" name="youare" id="BachelorDegree">
-                                                                    <label for="BachelorDegree">Bachelor Degree</label>
-                                                                    <input type="radio" class="yourareradio" name="youare" id="Other">
-                                                                    <label for="Other">Other</label>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-md-12">
-                                                                <div class="input-group">
-                                                                    <input type="text" name="lastname" placeholder="">
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-md-3">
-                                                                <div class="input-group checboxlist">
-                                                                    <p class="gendarlabel">Years of Experience</p>
-                                                                    <input type="checkbox" class="yourareradio" name="youare" id="2Years">
-                                                                    <label for="2Years">0-2 Years</label>
-                                                                    <input type="checkbox" class="yourareradio" name="youare" id="5Years">
-                                                                    <label for="5Years">2-5 Years</label>
-                                                                    <input type="checkbox" class="yourareradio" name="youare" id="8Years">
-                                                                    <label for="8Years">5-8 Years</label>
-                                                                    <input type="checkbox" class="yourareradio" name="youare" id="Years">
-                                                                    <label for="Years">8+ Years</label>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-md-3 verticalmiddle">
-                                                                <p>Or</p>
-                                                                <div class="input-group">
-                                                                    <input type="text" name="lastname" placeholder="Enter specific detail">
-                                                                </div>
-                                                            </div>
+                                                                <a href="#" class="readmore bgreadmore">Submit <i class="fa fa-long-arrow-right"></i></a>
                                                         </div>
-                                                    </form>
-                                                </div>
+                                                    </div>
+                                                </form>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                </div>      
-              </div>
+                    </div>
+            </div>      
+        </div>
+        </div>
+    </div>
+    <div class="modal underconstruction loginpopup fullwidth" id="filterBy">
+        <div class="modal-dialog">
+            <div class="modal-content">      
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>      
+            <!-- Modal body -->
+            <div class="modal-body">
+                    <div class="signsignup">       
+                        <div class="tab-content vertical">
+                            <div class="tab-pane fade show active">
+                                <div class="innertab">   
+                                    <div class="tab-content">
+                                        <div class="tab-pane fade show active" >
+                                            <div class="innertabsec joinusform">
+                                                <form class="contactusform" method="post">
+                                                    <h5 class="smalltitle">Filter by  </h5>
+                                                    <div class="row">
+                                                        <div class="col-md-4">
+                                                            <div class="input-group">
+                                                                <select>
+                                                                    <option>Select Project Status</option>
+                                                                    <option>All</option>
+                                                                    <option>Active</option>
+                                                                    <option>Closed</option>
+                                                                    <option>Pending</option>
+                                                                    <option>Rejected</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <div class="input-group">
+                                                                <select>
+                                                                    <option>Select Budget Type</option>
+                                                                    <option>All</option>
+                                                                    <option>Fixed</option>
+                                                                    <option>Hourly</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <div class="input-group">
+                                                                <select>
+                                                                    <option>Select Consultant Allocation</option>
+                                                                    <option>All</option>
+                                                                    <option>Yes</option>
+                                                                    <option>No</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <div class="input-group">
+                                                                <select>
+                                                                    <option>Select Amount Pending</option>
+                                                                    <option>All</option>
+                                                                    <option>Yes</option>
+                                                                    <option>No</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <div class="input-group">
+                                                                <input type="text" name="lastname" placeholder="Enter Client Email Id">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4"></div>
+                                                        <div class="col-md-12">
+                                                            <h5 class="smalltitle">Search by  </h5>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <div class="input-group">
+                                                                <input type="text" name="lastname" placeholder="Enter Project Id">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <div class="input-group">
+                                                                <input type="text" name="lastname" placeholder="Enter Project Title">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4"></div>
+                                                        <div class="col-md-4">
+                                                            <div class="input-group">
+                                                                <input type="text" name="lastname" placeholder="Enter Consultant Email Id">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-8"></div>
+                                                        <div class="col-md-6 text-right">
+                                                            <a href="#" class="readmore redcrborder wauto mt-0" data-dismiss="modal">Cancel</a>
+                                                        </div>
+                                                        <div class="col-md-6 text-left">
+                                                            <a href="#" class="readmore bgreadmore wauto mt-0 ml-0" data-dismiss="modal" data-toggle="modal" data-target="#confirmationMessage">Submit</a>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>      
             </div>
-          </div>
+        </div>
+        </div>
+    <div class="modal underconstruction addClientSucessbox  prodinfo" id="productInfo">
+        <div class="modal-dialog">
+        <div class="modal-content">
+    
+            <!-- Modal Header -->
+            <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+    
+            <!-- Modal body -->
+            <div class="modal-body">
+                <div class="signsignup text-left ">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <span class="proid">C1P1</span><span class="proid">TCS</span>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="documentbox"><i class="fa fa-file-pdf-o"></i> Uploaded Document</div>
+                        </div>
+                        <div class="col-md-12">
+                            <h5 class="smalltitle">Project Description </h5>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="textarea">
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <h5 class="smalltitle">Rejection Comment</h5>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="textarea">
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>      
+        </div>
+        </div>
+    </div>
+    <div class="modal underconstruction addClientSucessbox  prodinfo" id="approveProject">
+        <div class="modal-dialog">
+        <div class="modal-content">
+    
+            <!-- Modal Header -->
+            <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+    
+            <!-- Modal body -->
+            <div class="modal-body">
+                <div class="signsignup text-left ">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h5 class="smalltitle mt-0">Project ID: <span class="proid mb-0">C1P1</span></h5>
+                        </div>
+                        <div class="col-md-6">
+                            <h5 class="smalltitle mt-0">Created By: <span class="proid mb-0">Jashwant</span></h5>
+                        </div>
+                        <div class="col-md-6">
+                            <h5 class="smalltitle mt-0">Name: <span class="proid mb-0">TCS</span></h5>
+                        </div>
+                        <div class="col-md-12">
+                            <h5 class="smalltitle">Project Description </h5>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="textarea">
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-12 text-center">
+                            <div class="textarea">
+                                <p class="bigtext">Hi,<br>
+                                    Do you want to approve this Project?
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-12 text-right">
+                            <a href="#" class="readmore redcrborder wauto" data-dismiss="modal">Cancel</a>
+                            <a href="#" class="readmore bgreadmore smallwidth text-center" data-dismiss="modal" data-toggle="modal" data-target="#confirmationMessage">Submit</a>
+                        </div>
+                    </div>
+                </div>
+            </div>      
+        </div>
+        </div>
+    </div>
+    <div class="modal underconstruction addClientSucessbox  prodinfo" id="rejectProject">
+        <div class="modal-dialog">
+        <div class="modal-content">
+    
+            <!-- Modal Header -->
+            <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+    
+            <!-- Modal body -->
+            <div class="modal-body">
+                <div class="signsignup text-left ">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h5 class="smalltitle mt-0">Project ID: <span class="proid mb-0">C1P1</span></h5>
+                        </div>
+                        <div class="col-md-6">
+                            <h5 class="smalltitle mt-0">Created By: <span class="proid mb-0">Jashwant</span></h5>
+                        </div>
+                        <div class="col-md-6">
+                            <h5 class="smalltitle mt-0">Name: <span class="proid mb-0">TCS</span></h5>
+                        </div>
+                        <div class="col-md-12">
+                            <h5 class="smalltitle">Project Description </h5>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="textarea">
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-12 text-center">
+                            <div class="textarea">
+                                <p class="bigtext">Hi,<br>
+                                    Do you want to Reject this Project?
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="input-group">
+                                <textarea name="lastname" class="form-control" placeholder="Enter the Rejection Comment"></textarea>
+                            </div>
+                        </div>
+                        <div class="col-md-12 text-right">
+                            <a href="#" class="readmore redcrborder wauto" data-dismiss="modal">Cancel</a>
+                            <a href="#" class="readmore bgreadmore smallwidth text-center" data-dismiss="modal" data-toggle="modal" data-target="#confirmationMessage">Submit</a>
+                        </div>
+                    </div>
+                </div>
+            </div>      
+        </div>
+        </div>
+    </div>
+    <div class="modal underconstruction addClientSucessbox  prodinfo" id="closeProject">
+        <div class="modal-dialog">
+        <div class="modal-content">
+    
+            <!-- Modal Header -->
+            <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+    
+            <!-- Modal body -->
+            <div class="modal-body">
+                <div class="signsignup text-left ">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h5 class="smalltitle mt-0">Project ID: <span class="proid mb-0">C1P1</span></h5>
+                        </div>
+                        <div class="col-md-6">
+                            <h5 class="smalltitle mt-0">Created By: <span class="proid mb-0">Jashwant</span></h5>
+                        </div>
+                        <div class="col-md-6">
+                            <h5 class="smalltitle mt-0">Name: <span class="proid mb-0">TCS</span></h5>
+                        </div>
+                        <div class="col-md-12">
+                            <h5 class="smalltitle">Project Description </h5>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="textarea">
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-12 text-center">
+                            <div class="textarea">
+                                <p class="bigtext">Hi,<br>
+                                    Do you want to close this Project?
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-12 text-right">
+                            <a href="#" class="readmore redcrborder wauto" data-dismiss="modal">Cancel</a>
+                            <a href="#" class="readmore bgreadmore smallwidth text-center" data-dismiss="modal" data-toggle="modal" data-target="#confirmationMessage">Submit</a>
+                        </div>
+                    </div>
+                </div>
+            </div>      
+        </div>
+        </div>
+    </div>
        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
        <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>

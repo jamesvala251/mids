@@ -5,7 +5,6 @@
         <title>MIDS</title>
         <link rel="stylesheet" href="../vendor/bootstrap/css/bootstrap.min.css">
         <link rel="stylesheet" href="../icons/css/line-awesome.min.css">
-        <link rel="stylesheet" type="text/css" href="../vendor/date-range-picker/css/daterangepicker.css" />
         <link rel="stylesheet" href="../vendor/select-picker/css/bootstrap-select.min.css">
         <link rel="stylesheet" href="../vendor/slick/slick.css">
         <link rel="stylesheet" href="../vendor/slick/slick-theme.css">
@@ -253,10 +252,10 @@
                             <div class="collapse navbar-collapse" id="navbarResponsive">
                                 <ul class="navbar-nav ml-auto">
                                     <li class="nav-item active">
-                                        <a class="nav-link" href="about_us.html">About Us</a>
+                                        <a class="nav-link" href="../about_us.html">About Us</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="industries.html">Industries</a>
+                                        <a class="nav-link" href="../industries.html">Industries</a>
                                         <div class="submenuiteam">
                                             <div class="row">
                                                 <div class="col-md-3 rightborder">
@@ -291,7 +290,7 @@
                                         </div>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="services.html">Services</a>
+                                        <a class="nav-link" href="../services.html">Services</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" href="#">Technologies</a>
@@ -311,12 +310,12 @@
                 
             </div>
         </nav>
-       <section class="consultantsec">
+       <section class="consultantsec maincon">
             <div id="mySidebar" class="sidebar">
                 <ul>
                     <li><a href="consultant.html"> <i class="fa fa-fire"></i> Consultant</a></li>
                     <li><a href="clients.html"> <i class="fa fa-file-text-o"></i> Client</a></li>
-                    <li class="active"><a href="javascript:;"> <i class="fa fa-building"></i> Projects</a></li>
+                    <li class="active"><a href="projects.html"> <i class="fa fa-building"></i> Projects</a></li>
                     <li><a href="invoice.html"> <i class="fa fa-credit-card-alt" style="    margin-left: -5px;"></i> Billing & Invoices</a></li>
                     <li><a href="my_profile.html"> <i class="fa fa-user"></i> My Profile</a></li>
                     <li><a href="inbox.html"> <i class="fa fa-envelope"></i> Inbox</a></li>
@@ -324,68 +323,238 @@
                     <li><a href="javascript:;"> <i class="fa fa-cog"></i> Setting</a></li>
                 </ul>
             </div>
-            <div id="main">   
+            <div id="main">
+                <a href="#" class="readmore leftside"><i class="fa fa-long-arrow-left"> Projects</i></a>
                 
-                
-                <button class="openbtn openSitebararea"><i class="fa fa-bars"></i></button>  
-                <a href="#" class="readmore leftside"><i class="fa fa-long-arrow-left">Add Project</i></a>   
-                <span class="nav-tabs-wrapper-border" role="presentation"></span>
-                
-                        <div class="innertabsec joinusform">
-                            <form class="contactusform consultantside mt-4" method="post">
-                                <div class="row">
-                                    <div class="col-lg-8 col-md-12">
+                <button class="openbtn openSitebararea"><i class="fa fa-bars"></i></button> 
+                <div class="row">
+                    <div class="col-md-6">
+                        <ul class="horizontallist">
+                            <li class="active"><a class="boxcut" data-toggle="tab" href="javascript:;"><span>1097</span><br>All Projects </a></li>
+                            <li><a class="boxcut" data-toggle="tab" href="javascript:;"><span>1097</span><br>Active </a></li>
+                            <li><a class="boxcut" data-toggle="tab" href="#"><span>37</span><br>Pending </a></li>
+                            <li><a class="boxcut" data-toggle="tab" href="#"><span>50</span><br>Closed </a></li>
+                        </ul>   
+                    </div>
+                    <div class="col-md-6">
+                            <div class="row">
+                                <div class="col-lg-12 col-md-12">
+                                    <a href="add_project.html" class="readmore borderbtn wauto" >Add Project</a>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="searchbararwa">
                                         <div class="input-group">
-                                            <!-- <label class="form-label">Project Title</label> -->
-                                            <input type="text" name="firstname" placeholder="Project Name*">
+                                            <input type="text" class="form-control">
+                                            <i class="fa fa-search searicon"></i>
                                         </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-12"></div>
-                                    <div class="col-lg-8 col-md-12">
                                         <div class="input-group">
-                                            <p class="gendarlabel">Project Budget</p>
-                                            <input type="radio" class="yourareradio" name="youare" id="FullTime">
-                                            <label for="FullTime">Fixed Price</label>
-                                            <input type="radio" class="yourareradio" name="youare" id="PartTime">
-                                            <label for="PartTime">Hourly</label>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-12"></div>
-                                    <div class="col-lg-4 col-md-12">
-                                        <div class="input-group">
-                                            <!-- <label class="form-label">Budget</label> -->
-                                            <input type="text" name="lastname" placeholder="Enter Amount">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-8 col-md-12"></div>
-                                    <div class="col-md-8">
-                                        <div class="input-group">
-                                            <select class="selectbox">
-                                                <option>Seach and Select Client</option>
+                                            <select class="form-control">
+                                                <option>10/page</option>
                                             </select>
                                         </div>
-                                    </div>
-                                    <div class="col-md-8">
                                         <div class="input-group">
-                                            <!-- <label class="form-label">Owner</label> -->
-                                            <input type="text" name="lastname" placeholder="Project overview">
+                                            <a href="javascript:;"><i class="fa fa-refresh"></i></a>
+                                            <a href="javascript:;"><i class="fa fa-file"></i></a>
+                                            <a href="javascript:;" data-toggle="modal" data-target="#filterBy"><i class="fa fa-filter"></i></a>
                                         </div>
-                                    </div>
-                                    <div class="col-lg-8 col-md-12">
-                                        <div class="input-group">
-                                            <div class="file-wrapper">
-                                                <input type="file" id="resume">
-                                                <span class="file-button"> <span class="file-holder"></span> <i class="fa fa-upload"></i> Upload File*</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <a href="#" class="readmore redcrborder wauto">Cancel</a>
-                                        <a href="#" class="readmore bgreadmore autobutton">Submit</a>
                                     </div>
                                 </div>
-                            </form>
+                            </div>
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="clientinfo w100">
+                            <li class="mb-2"><strong>Allocate Consultant</strong></li>
+                            <li><strong>Client Name:</strong> Jashwant</li>
+                            <li><strong>Project Id:</strong> TCS123</li>
+                            <li><strong>Name:</strong> Jashwant</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="searchbararwa fullwidth">
+                            <div class="input-group">
+                                <input type="text" class="form-control">
+                                <i class="fa fa-search searicon"></i>
+                            </div>
                         </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="marginbottom-150">
+                            <div class="table-responsive">
+                                <table class="tablebox newtable">
+                                    <thead>
+                                        <tr>
+                                            <th>Select</th>
+                                            <th>Name</th>
+                                            <th>Email Id</th>
+                                            <th>Degree</th>
+                                            <th>Experience</th>
+                                            <th>Designation</th>
+                                            <th>Country</th>
+                                            <th>Status</th>
+                                            <th>No.of Project</th>
+                                            <th>Client Name</th>
+                                            <th>Action 
+                                                <div class="dropdownmainmenuheader"><a href="javascript:;" class=""><i class="fa fa-sliders"></i></a>                                            
+                                                    <ul class="innnermenuitme">
+                                                        <li><input type="checkbox" class="check"> <label>Select</label></li>
+                                                        <li><input type="checkbox" class="check"> <label>Name</label></li>
+                                                        <li><input type="checkbox" class="check"> <label>Email Id</label></li>
+                                                        <li><input type="checkbox" class="check"> <label>Degree</label></li>
+                                                        <li><input type="checkbox" class="check"> <label>Experience</label></li>
+                                                        <li><input type="checkbox" class="check"> <label>Designation</label></li>
+                                                        <li><input type="checkbox" class="check"> <label>Country</label></li>
+                                                        <li><input type="checkbox" class="check"> <label>Status</label></li>
+                                                        <li><input type="checkbox" class="check"> <label>No.of Project</label></li>
+                                                        <li><input type="checkbox" class="check"> <label>Client Name</label></li>
+                                                        <li><input type="checkbox" class="check"> <label>Action</label></li>
+                                                    </ul>
+                                                </div>
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><input type="checkbox"></td>
+                                            <td>Kapil S</td>
+                                            <td>jashwant.s@midscorp.com</td>
+                                            <td>MAster - MBA</td>
+                                            <td>5</td>
+                                            <td>Product Manager</td>
+                                            <td>India</td>
+                                            <td>Active</td>
+                                            <td>1</td>
+                                            <td>Mids Crop</td>
+                                            <td><div class="dropdownmainmenu">
+                                                <a href="javascript:;" class="" data-toggle="modal" data-target="#confirmationProject"><i class="fa fa-ellipsis-v"></i>
+                                                </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="checkbox"></td>
+                                            <td>Kapil S</td>
+                                            <td>jashwant.s@midscorp.com</td>
+                                            <td>MAster - MBA</td>
+                                            <td>5</td>
+                                            <td>Product Manager</td>
+                                            <td>India</td>
+                                            <td>Active</td>
+                                            <td>1</td>
+                                            <td>Mids Crop</td>
+                                            <td><div class="dropdownmainmenu">
+                                                <a href="javascript:;" class=""><i class="fa fa-ellipsis-v"></i>
+                                                </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="checkbox"></td>
+                                            <td>Kapil S</td>
+                                            <td>jashwant.s@midscorp.com</td>
+                                            <td>MAster - MBA</td>
+                                            <td>5</td>
+                                            <td>Product Manager</td>
+                                            <td>India</td>
+                                            <td>Active</td>
+                                            <td>1</td>
+                                            <td>Mids Crop</td>
+                                            <td><div class="dropdownmainmenu">
+                                                <a href="javascript:;" class=""><i class="fa fa-ellipsis-v"></i>
+                                                </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="checkbox"></td>
+                                            <td>Kapil S</td>
+                                            <td>jashwant.s@midscorp.com</td>
+                                            <td>MAster - MBA</td>
+                                            <td>5</td>
+                                            <td>Product Manager</td>
+                                            <td>India</td>
+                                            <td>Active</td>
+                                            <td>1</td>
+                                            <td>Mids Crop</td>
+                                            <td><div class="dropdownmainmenu">
+                                                <a href="javascript:;" class=""><i class="fa fa-ellipsis-v"></i>
+                                                </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="checkbox"></td>
+                                            <td>Kapil S</td>
+                                            <td>jashwant.s@midscorp.com</td>
+                                            <td>MAster - MBA</td>
+                                            <td>5</td>
+                                            <td>Product Manager</td>
+                                            <td>India</td>
+                                            <td>Active</td>
+                                            <td>1</td>
+                                            <td>Mids Crop</td>
+                                            <td><div class="dropdownmainmenu">
+                                                <a href="javascript:;" class=""><i class="fa fa-ellipsis-v"></i>
+                                                </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="checkbox"></td>
+                                            <td>Kapil S</td>
+                                            <td>jashwant.s@midscorp.com</td>
+                                            <td>MAster - MBA</td>
+                                            <td>5</td>
+                                            <td>Product Manager</td>
+                                            <td>India</td>
+                                            <td>Active</td>
+                                            <td>1</td>
+                                            <td>Mids Crop</td>
+                                            <td><div class="dropdownmainmenu">
+                                                <a href="javascript:;" class=""><i class="fa fa-ellipsis-v"></i>
+                                                </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="checkbox"></td>
+                                            <td>Kapil S</td>
+                                            <td>jashwant.s@midscorp.com</td>
+                                            <td>MAster - MBA</td>
+                                            <td>5</td>
+                                            <td>Product Manager</td>
+                                            <td>India</td>
+                                            <td>Active</td>
+                                            <td>1</td>
+                                            <td>Mids Crop</td>
+                                            <td><div class="dropdownmainmenu">
+                                                <a href="javascript:;" class=""><i class="fa fa-ellipsis-v"></i>
+                                                </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="checkbox"></td>
+                                            <td>Kapil S</td>
+                                            <td>jashwant.s@midscorp.com</td>
+                                            <td>MAster - MBA</td>
+                                            <td>5</td>
+                                            <td>Product Manager</td>
+                                            <td>India</td>
+                                            <td>Active</td>
+                                            <td>1</td>
+                                            <td>Mids Crop</td>
+                                            <td><div class="dropdownmainmenu">
+                                                <a href="javascript:;" class=""><i class="fa fa-ellipsis-v"></i>
+                                                </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
        </section>
        <footer class="footersec">
@@ -783,59 +952,205 @@
           </div>
         </div>
       </div>
-      <div class="modal underconstruction loginpopup fullwidth" id="clientresetPassword">
-          <div class="modal-dialog">
-            <div class="modal-content">      
-              <!-- Modal Header -->
-              <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
-              </div>      
-              <!-- Modal body -->
-              <div class="modal-body">
-                      <div class="signsignup">       
-                          <div class="tab-content vertical">
-                              <div class="tab-pane fade show active">
-                                  <div class="innertab">   
-                                      <div class="tab-content">
-                                          <div class="tab-pane fade show active" >
-                                              <div class="innertabsec joinusform">
-                                                  <form class="contactusform" method="post">
-                                                      <h2 class="headtitle">Client Reset Password </h2>
-                                                      <div class="row">
-                                                          <div class="col-md-8 offset-md-2">
-                                                                  <div class="input-group">
-                                                                      <input type="text" name="lastname" placeholder="Enter Password*">
-                                                                  </div>
-                                                                  <div class="forgoltlink">
-                                                                     <a href="javascript:;" class="link">Signin</a> 
-                                                                  </div>
-                                                                  <div class="input-group">
-                                                                      <input type="text" name="lastname" placeholder="Enter Password*">
-                                                                  </div>
-                                                                  <div class="input-group">
-                                                                      <input type="text" name="lastname" placeholder="Confirm New Password*">
-                                                                  </div>
-                                                                  <a href="#" class="readmore bgreadmore">Submit <i class="fa fa-long-arrow-right"></i></a>
-                                                          </div>
-                                                      </div>
-                                                  </form>
-                                              </div>
-                                          </div>
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-              </div>      
-            </div>
-          </div>
+    <div class="modal underconstruction loginpopup fullwidth" id="clientresetPassword">
+        <div class="modal-dialog">
+        <div class="modal-content">      
+            <!-- Modal Header -->
+            <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>      
+            <!-- Modal body -->
+            <div class="modal-body">
+                    <div class="signsignup">       
+                        <div class="tab-content vertical">
+                            <div class="tab-pane fade show active">
+                                <div class="innertab">   
+                                    <div class="tab-content">
+                                        <div class="tab-pane fade show active" >
+                                            <div class="innertabsec joinusform">
+                                                <form class="contactusform" method="post">
+                                                    <h2 class="headtitle">Client Reset Password </h2>
+                                                    <div class="row">
+                                                        <div class="col-md-8 offset-md-2">
+                                                                <div class="input-group">
+                                                                    <input type="text" name="lastname" placeholder="Enter Password*">
+                                                                </div>
+                                                                <div class="forgoltlink">
+                                                                    <a href="javascript:;" class="link">Signin</a> 
+                                                                </div>
+                                                                <div class="input-group">
+                                                                    <input type="text" name="lastname" placeholder="Enter Password*">
+                                                                </div>
+                                                                <div class="input-group">
+                                                                    <input type="text" name="lastname" placeholder="Confirm New Password*">
+                                                                </div>
+                                                                <a href="#" class="readmore bgreadmore">Submit <i class="fa fa-long-arrow-right"></i></a>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>      
         </div>
+        </div>
+    </div>
+    <div class="modal underconstruction loginpopup fullwidth" id="filterBy">
+        <div class="modal-dialog">
+            <div class="modal-content">      
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>      
+            <!-- Modal body -->
+            <div class="modal-body">
+                    <div class="signsignup">       
+                        <div class="tab-content vertical">
+                            <div class="tab-pane fade show active">
+                                <div class="innertab">   
+                                    <div class="tab-content">
+                                        <div class="tab-pane fade show active" >
+                                            <div class="innertabsec joinusform">
+                                                <form class="contactusform" method="post">
+                                                    <h5 class="smalltitle">Filter by  </h5>
+                                                    <div class="row">
+                                                        <div class="col-md-4">
+                                                            <div class="input-group">
+                                                                <select>
+                                                                    <option>Select Project Status</option>
+                                                                    <option>All</option>
+                                                                    <option>Active</option>
+                                                                    <option>Closed</option>
+                                                                    <option>Pending</option>
+                                                                    <option>Rejected</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <div class="input-group">
+                                                                <select>
+                                                                    <option>Select Budget Type</option>
+                                                                    <option>All</option>
+                                                                    <option>Fixed</option>
+                                                                    <option>Hourly</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <div class="input-group">
+                                                                <select>
+                                                                    <option>Select Consultant Allocation</option>
+                                                                    <option>All</option>
+                                                                    <option>Yes</option>
+                                                                    <option>No</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <div class="input-group">
+                                                                <select>
+                                                                    <option>Select Amount Pending</option>
+                                                                    <option>All</option>
+                                                                    <option>Yes</option>
+                                                                    <option>No</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <div class="input-group">
+                                                                <input type="text" name="lastname" placeholder="Enter Client Email Id">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4"></div>
+                                                        <div class="col-md-12">
+                                                            <h5 class="smalltitle">Search by  </h5>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <div class="input-group">
+                                                                <input type="text" name="lastname" placeholder="Enter Project Id">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <div class="input-group">
+                                                                <input type="text" name="lastname" placeholder="Enter Project Title">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4"></div>
+                                                        <div class="col-md-4">
+                                                            <div class="input-group">
+                                                                <input type="text" name="lastname" placeholder="Enter Consultant Email Id">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-8"></div>
+                                                        <div class="col-md-6 text-right">
+                                                            <a href="#" class="readmore redcrborder wauto mt-0" data-dismiss="modal">Cancel</a>
+                                                        </div>
+                                                        <div class="col-md-6 text-left">
+                                                            <a href="#" class="readmore bgreadmore wauto mt-0 ml-0" data-dismiss="modal" data-toggle="modal" data-target="#confirmationMessage">Submit</a>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>      
+            </div>
+        </div>
+        </div>
+    <div class="modal underconstruction addClientSucessbox  prodinfo" id="confirmationProject">
+        <div class="modal-dialog">
+        <div class="modal-content">
+    
+            <!-- Modal Header -->
+            <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+    
+            <!-- Modal body -->
+            <div class="modal-body">
+                <div class="signsignup text-left ">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h5 class="smalltitle mt-0">Project ID: <span class="proid mb-0">C1P1</span></h5>
+                        </div>
+                        <div class="col-md-6">
+                            <h5 class="smalltitle mt-0">Consultant: <span class="proid mb-0">Jashwant</span></h5>
+                        </div>
+                        <div class="col-md-6">
+                            <h5 class="smalltitle mt-0">Name: <span class="proid mb-0">TCS</span></h5>
+                        </div>
+                        <div class="col-md-6">
+                            <h5 class="smalltitle mt-0">Consultant: <span class="proid mb-0">Jashwant@gmail.com</span></h5>
+                        </div>
+                        <div class="col-md-12 text-center mt-4">
+                            <div class="textarea">
+                                <p class="bigtext">Hi,<br>
+                                   Do you want to allocate project to consultant name<br> Please Click on Confirm to confirm Allocation
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-12 text-right">
+                            <a href="#" class="readmore redcrborder wauto" data-dismiss="modal">Cancel</a>
+                            <a href="#" class="readmore bgreadmore smallwidth text-center" data-dismiss="modal">Confirm</a>
+                        </div>
+                    </div>
+                </div>
+            </div>      
+        </div>
+        </div>
+    </div>
        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-       <script type="text/javascript" src="../vendor/date-range-picker/js/moment.min.js"></script>
        <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
        <script src="../vendor/select-picker/js/bootstrap-select.min.js"></script>
-       <script type="text/javascript" src="../vendor/date-range-picker/js/daterangepicker.js"></script>
        <script src="../vendor/slick/slick.js"></script>
        <script src="../js/script.js"></script>
        <script>
@@ -846,35 +1161,5 @@
                 });
            });
        </script>
-       <script type="text/javascript">
-        $(function() {
-            $('.daterange').daterangepicker();
-        });
-        </script>
-         <script type="text/javascript">
-            var SITE = SITE || {};
-            SITE.fileInputs = function() {
-             var $this = $(this),
-                 $val = $this.val(),
-                 valArray = $val.split('\\'),
-                 newVal = valArray[valArray.length-1],
-                 $button = $this.siblings('.file-button'),
-                 $fakeFile = $this.siblings('.file-holder');
-             if(newVal !== '') {
-               $button.html('<i class="fa fa-upload"></i> Resume Uploaded');
-               if($fakeFile.length === 0) {
-                 $button.after('<span class="file-holder">' + newVal + '</span>');
-               } else {
-                 $fakeFile.text(newVal);
-               }
-             }
-            };
-
-            $(document).ready(function() {
-             $('.file-wrapper input[type=file]').bind('change focus click', SITE.fileInputs);
-            });
-
- 
-        </script>
     </body>
 </html>
