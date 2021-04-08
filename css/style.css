@@ -3895,3 +3895,47 @@ ul.clientinfo.w100 li {
     justify-content: flex-end;
     border: none;
 }
+.iprofilebox {
+    position: relative;
+    display: block;
+    margin-top: 40px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 0 18px 1px rgb(185 185 185 / 50%);
+    border-bottom: 3px solid #006837;
+}
+.iprofilebox img {
+    position: relative;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+.iprofilebox a.linkedin {
+    position: absolute;
+    display: inline-block;
+    top: 49%;
+    width: 45px;
+    height: 45px;
+    background: #0a3c69;
+    border-radius: 50%;
+    line-height: 45px;
+    text-align: center;
+    right: 25.5%;
+}
+.iprofilebox a.linkedin i {
+    line-height: 45px;
+    color: #fff;
+    font-size: 20px;
+}
+.iprofilebox h4 {
+    position: relative;
+    display: block;
+    margin: 0;
+    padding-top: 12px;
+}
+.iprofilebox h4 a {
+    text-decoration: none;
+    font-size: 22px;
+    color: #0B1D26;
+    font-weight: 700;
+}
