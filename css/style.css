@@ -3939,3 +3939,56 @@ ul.clientinfo.w100 li {
     color: #0B1D26;
     font-weight: 700;
 }
+
+
+
+.tahnkyoubox {
+    position: relative;
+    display: block;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding: 30px;
+    background: rgb(40 167 69 / 40%);
+    box-shadow: 0 0 16px 2px rgb(195 195 195 / 50%);
+}
+.tahnkyoubox h2 {
+    font-size: 61px;
+    font-weight: 700;
+    color: #006837;
+    text-transform: uppercase;
+    line-height: 75px;
+}
+.tahnkyoubox p {
+    font-size: 22px;
+    color: #111;
+    text-transform: capitalize;
+    font-weight: 600;
+    line-height: 36px;
+}
+@media (max-width:767px){.tahnkyoubox {
+    width: 100%;
+}
+.tahnkyoubox h2 {
+    font-size: 50px;
+}
+.tahnkyoubox p {
+    text-align: center;
+}}
+
+.justify-center {
+    justify-content: center;
+}
+input[type='radio']:checked:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: 2px;
+    left: 2px;
+    position: relative;
+    background-color: #016634;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
