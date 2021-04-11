@@ -4010,3 +4010,17 @@ h6.smalltitle {
     display: flex;
     justify-content: center;
 }
+.industrieds .nav-tabs-wrapper ul.nav.nav-tabs.w80 {
+    width: calc(100% - 45px);
+    display: inline-flex;
+}
+.nvprev {
+    position: relative;
+    display: inline-flex;
+    width: auto;
+}
+.nvprev a.direction {
+    font-size: 17px;
+    margin: 0 4px;
+    color: #006837;
+}
