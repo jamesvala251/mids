@@ -18,7 +18,7 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-3">
-                        <a class="navbar-brand" href="#"><img src="images/logo.png"></a>
+                        <a class="navbar-brand" href="#"><img src="../images/logo.png"></a>
                     </div>
                     <div class="col-md-9">
                         <div class="row">
@@ -324,72 +324,113 @@
                     <li><a href="javascript:;"> <i class="fa fa-cog"></i> Setting</a></li>
                 </ul>
             </div>
-            <div id="main">
-                               
+            <div id="main">          
                 <button class="openbtn openSitebararea"><i class="fa fa-bars"></i></button>  
                 <span class="nav-tabs-wrapper-border" role="presentation"></span>
                 
                 <div class="tab-content">
-                    <div class="tab-pane fade show active" id="myProfile">
+                    <div class="tab-pane fade active show " id="reviewandSubmit">
                         <div class="innberwhite">
-                            <form class="contactusform consultantside" method="post">
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <div class="row">
-                                            <div class="col-lg-8 col-md-12">
-                                                <div class="input-group">
-                                                    <label class="form-label">Company Name</label>
-                                                    <input type="text" name="firstname" placeholder="Company Name*">
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-8 col-md-12">
-                                                <div class="input-group">
-                                                    <label class="form-label">Registration No</label>
-                                                    <input type="text" name="firstname" placeholder="Registration No*">
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-8 col-md-12">
-                                                <div class="input-group">
-                                                    <select>
-                                                        <option>Select Industry</option>
-                                                        <option>Information tech</option>
-                                                    </select>
-                                                    <p class="addblock"></p>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-8 col-md-12">
-                                                <div class="input-group">
-                                                    <label class="form-label">First Name</label>
-                                                    <input type="text" name="firstname" placeholder="First Name*">
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-8 col-md-12">
-                                                <div class="input-group">
-                                                    <label class="form-label">Last Name</label>
-                                                    <input type="text" name="firstname" placeholder="Last Name*">
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-8 col-md-12">
-                                                <div class="input-group">
-                                                    <label class="form-label">Email Id</label>
-                                                    <input type="text" name="firstname" placeholder="Email Id*">
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-8 col-md-12">
-                                                <div class="input-group">
-                                                    <label class="form-label">Phone Number</label>
-                                                    <input type="text" name="firstname" placeholder="Phone Number*">
-                                                </div>
-                                            </div>
-                                        </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="reviewedit">
+                                        <h5>Personal Details</h5>
+                                        <div class="edition"><i class="fa fa-download"></i></div>
                                     </div>
-                                    <div class="col-md-12">
-                                        <a href="#" class="readmore redcrborder wauto">Cancel</a>
-                                        <a href="#" class="readmore bgreadmore smallwidth">Save</a>
-                                        <a href="#" class="readmore greencrborder wauto">Edit</a>
+                                    <div class="editboxarea">
+                                        <div class="content"><span class="heading">Name</span> <span class="textbox">Full Name</span></div>
+                                        <div class="content"><span class="heading">Email ID</span> <span class="textbox">abc@abc.com</span></div>
+                                        <div class="content"><span class="heading">Industry</span> <span class="textbox">Information Technology </span></div>
+                                        <div class="content"><span class="heading">Business Function</span> <span class="textbox">Information Technology </span></div>
+                                        <div class="content"><span class="heading">Profile Picture</span> <span class="textbox"><img src="../images/MaskGroup.png"></span></div>
                                     </div>
                                 </div>
-                            </form>
+                                <div class="col-md-12">
+                                    <div class="reviewedit">
+                                        <h5>About Me</h5>
+                                        <!-- <div class="edition"><i class="fa fa-pencil"></i></div> -->
+                                    </div>
+                                    <div class="editboxarea">
+                                        <div class="content"><span class="heading">Location</span> <span class="textbox">India, Bangalore</span></div>
+                                        <div class="content"><span class="heading">Designation</span> <span class="textbox">Product Manager</span></div>
+                                        <div class="content"><span class="heading">Facebook Profile</span> <span class="textbox">facebook.com/aaaxxx </span></div>
+                                        <div class="content"><span class="heading">Linkedin Profile</span> <span class="textbox">Lineding.com/aaccc </span></div>
+                                        <div class="content"><span class="heading">Twitter Profile</span> <span class="textbox">Twitter.com/asxx</span></div>
+                                        <div class="content"><span class="heading">About Me</span> <span class="textbox">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took centuries, but also the leap into electronic typesetting,</span></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="reviewedit">
+                                        <h5>Qualification Details</h5>
+                                        <!-- <div class="edition"><i class="fa fa-pencil"></i></div> -->
+                                    </div>
+                                    <div class="editboxarea">
+                                        <div class="content"><span class="heading">Highest Qualification</span> <span class="textbox">XXXXXX</span></div>
+                                        
+                                        <label class="form-label">Qualification Review</label>
+                                        <div class="table-responsive">
+                                            <table class="tablebox">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Education Name,Title</th>
+                                                        <th>Type</th>
+                                                        <th>Start Date</th>
+                                                        <th>End Date</th>
+                                                        <th>Institute Name</th>
+                                                        <th>State</th>
+                                                        <th>Country</th>
+                                                        <th></th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Master of Education</td>
+                                                        <td>Master</td>
+                                                        <td>01/07/2006</td>
+                                                        <td>01/07/2010</td>
+                                                        <td>ABC</td>
+                                                        <td>NSW</td>
+                                                        <td>NSW</td>
+                                                        <td><a href="javascript:;"><i class="fa fa-close"></i></a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Master of Education</td>
+                                                        <td>Master</td>
+                                                        <td>01/07/2006</td>
+                                                        <td>01/07/2010</td>
+                                                        <td>ABC</td>
+                                                        <td>NSW</td>
+                                                        <td>NSW</td>
+                                                        <td><a href="javascript:;"><i class="fa fa-close"></i></a></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="reviewedit">
+                                        <h5>Experience Details</h5>
+                                        <!-- <div class="edition"><i class="fa fa-pencil"></i></div> -->
+                                    </div>
+                                    <div class="editboxarea">
+                                        <div class="content"><span class="heading">Company Name</span> <span class="textbox wauto">Title</span><span class="textbox wauto">Started,Completion Date</span><span class="textbox wauto">Years of experinece</span></div>
+                                        <div class="content"><span class="heading">Roles and Responsibilities</span> <span class="textbox">To manage team<br>To manage team<br>To manage team</span></div>
+                                        <div class="content"><span class="heading">Company Name</span> <span class="textbox wauto">Title</span><span class="textbox wauto">Started,Completion Date</span><span class="textbox wauto">Years of experinece</span></div>
+                                        <div class="content"><span class="heading">Roles and Responsibilities</span> <span class="textbox">To manage team<br>To manage team<br>To manage team</span></div>
+                                    </div>
+                                    <div class="input-group termsbox">
+                                        <input type="checkbox" class="tearms" id="Terms"><label for="Terms">I declare , that above information is complete and accurate account of my personal and professional account </label>
+                                    </div>
+                                    <div class="input-group termsbox">
+                                        <input type="checkbox" class="tearms" id="Terms2"><label for="Terms2">I agree , Terms and Condition and Privacy Policy associated with the use of the services as per Mids Corporation</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <a href="#" class="readmore redcrborder wauto">Cancel</a>
+                                    <a href="#" class="readmore bgreadmore wauto text-center">Submit <i class="fa fa-long-arrow-right"></i></a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div> 
