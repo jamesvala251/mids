@@ -4024,3 +4024,71 @@ h6.smalltitle {
     margin: 0 4px;
     color: #006837;
 }
+
+#navbarResponsive ul.navbar-nav li.nav-item a.nav-link {
+    font-size: 18px;
+}
+.hero .slick-slide .multiple {
+    height: calc(100vh - 121px);
+}
+section.hero .slick-slide {
+    height: auto;
+}
+.projectlistbox {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 20px;
+    box-shadow: 0 0 17px 3px rgb(217 216 216 / 50%);
+    min-height: 225px;
+}
+.projectlistbox a {
+    position: relative;
+    text-decoration: none;
+    width: 100%;
+    display: block;
+}
+.projectlistbox img {
+    max-width: 65%;
+    margin: auto;
+    display: block;
+    padding-bottom: 15px;
+    position: relative;
+}
+.projectlistbox h4 {
+    display: block;
+    text-align: center;
+    font-size: 22px;
+    color: #006837;
+    font-weight: 700;
+    line-height: 30px;
+    padding-bottom: 10px;
+    position: relative;
+    margin-bottom: 0;
+    transition: 0.8s;
+}
+.projectlistbox h4:after {content: '';width: 60px;height: 2px;background: #184973;position: relative;bottom: 0;display: block;text-align: center;margin: 6px auto 0;}
+.projectlistbox p {
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 0;
+}
+.projectlistbox:before {content: '';position: absolute;top: 0;left: 0;background: #0b1d26;width: 10px;height: 100%;transition: 0.8s;}
+.projectlistbox:hover:before {
+    transition: 0.8s;
+    width: 100%;
+}
+.projectlistbox:hover h4,.projectlistbox:hover p {
+    color: #fff;
+    transition: 0.8s;
+}
+section.sec-pad.differentiator.industrieds.ourpeoplesec {
+    padding: 60px 15px;
+}
+.searchboxfilter.contactusform {
+    position: relative;
+    display: block;
+}
+.searchboxfilter.contactusform a.readmore.bgreadmore {
+    min-width: 100%;
+}
