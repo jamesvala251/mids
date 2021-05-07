@@ -3979,6 +3979,8 @@ ul.clientinfo.w100 li {
 .justify-center {
     justify-content: center;
 }
+
+
 input[type='radio']:checked:after {
     width: 15px;
     height: 15px;
@@ -3994,7 +3996,7 @@ input[type='radio']:checked:after {
 }
 
 
-
+/*----- css added in developmnt start this point -----*/
 h6.smalltitle {
     font-weight: bold;
     font-size: 24px;
@@ -4091,4 +4093,23 @@ section.sec-pad.differentiator.industrieds.ourpeoplesec {
 }
 .searchboxfilter.contactusform a.readmore.bgreadmore {
     min-width: 100%;
+}
+/*----- css added in developmnt end of this point -----*/
+
+
+
+
+
+/*-------Consultant profile Css------------*/
+.profilepicimg {
+    position: relative;
+    display: block;
+    margin: auto;
+    text-align: center;
+    width: 100%;
+    margin-top: 16px;
+}
+.profilepicimg img {
+    max-width: 300px;
+    height: auto;
 }
