@@ -5,6 +5,7 @@
         <title>MIDS</title>
         <link rel="stylesheet" href="../vendor/bootstrap/css/bootstrap.min.css">
         <link rel="stylesheet" href="../icons/css/line-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="../vendor/date-range-picker/css/daterangepicker.css" />
         <link rel="stylesheet" href="../vendor/select-picker/css/bootstrap-select.min.css">
         <link rel="stylesheet" href="../vendor/slick/slick.css">
         <link rel="stylesheet" href="../vendor/slick/slick-theme.css">
@@ -310,270 +311,132 @@
                 
             </div>
         </nav>
-       <section class="consultantsec maincon">
+       <section class="consultantsec">
             <div id="mySidebar" class="sidebar">
                 <ul>
-                    <li><a href="javascript:;"> <i class="fa fa-fire"></i> Consultant</a></li>
+                    <li><a href="consultant.html"> <i class="fa fa-fire"></i> Consultant</a></li>
                     <li><a href="projects.html"> <i class="fa fa-building"></i> Projects</a></li>
-                    <li class="active"><a href="invoice.html"> <i class="fa fa-credit-card-alt" style="    margin-left: -5px;"></i> Billing & Invoices</a></li>
+                    <li class="active"><a href="javascript:;"> <i class="fa fa-credit-card-alt" style="margin-left: -5px;"></i> Billing & Invoices</a></li>
                     <li><a href="my_profile.html"> <i class="fa fa-user"></i> My Profile</a></li>
                     <li><a href="javascript:;"> <i class="fa fa-envelope"></i> Inbox</a></li>
                     <li><a href="javascript:;"> <i class="fa fa-bell"></i> Notification</a></li>
                     <li><a href="javascript:;"> <i class="fa fa-cog"></i> Setting</a></li>
                 </ul>
             </div>
-            <div id="main">
-                <a href="#" class="readmore leftside"><i class="fa fa-long-arrow-left"> INVOICES</i></a>
-                
-                <button class="openbtn openSitebararea"><i class="fa fa-bars"></i></button> 
-                <div class="row">
-                    <div class="col-md-6">
-                        <ul class="horizontallist">
-                            <li class="active"><a class="boxcut" data-toggle="tab" href="#"><span>1097</span><br>All Invoice </a></li>
-                            <li><a class="boxcut" data-toggle="tab" href="#"><span>1097</span><br>Payment Pending </a></li>
-                            <li><a class="boxcut" data-toggle="tab" href="#"><span>37</span><br>Paid </a></li>
-                            <li><a class="boxcut" data-toggle="tab" href="#"><span>50</span><br>Rejected </a></li>
-                        </ul>   
-                    </div>
-                    <div class="col-md-6">
-                            <div class="row">
-                                <div class="col-lg-4 col-md-6">
-                                    <div class="summurybox">
-                                       
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-6">
-                                    <div class="summurybox">
-                                       
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-6">
-                                    <div class="summurybox">
-                                       
-                                    </div>
-                                </div>
-                                <div class="col-md-12">
-                                    <div class="searchbararwa large">
+            <div id="main">            
+                <button class="openbtn openSitebararea"><i class="fa fa-bars"></i></button>  
+                <span class="nav-tabs-wrapper-border" role="presentation"></span>
+
+                        <div class="innberwhite">
+                            <form class="contactusform consultantside" method="post">
+                                <div class="row">
+                                    <div class="col-lg-12 col-md-12 ">
                                         <div class="input-group">
-                                            <input type="text" class="form-control">
-                                            <i class="fa fa-search searicon"></i>
-                                        </div>
-                                        <div class="input-group">
-                                            <select class="form-control">
-                                                <option>10/page</option>
+                                            <label class="form-label">Customer Name</label>
+                                            <select>
+                                                <option>Select Customer Name</option>
                                             </select>
                                         </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-12">
                                         <div class="input-group">
-                                            <a href="add_invoice.html"><i class="fa fa-plus"></i></a>
-                                            <a href="javascript:;"><i class="fa fa-refresh"></i></a>
-                                            <a href="javascript:;"><i class="fa fa-file"></i></a>
-                                            <a href="javascript:;" data-toggle="modal" data-target="#filterBy"><i class="fa fa-filter"></i></a>
+                                            <label class="form-label">Invoice No.</label>
+                                            <input type="text" name="lastname" placeholder="Invoice No.">
                                         </div>
                                     </div>
+                                    <div class="col-lg-6 col-md-12">
+                                        <div class="input-group">
+                                            <label class="form-label">Order No.</label>
+                                            <input type="text" name="lastname" placeholder="Order No.">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-12">
+                                        <div class="input-group">
+                                            <label class="form-label">Invoice Date</label>
+                                            <input type="date" name="lastname" placeholder="Invoice Date">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-12 ">
+                                        <div class="input-group">
+                                            <label class="form-label">Terms</label>
+                                            <select>
+                                                <option>Due on Receipt</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-12">
+                                        <div class="input-group">
+                                            <label class="form-label">Due Date</label>
+                                            <input type="date" name="lastname" placeholder="Due Date">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-12">
+                                        <div class="input-group">
+                                            <label class="form-label">Sales Person</label>
+                                            <input type="text" name="lastname" placeholder="Sales Person">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-12">
+                                        <div class="input-group">
+                                            <label class="form-label">Customer Code</label>
+                                            <input type="text" name="lastname" placeholder="Customer Code">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="input-group">
+                                            <label class="form-label">Item Rates Are</label>
+                                            <select>
+                                                <option>Tax</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="input-group">
+                                            <label class="form-label">Price List</label>
+                                            <select>
+                                                <option>None</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 text-right">
+                                        <a href="javascript:;" class="blukupload"><i class="las la-cog"></i> Bulk Upload Line Items</a>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="table-responsive">
+                                            <table class="tablebox newinvoice">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Items Details</th>
+                                                        <th>Quantity</th>
+                                                        <th>Rate</th>
+                                                        <th>Discount</th>
+                                                        <th>Tax</th>
+                                                        <th>Amount</th>
+                                                        <th><i class="las la-ellipsis-h round"></i></th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td><img src="images/team1.png"> Type or Click to Select an item</td>
+                                                        <td>1.00</td>
+                                                        <td>0.00</td>
+                                                        <td>0 <select><option>%</option></select></td>
+                                                        <td><select><option>Select Tax</option></select></td>
+                                                        <td><strong>0.00</strong></td>
+                                                        <td><a href="javascript:;"><i class="las la-ellipsis-h round"></i></a><a href="javascript:;"><i class="las la-times-circle"></i></a></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <a href="#" class="readmore greencrborder wauto">Save as Draft</a>
+                                        <a href="#" class="readmore bgreadmore smallwidth">Save & Send</a>
+                                        <a href="#" class="readmore redcrborder wauto">Cancel</a>
+                                    </div>
                                 </div>
-                            </div>
-                    </div>
-                    <div class="col-md-12">
-                        <div class="marginbottom-150">
-                            <div class="table-responsive">
-                                <table class="tablebox newtable">
-                                    <thead>
-                                        <tr>
-                                            <th>ID</th>
-                                            <th>Project ID</th>
-                                            <th>Project Name</th>
-                                            <th>Consultant Name</th>
-                                            <th>Created Date</th>
-                                            <th>Status</th>
-                                            <th>Invoices - Amount</th>
-                                            <th>Payment Status</th>
-                                            <th>No. of Invoices - Project</th>
-                                            <th>Action</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>INV1</td>
-                                            <td>C1P2</td>
-                                            <td>C# Developer</td>
-                                            <td>TCS</td>
-                                            <td>12/11/2020</td>
-                                            <td>Pending</td>
-                                            <td>$100</td>
-                                            <td>Not Applicable</td>
-                                            <td>3</td>
-                                            <td><div class="dropdownmainmenu">
-                                                <a href="javascript:;" class=""><i class="fa fa-ellipsis-v"></i>
-                                                </a>
-                                                    <ul class="innnermenuitme">
-                                                        <li><a href="javascript:;" data-toggle="modal" data-target="#InvoiceInfo">View Invoice Info</a></li>
-                                                        <li><a href="javascript:;" data-toggle="modal" data-target="#rejectInvoice">Reject Invoice</a></li>
-                                                        <li><a href="javascript:;" data-toggle="modal" data-target="#approveInvoice">Approve Invoice</a></li>
-                                                        <li><a href="javascript:;" data-toggle="modal" data-target="#markAsPaid">Mark as Paid</a></li>
-                                                    </ul>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>INV1</td>
-                                            <td>C1P2</td>
-                                            <td>C# Developer</td>
-                                            <td>TCS</td>
-                                            <td>12/11/2020</td>
-                                            <td>Approved</td>
-                                            <td>$100</td>
-                                            <td>Paid</td>
-                                            <td>3</td>
-                                            <td><div class="dropdownmainmenu">
-                                                <a href="javascript:;" class=""><i class="fa fa-ellipsis-v"></i>
-                                                </a>
-                                                    <ul class="innnermenuitme">
-                                                        <li><a href="javascript:;" data-toggle="modal" data-target="#InvoiceInfo">View Invoice Info</a></li>
-                                                        <li><a href="javascript:;" data-toggle="modal" data-target="#rejectInvoice">Reject Invoice</a></li>
-                                                        <li><a href="javascript:;" data-toggle="modal" data-target="#approveInvoice">Approve Invoice</a></li>
-                                                        <li><a href="javascript:;" data-toggle="modal" data-target="#markAsPaid">Mark as Paid</a></li>
-                                                    </ul>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>INV1</td>
-                                            <td>C1P2</td>
-                                            <td>C# Developer</td>
-                                            <td>TCS</td>
-                                            <td>12/11/2020</td>
-                                            <td>Pending</td>
-                                            <td>$100</td>
-                                            <td>Not Paid</td>
-                                            <td>3</td>
-                                            <td><div class="dropdownmainmenu">
-                                                <a href="javascript:;" class=""><i class="fa fa-ellipsis-v"></i>
-                                                </a>
-                                                    <ul class="innnermenuitme">
-                                                        <li><a href="javascript:;" data-toggle="modal" data-target="#InvoiceInfo">View Invoice Info</a></li>
-                                                        <li><a href="javascript:;" data-toggle="modal" data-target="#rejectInvoice">Reject Invoice</a></li>
-                                                        <li><a href="javascript:;" data-toggle="modal" data-target="#approveInvoice">Approve Invoice</a></li>
-                                                        <li><a href="javascript:;" data-toggle="modal" data-target="#markAsPaid">Mark as Paid</a></li>
-                                                    </ul>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>INV1</td>
-                                            <td>C1P2</td>
-                                            <td>C# Developer</td>
-                                            <td>TCS</td>
-                                            <td>12/11/2020</td>
-                                            <td>Pending</td>
-                                            <td>$100</td>
-                                            <td>Not Applicable</td>
-                                            <td>3</td>
-                                            <td><div class="dropdownmainmenu">
-                                                <a href="javascript:;" class=""><i class="fa fa-ellipsis-v"></i>
-                                                </a>
-                                                    <ul class="innnermenuitme">
-                                                        <li><a href="javascript:;" data-toggle="modal" data-target="#InvoiceInfo">View Invoice Info</a></li>
-                                                        <li><a href="javascript:;" data-toggle="modal" data-target="#rejectInvoice">Reject Invoice</a></li>
-                                                        <li><a href="javascript:;" data-toggle="modal" data-target="#approveInvoice">Approve Invoice</a></li>
-                                                        <li><a href="javascript:;" data-toggle="modal" data-target="#markAsPaid">Mark as Paid</a></li>
-                                                    </ul>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>INV1</td>
-                                            <td>C1P2</td>
-                                            <td>C# Developer</td>
-                                            <td>TCS</td>
-                                            <td>12/11/2020</td>
-                                            <td>Pending</td>
-                                            <td>$100</td>
-                                            <td>Not Applicable</td>
-                                            <td>3</td>
-                                            <td><div class="dropdownmainmenu">
-                                                <a href="javascript:;" class=""><i class="fa fa-ellipsis-v"></i>
-                                                </a>
-                                                    <ul class="innnermenuitme">
-                                                        <li><a href="javascript:;" data-toggle="modal" data-target="#InvoiceInfo">View Invoice Info</a></li>
-                                                        <li><a href="javascript:;" data-toggle="modal" data-target="#rejectInvoice">Reject Invoice</a></li>
-                                                        <li><a href="javascript:;" data-toggle="modal" data-target="#approveInvoice">Approve Invoice</a></li>
-                                                        <li><a href="javascript:;" data-toggle="modal" data-target="#markAsPaid">Mark as Paid</a></li>
-                                                    </ul>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>INV1</td>
-                                            <td>C1P2</td>
-                                            <td>C# Developer</td>
-                                            <td>TCS</td>
-                                            <td>12/11/2020</td>
-                                            <td>Pending</td>
-                                            <td>$100</td>
-                                            <td>Not Applicable</td>
-                                            <td>3</td>
-                                            <td><div class="dropdownmainmenu">
-                                                <a href="javascript:;" class=""><i class="fa fa-ellipsis-v"></i>
-                                                </a>
-                                                    <ul class="innnermenuitme">
-                                                        <li><a href="javascript:;" data-toggle="modal" data-target="#InvoiceInfo">View Invoice Info</a></li>
-                                                        <li><a href="javascript:;" data-toggle="modal" data-target="#rejectInvoice">Reject Invoice</a></li>
-                                                        <li><a href="javascript:;" data-toggle="modal" data-target="#approveInvoice">Approve Invoice</a></li>
-                                                        <li><a href="javascript:;" data-toggle="modal" data-target="#markAsPaid">Mark as Paid</a></li>
-                                                    </ul>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>INV1</td>
-                                            <td>C1P2</td>
-                                            <td>C# Developer</td>
-                                            <td>TCS</td>
-                                            <td>12/11/2020</td>
-                                            <td>Pending</td>
-                                            <td>$100</td>
-                                            <td>Not Applicable</td>
-                                            <td>3</td>
-                                            <td><div class="dropdownmainmenu">
-                                                <a href="javascript:;" class=""><i class="fa fa-ellipsis-v"></i>
-                                                </a>
-                                                    <ul class="innnermenuitme">
-                                                        <li><a href="javascript:;" data-toggle="modal" data-target="#InvoiceInfo">View Invoice Info</a></li>
-                                                        <li><a href="javascript:;" data-toggle="modal" data-target="#rejectInvoice">Reject Invoice</a></li>
-                                                        <li><a href="javascript:;" data-toggle="modal" data-target="#approveInvoice">Approve Invoice</a></li>
-                                                        <li><a href="javascript:;" data-toggle="modal" data-target="#markAsPaid">Mark as Paid</a></li>
-                                                    </ul>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>INV1</td>
-                                            <td>C1P2</td>
-                                            <td>C# Developer</td>
-                                            <td>TCS</td>
-                                            <td>12/11/2020</td>
-                                            <td>Pending</td>
-                                            <td>$100</td>
-                                            <td>Not Applicable</td>
-                                            <td>3</td>
-                                            <td><div class="dropdownmainmenu">
-                                                <a href="javascript:;" class=""><i class="fa fa-ellipsis-v"></i>
-                                                </a>
-                                                    <ul class="innnermenuitme">
-                                                        <li><a href="javascript:;" data-toggle="modal" data-target="#InvoiceInfo">View Invoice Info</a></li>
-                                                        <li><a href="javascript:;" data-toggle="modal" data-target="#rejectInvoice">Reject Invoice</a></li>
-                                                        <li><a href="javascript:;" data-toggle="modal" data-target="#approveInvoice">Approve Invoice</a></li>
-                                                        <li><a href="javascript:;" data-toggle="modal" data-target="#markAsPaid">Mark as Paid</a></li>
-                                                    </ul>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
+                            </form>
                         </div>
-                    </div>
-                </div>
             </div>
        </section>
        <footer class="footersec">
@@ -971,314 +834,59 @@
           </div>
         </div>
       </div>
-    <div class="modal underconstruction loginpopup fullwidth" id="clientresetPassword">
-        <div class="modal-dialog">
-        <div class="modal-content">      
-            <!-- Modal Header -->
-            <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal">&times;</button>
-            </div>      
-            <!-- Modal body -->
-            <div class="modal-body">
-                    <div class="signsignup">       
-                        <div class="tab-content vertical">
-                            <div class="tab-pane fade show active">
-                                <div class="innertab">   
-                                    <div class="tab-content">
-                                        <div class="tab-pane fade show active" >
-                                            <div class="innertabsec joinusform">
-                                                <form class="contactusform" method="post">
-                                                    <h2 class="headtitle">Client Reset Password </h2>
-                                                    <div class="row">
-                                                        <div class="col-md-8 offset-md-2">
-                                                                <div class="input-group">
-                                                                    <input type="text" name="lastname" placeholder="Enter Password*">
-                                                                </div>
-                                                                <div class="forgoltlink">
-                                                                    <a href="javascript:;" class="link">Signin</a> 
-                                                                </div>
-                                                                <div class="input-group">
-                                                                    <input type="text" name="lastname" placeholder="Enter Password*">
-                                                                </div>
-                                                                <div class="input-group">
-                                                                    <input type="text" name="lastname" placeholder="Confirm New Password*">
-                                                                </div>
-                                                                <a href="#" class="readmore bgreadmore">Submit <i class="fa fa-long-arrow-right"></i></a>
-                                                        </div>
-                                                    </div>
-                                                </form>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-            </div>      
-        </div>
-        </div>
-    </div>
-    <div class="modal underconstruction loginpopup fullwidth" id="filterBy">
-        <div class="modal-dialog">
+      <div class="modal underconstruction loginpopup fullwidth" id="clientresetPassword">
+          <div class="modal-dialog">
             <div class="modal-content">      
-            <!-- Modal Header -->
-            <div class="modal-header">
+              <!-- Modal Header -->
+              <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
-            </div>      
-            <!-- Modal body -->
-            <div class="modal-body">
-                    <div class="signsignup">       
-                        <div class="tab-content vertical">
-                            <div class="tab-pane fade show active">
-                                <div class="innertab">   
-                                    <div class="tab-content">
-                                        <div class="tab-pane fade show active" >
-                                            <div class="innertabsec joinusform">
-                                                <form class="contactusform" method="post">
-                                                    <h2 class="headtitle">Filter by  </h2>
-                                                    <div class="row">
-                                                        <div class="col-md-4">
-                                                            <div class="input-group">
-                                                                <select>
-                                                                    <option>Select Invoice Status</option>
-                                                                    <option>All</option>
-                                                                    <option>Payment Pending</option>
-                                                                    <option>Payment Paid</option>
-                                                                    <option>Payment Rejected</option>
-                                                                </select>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-4">
-                                                            <div class="input-group">
-                                                                <select>
-                                                                    <option>Select Payment Status</option>
-                                                                    <option>All</option>
-                                                                    <option>Paid</option>
-                                                                    <option>Not Paid</option>
-                                                                    <option>Not Applicable</option>
-                                                                </select>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-12">
-                                                            <h2 class="headtitle">Search by  </h2>
-                                                        </div>
-                                                        <div class="col-md-4">
-                                                            <div class="input-group ">
-                                                                <input type="text" name="lastname" placeholder="Enter Invoice Id">
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-4">
-                                                            <div class="input-group">
-                                                                <input type="text" name="lastname" placeholder="Enter Project ID">
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-4">
-                                                            <div class="input-group">
-                                                                <input type="text" name="lastname" placeholder="Enter Consultant Name">
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-8"></div>
-                                                        <div class="col-md-2 text-right">
-                                                            <a href="#" class="readmore redcrborder wauto mt-0 mr-0" data-dismiss="modal">Cancel</a>
-                                                        </div>
-                                                        <div class="col-md-2 text-left">
-                                                            <a href="#" class="readmore bgreadmore smallwidth mt-0 ml-0" data-dismiss="modal" data-toggle="modal" data-target="#confirmationMessage">Submit</a>
-                                                        </div>
-                                                    </div>
-                                                </form>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-            </div>      
+              </div>      
+              <!-- Modal body -->
+              <div class="modal-body">
+                      <div class="signsignup">       
+                          <div class="tab-content vertical">
+                              <div class="tab-pane fade show active">
+                                  <div class="innertab">   
+                                      <div class="tab-content">
+                                          <div class="tab-pane fade show active" >
+                                              <div class="innertabsec joinusform">
+                                                  <form class="contactusform" method="post">
+                                                      <h2 class="headtitle">Client Reset Password </h2>
+                                                      <div class="row">
+                                                          <div class="col-md-8 offset-md-2">
+                                                                  <div class="input-group">
+                                                                      <input type="text" name="lastname" placeholder="Enter Password*">
+                                                                  </div>
+                                                                  <div class="forgoltlink">
+                                                                     <a href="javascript:;" class="link">Signin</a> 
+                                                                  </div>
+                                                                  <div class="input-group">
+                                                                      <input type="text" name="lastname" placeholder="Enter Password*">
+                                                                  </div>
+                                                                  <div class="input-group">
+                                                                      <input type="text" name="lastname" placeholder="Confirm New Password*">
+                                                                  </div>
+                                                                  <a href="#" class="readmore bgreadmore">Submit <i class="fa fa-long-arrow-right"></i></a>
+                                                          </div>
+                                                      </div>
+                                                  </form>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+              </div>      
             </div>
-        </div>
-        </div>
-        <div class="modal underconstruction addinvoicebox" id="InvoiceInfo">
-            <div class="modal-dialog">
-            <div class="modal-content">
-        
-                <!-- Modal Header -->
-                <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                </div>
-        
-                <!-- Modal body -->
-                <div class="modal-body">
-                    <div class="signsignup">
-                        <div class="textarea">
-                            <h6>Payment Status <a href="javascript:;" class="smallstatusbtn noyApplicable">Not Applicable</a><a href="javascript:;" class="smallstatusbtn noyPaid">Not Paid</a><a href="javascript:;" class="smallstatusbtn paid">Paid</a></h6>
-                            <p><b>INV1, C# Developer</b></p>
-                            <p><b>Invoice Description</b><span class="downloadattch"><a href="javascript:;"><i class="fa fa-file-pdf-o"></i> Uploaded Document</a></span></p>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-                           <p><b>Client: Approve/Rejection</b><span class="downloadattch"><a href="javascript:;"><i class="fa fa-file-pdf-o"></i> Uploaded Document</a></span></p>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-                        </div>
-                    </div>
-                </div>      
-            </div>
-            </div>
-        </div>
-        <div class="modal underconstruction addinvoicebox  " id="approveInvoice">
-            <div class="modal-dialog">
-            <div class="modal-content">
-        
-                <!-- Modal Header -->
-                <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                </div>
-        
-                <!-- Modal body -->
-                <div class="modal-body">
-                    <div class="signsignup text-left ">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <h5 class="smalltitle mt-0">Invoice ID: <span class="proid mb-0">C1P1</span></h5>
-                            </div>
-                            <div class="col-md-6 text-right">
-                                <h5 class="smalltitle mt-0">Invoice Amount: <span class="proid mb-0"><a href="javascript:;" class="smallstatusbtn paid">$250</a></span></h5>
-                            </div>
-                            <div class="col-md-6">
-                                <h5 class="smalltitle mt-0">Project Name: <span class="proid mb-0">C1P1</span></h5>
-                            </div>
-                            <div class="col-md-6 text-right">
-                                <h5 class="smalltitle mt-0">Uploaded Document: <span class="proid mb-0"><a href="javascript:;"><i class="fa fa-file-pdf-o"></i></a></span></h5>
-                            </div>
-                            <div class="col-md-12">
-                                <div class="input-group mb-20">
-                                    <textarea rows="8" class="form-control" placeholder="Enter Approval Comment"></textarea>
-                                </div>
-                            </div>
-                            <div class="col-md-12 text-center">
-                                <div class="input-group mb-20">
-                                    <div class="file-wrapper">
-                                        <input type="file" id="resume">
-                                        <span class="file-button"> <span class="file-holder"></span> <i class="fa fa-upload"></i> Upload File*</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-12 text-right">
-                                <a href="#" class="readmore redcrborder wauto" data-dismiss="modal">Cancel</a>
-                                <a href="#" class="readmore bgreadmore smallwidth text-center" data-dismiss="modal">Approve</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>      
-            </div>
-            </div>
-        </div>
-        <div class="modal underconstruction addinvoicebox" id="rejectInvoice">
-            <div class="modal-dialog">
-            <div class="modal-content">
-        
-                <!-- Modal Header -->
-                <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                </div>
-        
-                <!-- Modal body -->
-                <div class="modal-body">
-                    <div class="signsignup text-left ">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <h5 class="smalltitle mt-0">Invoice ID: <span class="proid mb-0">C1P1</span></h5>
-                            </div>
-                            <div class="col-md-6 text-right">
-                                <h5 class="smalltitle mt-0">Invoice Amount: <span class="proid mb-0"><a href="javascript:;" class="smallstatusbtn paid">$250</a></span></h5>
-                            </div>
-                            <div class="col-md-6">
-                                <h5 class="smalltitle mt-0">Project Name: <span class="proid mb-0">C1P1</span></h5>
-                            </div>
-                            <div class="col-md-6 text-right">
-                                <h5 class="smalltitle mt-0">Uploaded Document: <span class="proid mb-0"><a href="javascript:;"><i class="fa fa-file-pdf-o"></i></a></span></h5>
-                            </div>
-                            <div class="col-md-12">
-                                <div class="input-group mb-20">
-                                    <textarea rows="8" class="form-control" placeholder="Enter Rejection Comment"></textarea>
-                                </div>
-                            </div>
-                            <div class="col-md-12 text-center">
-                                <div class="input-group mb-20">
-                                    <div class="file-wrapper">
-                                        <input type="file" id="resume">
-                                        <span class="file-button"> <span class="file-holder"></span> <i class="fa fa-upload"></i> Upload File*</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-12 text-right">
-                                <a href="#" class="readmore redcrborder wauto" data-dismiss="modal">Cancel</a>
-                                <a href="#" class="readmore bgreadmore smallwidth text-center" data-dismiss="modal">Reject</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>      
-            </div>
-            </div>
-        </div>
-        <div class="modal underconstruction addinvoicebox" id="markAsPaid">
-            <div class="modal-dialog">
-            <div class="modal-content">
-        
-                <!-- Modal Header -->
-                <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                </div>
-        
-                <!-- Modal body -->
-                <div class="modal-body">
-                    <div class="signsignup text-left ">
-                        <div class="row">
-                            <div class="col-md-12 text-center">
-                                <p>Hi, Do you really want to Mark thid invoice is Paid?<br>
-                                    Please review the below details:</p>
-                                    <hr>
-                            </div>
-                            <div class="col-md-6">
-                                <h5 class="smalltitle mt-0">Invoice ID: <span class="proid mb-0">C1P1</span></h5>
-                            </div>
-                            <div class="col-md-6 text-right">
-                                <h5 class="smalltitle mt-0">Invoice Amount: <span class="proid mb-0"><a href="javascript:;" class="smallstatusbtn paid">$250</a></span></h5>
-                            </div>
-                            <div class="col-md-6">
-                                <h5 class="smalltitle mt-0">Invoice Approved Date: <span class="proid mb-0">20/11/2020</span></h5>
-                            </div>
-                            <div class="col-md-6"></div>
-                            <div class="col-md-6">
-                                <h5 class="smalltitle mt-0">Project Name: <span class="proid mb-0">C1P1</span></h5>
-                            </div>
-                            <div class="col-md-6 text-right">
-                                <h5 class="smalltitle mt-0">Uploaded Document: <span class="proid mb-0"><a href="javascript:;"><i class="fa fa-file-pdf-o"></i></a></span></h5>
-                            </div>
-                            <div class="col-md-12">
-                                <div class="input-group mb-20">
-                                    <textarea rows="8" class="form-control" placeholder="Enter Mark as Paid Comment"></textarea>
-                                </div>
-                            </div>
-                            <div class="col-md-12 text-center">
-                                <div class="input-group mb-20">
-                                    <div class="file-wrapper">
-                                        <input type="file" id="resume">
-                                        <span class="file-button"> <span class="file-holder"></span> <i class="fa fa-upload"></i> Upload File*</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-12 text-right">
-                                <a href="#" class="readmore redcrborder wauto" data-dismiss="modal">Cancel</a>
-                                <a href="#" class="readmore bgreadmore smallwidth text-center" data-dismiss="modal">Mark as Paid</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>      
-            </div>
-            </div>
+          </div>
         </div>
        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+       <script type="text/javascript" src="../vendor/date-range-picker/js/moment.min.js"></script>
        <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
        <script src="../vendor/select-picker/js/bootstrap-select.min.js"></script>
+       <script type="text/javascript" src="../vendor/date-range-picker/js/daterangepicker.js"></script>
        <script src="../vendor/slick/slick.js"></script>
        <script src="../js/script.js"></script>
        <script>
@@ -1289,5 +897,35 @@
                 });
            });
        </script>
+       <script type="text/javascript">
+        $(function() {
+            $('.daterange').daterangepicker();
+        });
+        </script>
+         <script type="text/javascript">
+            var SITE = SITE || {};
+            SITE.fileInputs = function() {
+             var $this = $(this),
+                 $val = $this.val(),
+                 valArray = $val.split('\\'),
+                 newVal = valArray[valArray.length-1],
+                 $button = $this.siblings('.file-button'),
+                 $fakeFile = $this.siblings('.file-holder');
+             if(newVal !== '') {
+               $button.html('<i class="fa fa-upload"></i> Resume Uploaded');
+               if($fakeFile.length === 0) {
+                 $button.after('<span class="file-holder">' + newVal + '</span>');
+               } else {
+                 $fakeFile.text(newVal);
+               }
+             }
+            };
+
+            $(document).ready(function() {
+             $('.file-wrapper input[type=file]').bind('change focus click', SITE.fileInputs);
+            });
+
+ 
+        </script>
     </body>
 </html>

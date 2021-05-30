@@ -4113,3 +4113,72 @@ section.sec-pad.differentiator.industrieds.ourpeoplesec {
     max-width: 300px;
     height: auto;
 }
+
+
+
+/* New Billing & Invoice CSS -----------------*/
+.addinvoicebox.underconstruction .modal-dialog {
+    max-width: 80%;
+    height: 91vh;
+    align-items: center;
+    display: flex;
+}
+.addinvoicebox.underconstruction .modal-dialog p {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    margin-bottom: 10px;
+}
+.addinvoicebox.underconstruction .modal-dialog h6 {
+    font-size: 19px;
+    font-weight: 600;
+    margin-bottom: 22px;
+}
+.addinvoicebox.underconstruction .modal-dialog .modal-content {
+    background: #fff;
+}
+.addinvoicebox.underconstruction .modal-dialog p .downloadattch {
+    float: right;
+}
+.addinvoicebox.underconstruction .modal-dialog p .downloadattch a {
+    color: #016634;
+    font-size: 15px;
+    text-decoration: none;
+}
+.addinvoicebox.underconstruction .modal-dialog p .downloadattch a i {
+    margin-right: 4px;
+}
+a.smallstatusbtn {
+    text-decoration: none;
+    padding: 6px 15px;
+    background: #ccc;
+    margin: 0 5;
+    font-size: 15px;
+    color: #fff;
+}
+a.smallstatusbtn.noyPaid {
+    background: #f9980a;
+}
+a.smallstatusbtn.noyApplicable {
+    background: purple;
+}
+a.smallstatusbtn.paid {
+    background: green;
+}
+.mb-20 {
+    margin-bottom: 20px;
+}
+.contactusform .input-group input[readonly], .contactusform .input-group select[readonly] {
+    background: #f0f0f0;
+}
+.contactusform .input-group input[readonly]::placeholder, .contactusform .input-group select[readonly]::placeholder {
+    opacity: 0.4;
+}
+@media (min-width:991px) and (max-width:1440px){
+    .searchbararwa.large .input-group {
+        width: 29%;
+    }
+    .searchbararwa.large .input-group:last-child {
+        width: 40%;
+    }
+}
